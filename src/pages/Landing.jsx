@@ -281,7 +281,7 @@ export default function Landing() {
   const [stat2, start2] = useCountUp(2)
 
   return (
-    <div style={{ backgroundColor: '#080810', minHeight: '100vh', color: '#e4e1ed' }}>
+    <div className="overflow-x-hidden" style={{ backgroundColor: '#080810', minHeight: '100vh', color: '#e4e1ed' }}>
       <CursorPixels />
       {/* Scroll progress bar */}
       <motion.div style={{ scaleX, transformOrigin:'left', position:'fixed', top:0, left:0, right:0, height:3, background:'linear-gradient(90deg,#7c6fff,#00d97e)', zIndex:9999 }} />
@@ -299,9 +299,10 @@ export default function Landing() {
         initial={{ y: -60, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
-        style={{ position:'fixed', top:0, left:0, right:0, zIndex:50, background:'rgba(8,8,16,0.80)', backdropFilter:'blur(20px)', WebkitBackdropFilter:'blur(20px)', borderBottom:'1px solid rgba(255,255,255,0.06)', padding:'16px 48px', display:'flex', alignItems:'center', justifyContent:'space-between' }}
+        className="px-4 py-3 md:px-12 md:py-4 flex items-center justify-between"
+        style={{ position:'fixed', top:0, left:0, right:0, zIndex:50, background:'rgba(8,8,16,0.80)', backdropFilter:'blur(20px)', WebkitBackdropFilter:'blur(20px)', borderBottom:'1px solid rgba(255,255,255,0.06)' }}
       >
-        <span style={{ fontFamily:"'Outfit',sans-serif", fontWeight:700, fontSize:20, color:'white', cursor:'pointer' }} onClick={() => navigate('/')}>
+        <span className="text-[16px] md:text-[20px] whitespace-nowrap" style={{ fontFamily:"'Outfit',sans-serif", fontWeight:700, color:'white', cursor:'pointer' }} onClick={() => navigate('/')}>
           Kalvio <span style={{ textDecoration:'underline', textDecorationColor:'#7c6fff', textUnderlineOffset:4 }}>Build</span>
         </span>
         <div style={{ display:'flex', gap:32 }} className="hidden md:flex">
@@ -312,18 +313,26 @@ export default function Landing() {
             </span>
           ))}
         </div>
-        <motion.button
-          whileHover={{ background:'rgba(124,111,255,0.25)' }}
-          whileTap={{ scale: 0.97 }}
-          onClick={() => navigate('/styles')}
-          style={{ background:'rgba(124,111,255,0.15)', border:'1px solid rgba(124,111,255,0.40)', color:'#a89fff', fontFamily:"'Plus Jakarta Sans',sans-serif", fontWeight:500, fontSize:14, borderRadius:9999, padding:'8px 20px', cursor:'pointer' }}
-        >
-          Get Started →
-        </motion.button>
+        <div className="flex items-center">
+          <motion.button
+            className="hidden md:block"
+            whileHover={{ background:'rgba(124,111,255,0.25)' }}
+            whileTap={{ scale: 0.97 }}
+            onClick={() => navigate('/styles')}
+            style={{ background:'rgba(124,111,255,0.15)', border:'1px solid rgba(124,111,255,0.40)', color:'#a89fff', fontFamily:"'Plus Jakarta Sans',sans-serif", fontWeight:500, fontSize:14, borderRadius:9999, padding:'8px 20px', cursor:'pointer' }}
+          >
+            Get Started →
+          </motion.button>
+          <svg className="md:hidden" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth={2} strokeLinecap="round">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </div>
       </motion.nav>
 
       {/* HERO */}
-      <section style={{ paddingTop:100, paddingBottom:56, paddingLeft:24, paddingRight:24, maxWidth:1100, margin:'0 auto', position:'relative', zIndex:1 }}>
+      <section className="pt-20 md:pt-[100px] pb-14 px-4 md:px-6" style={{ maxWidth:1100, margin:'0 auto', position:'relative', zIndex:1 }}>
         <div style={{ display:'grid', gridTemplateColumns:'1fr', gap:48 }}>
           <div style={{ maxWidth:700 }}>
             <motion.div {...fadeUp(0.1)}>
@@ -342,8 +351,9 @@ export default function Landing() {
               We build stunning, fast websites for clinics, gyms, and local shops... starting at just ₹3,000.
             </motion.p>
 
-            <motion.div {...fadeUp(0.4)} style={{ display:'flex', gap:16, flexWrap:'wrap', marginBottom:28 }}>
+            <motion.div {...fadeUp(0.4)} className="flex flex-col sm:flex-row gap-4 mb-7">
               <motion.button
+                className="w-full sm:w-auto"
                 animate={{ boxShadow:['0 0 30px rgba(124,111,255,0.25)','0 0 50px rgba(124,111,255,0.45)','0 0 30px rgba(124,111,255,0.25)'] }}
                 transition={{ duration:2.5, repeat:Infinity, ease:'easeInOut' }}
                 whileHover={{ y:-3, scale:1.03 }}
@@ -354,6 +364,7 @@ export default function Landing() {
                 Start Your Project
               </motion.button>
               <motion.button
+                className="w-full sm:w-auto"
                 whileHover={{ borderColor:'rgba(255,255,255,0.30)', color:'white' }}
                 whileTap={{ scale: 0.97 }}
                 onClick={() => navigate('/styles')}
@@ -363,7 +374,7 @@ export default function Landing() {
               </motion.button>
             </motion.div>
 
-            <motion.div {...fadeUp(0.5)} style={{ display:'flex', gap:20, flexWrap:'wrap' }}>
+            <motion.div {...fadeUp(0.5)} className="flex flex-col md:flex-row gap-2 md:gap-5">
               {['No advance payment', 'Ready in 5 days', '100% satisfaction'].map(t => (
                 <span key={t} style={{ display:'flex', alignItems:'center', gap:6, fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:12, color:'rgba(228,225,237,0.30)' }}>
                   <span className="material-symbols-outlined" style={{ fontSize:14, color:'#00d97e', fontVariationSettings:"'FILL' 1" }}>check_circle</span>
@@ -376,7 +387,8 @@ export default function Landing() {
           {/* Decorative preview cards */}
           <motion.div initial="hidden" animate="show"
             variants={{ hidden:{opacity:0}, show:{opacity:1,transition:{staggerChildren:0.15,delayChildren:0.6}} }}
-            style={{ display:'flex', gap:16, alignItems:'flex-end', justifyContent:'center', marginTop:20 }}>
+            className="hidden md:flex"
+            style={{ gap:16, alignItems:'flex-end', justifyContent:'center', marginTop:20 }}>
             {[
               { label: 'Glassmorphism', rot: -3, floatDelay: 0, bg: 'linear-gradient(135deg,#1a0060,#0d1a60)', inner: <div style={{height:'100%', display:'flex',alignItems:'center',justifyContent:'center'}}><div style={{width:80,padding:8,background:'rgba(255,255,255,0.10)',border:'1px solid rgba(255,255,255,0.20)',borderRadius:8,backdropFilter:'blur(8px)'}}><div style={{width:20,height:20,borderRadius:'50%',background:'rgba(120,100,255,0.6)',marginBottom:6}}/><div style={{height:4,background:'rgba(255,255,255,0.3)',borderRadius:2,marginBottom:4}}/><div style={{height:4,width:'65%',background:'rgba(255,255,255,0.15)',borderRadius:2}}/></div></div> },
               { label: 'Neo Brutalism', rot: 0, floatDelay: 0.5, bg: '#f0ebe0', inner: <div style={{height:'100%',display:'flex',alignItems:'center',justifyContent:'center'}}><div style={{width:80,background:'white',border:'2px solid #0a0a0a',padding:8,boxShadow:'4px 4px 0 #0a0a0a'}}><div style={{height:12,background:'#ffe600',border:'1.5px solid #0a0a0a',marginBottom:5}}/><div style={{height:3,background:'#0a0a0a',marginBottom:3}}/><div style={{height:3,width:'65%',background:'rgba(0,0,0,0.3)',marginBottom:6}}/><div style={{height:14,background:'#0a0a0a',boxShadow:'3px 3px 0 #ff3300'}}/></div></div> },
@@ -396,14 +408,14 @@ export default function Landing() {
       </section>
 
       {/* MARQUEE */}
-      <section style={{ background:'#13131b', borderTop:'1px solid rgba(255,255,255,0.04)', borderBottom:'1px solid rgba(255,255,255,0.04)', padding:'40px 0', position:'relative', zIndex:1 }}>
+      <section style={{ background:'#13131b', borderTop:'1px solid rgba(255,255,255,0.04)', borderBottom:'1px solid rgba(255,255,255,0.04)', padding:'40px 0', position:'relative', zIndex:1, overflow:'hidden' }}>
         <p style={{ textAlign:'center', fontFamily:"'Plus Jakarta Sans',sans-serif", fontWeight:400, fontSize:11, letterSpacing:'0.10em', textTransform:'uppercase', color:'rgba(228,225,237,0.25)', marginBottom:20 }}>
           Trusted by businesses across India
         </p>
         <div className="marquee-container">
           <div className="marquee-content" style={{ display:'inline-flex', gap:32, paddingRight:32 }}>
             {[...marqueeItems, ...marqueeItems].map((item, i) => (
-              <span key={i} style={{ fontFamily:"'Outfit',sans-serif", fontWeight:700, fontSize:18, color:'rgba(228,225,237,0.30)', cursor:'default', transition:'color 200ms', whiteSpace:'nowrap' }}
+              <span key={i} className="text-base md:text-[18px]" style={{ fontFamily:"'Outfit',sans-serif", fontWeight:700, color:'rgba(228,225,237,0.30)', cursor:'default', transition:'color 200ms', whiteSpace:'nowrap' }}
                 onMouseEnter={e => e.target.style.color='rgba(228,225,237,0.90)'}
                 onMouseLeave={e => e.target.style.color='rgba(228,225,237,0.30)'}>
                 {item}
@@ -415,18 +427,18 @@ export default function Landing() {
       </section>
 
       {/* THE PROBLEM */}
-      <motion.section {...scrollReveal} style={{ maxWidth:1200, margin:'0 auto', padding:'72px 24px', position:'relative', zIndex:1 }}>
+      <motion.section {...scrollReveal} className="py-16 md:py-[72px] px-4 md:px-6" style={{ maxWidth:1200, margin:'0 auto', position:'relative', zIndex:1 }}>
         <p style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontWeight:500, fontSize:11, letterSpacing:'0.15em', textTransform:'uppercase', color:'#ff6b9d', marginBottom:16 }}>THE REALITY</p>
         <h2 style={{ fontFamily:"'Outfit',sans-serif", fontWeight:700, fontSize:'clamp(32px,4vw,48px)', color:'#e4e1ed', marginBottom:60 }}>Your competitor already has a website.</h2>
 
-        <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(280px,1fr))', gap:24, marginBottom:40 }}>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
           {[
             { display: `${stat73}%`, startFn: start73, text: 'of customers search online before visiting a local shop', gradient: true },
             { display: `${stat2}×`, startFn: start2, text: 'more trust for businesses with a professional website', gradient: true },
             { display: '₹0', startFn: ()=>{}, text: 'cost to start — we only take payment after you approve', color: '#00d97e' },
           ].map(({ display, startFn, text, gradient, color }) => (
             <motion.div key={text} {...scrollReveal} onViewportEnter={startFn} className="glass-card" style={{ borderRadius:16, padding:32 }}>
-              <div className={gradient ? 'text-gradient' : ''} style={{ fontFamily:"'Outfit',sans-serif", fontWeight:800, fontSize:56, color:color||undefined, marginBottom:12 }}>{display}</div>
+              <div className={`text-[40px] md:text-[56px] ${gradient ? 'text-gradient' : ''}`} style={{ fontFamily:"'Outfit',sans-serif", fontWeight:800, color:color||undefined, marginBottom:12 }}>{display}</div>
               <p style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:15, color:'rgba(228,225,237,0.55)', lineHeight:1.6 }}>{text}</p>
             </motion.div>
           ))}
@@ -454,7 +466,7 @@ export default function Landing() {
       </motion.section>
 
       {/* STYLE SELECTOR PREVIEW */}
-      <motion.section {...scrollReveal} style={{ maxWidth:1280, margin:'0 auto', padding:'72px 24px', position:'relative', zIndex:1 }}>
+      <motion.section {...scrollReveal} className="py-16 md:py-[72px] px-4 md:px-6" style={{ maxWidth:1280, margin:'0 auto', position:'relative', zIndex:1 }}>
         <div style={{ textAlign:'center', marginBottom:44 }}>
           <p style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontWeight:500, fontSize:11, letterSpacing:'0.15em', textTransform:'uppercase', color:'#7c6fff', marginBottom:16 }}>PICK YOUR STYLE</p>
           <h2 style={{ fontFamily:"'Outfit',sans-serif", fontWeight:800, fontSize:'clamp(28px,4vw,52px)', marginBottom:16 }}>
@@ -503,7 +515,7 @@ export default function Landing() {
       </motion.section>
 
       {/* HOW IT WORKS */}
-      <motion.section {...scrollReveal} style={{ background:'#0e0e1a', borderTop:'1px solid rgba(255,255,255,0.05)', borderBottom:'1px solid rgba(255,255,255,0.05)', padding:'72px 24px', position:'relative', zIndex:1 }}>
+      <motion.section {...scrollReveal} className="py-16 md:py-[72px] px-4 md:px-6" style={{ background:'#0e0e1a', borderTop:'1px solid rgba(255,255,255,0.05)', borderBottom:'1px solid rgba(255,255,255,0.05)', position:'relative', zIndex:1 }}>
         <div style={{ maxWidth:1000, margin:'0 auto' }}>
           <div style={{ textAlign:'center', marginBottom:44 }}>
             <p style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontWeight:500, fontSize:11, letterSpacing:'0.15em', textTransform:'uppercase', color:'#7c6fff', marginBottom:16 }}>THE PROCESS</p>
@@ -539,7 +551,7 @@ export default function Landing() {
       </motion.section>
 
       {/* WHY KALVIO BUILD */}
-      <motion.section {...scrollReveal} style={{ maxWidth:1200, margin:'0 auto', padding:'72px 24px', position:'relative', zIndex:1 }}>
+      <motion.section {...scrollReveal} className="py-16 md:py-[72px] px-4 md:px-6" style={{ maxWidth:1200, margin:'0 auto', position:'relative', zIndex:1 }}>
         <div style={{ textAlign:'center', marginBottom:44 }}>
           <p style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontWeight:500, fontSize:11, letterSpacing:'0.15em', textTransform:'uppercase', color:'#7c6fff', marginBottom:16 }}>WHY US</p>
           <h2 style={{ fontFamily:"'Outfit',sans-serif", fontWeight:800, fontSize:'clamp(28px,4vw,52px)' }}>Built for Indian businesses</h2>
@@ -551,18 +563,18 @@ export default function Landing() {
             <motion.div key={f.title}
               variants={{ hidden: { opacity:0, y:30 }, show: { opacity:1, y:0, transition:{ duration:0.5 } } }}
               whileHover={{ y:-4, borderColor:'rgba(255,255,255,0.15)' }}
-              className="glass-card" style={{ borderRadius:16, padding:28, transition:'border-color 0.3s' }}>
+              className="glass-card p-5 md:p-7" style={{ borderRadius:16, transition:'border-color 0.3s' }}>
               <div style={{ width:40, height:40, borderRadius:12, background:f.grad, display:'flex', alignItems:'center', justifyContent:'center', fontSize:20, marginBottom:16 }}>{f.emoji}</div>
               <div style={{ fontFamily:"'Outfit',sans-serif", fontWeight:600, fontSize:18, color:'#e4e1ed', marginBottom:8 }}>{f.title}</div>
               <div style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:14, color:'rgba(228,225,237,0.50)', lineHeight:1.6 }}>{f.desc}</div>
             </motion.div>
           ))}
         </motion.div>
-        <style>{`@media (max-width:900px) { .features-grid { grid-template-columns: repeat(2,1fr) !important; } } @media (max-width:560px) { .features-grid { grid-template-columns: 1fr !important; } }`}</style>
+        <style>{`@media (max-width:900px) { .features-grid { grid-template-columns: repeat(2,1fr) !important; } }`}</style>
       </motion.section>
 
       {/* PRICING */}
-      <motion.section {...scrollReveal} style={{ background:'#0e0e1a', borderTop:'1px solid rgba(255,255,255,0.05)', padding:'72px 24px', position:'relative', zIndex:1 }}>
+      <motion.section {...scrollReveal} className="py-16 md:py-[72px] px-4 md:px-6" style={{ background:'#0e0e1a', borderTop:'1px solid rgba(255,255,255,0.05)', position:'relative', zIndex:1 }}>
         <div style={{ maxWidth:1100, margin:'0 auto' }}>
           <div style={{ textAlign:'center', marginBottom:64 }}>
             <p style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontWeight:500, fontSize:11, letterSpacing:'0.15em', textTransform:'uppercase', color:'#7c6fff', marginBottom:16 }}>PRICING</p>
@@ -572,9 +584,9 @@ export default function Landing() {
 
           <div style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:24 }} className="pricing-grid">
             {/* Starter */}
-            <motion.div {...scrollReveal} className="glass-card" style={{ borderRadius:20, padding:36 }}>
+            <motion.div {...scrollReveal} className="glass-card p-6 md:p-9" style={{ borderRadius:20 }}>
               <div style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontWeight:600, fontSize:12, color:'rgba(228,225,237,0.30)', textTransform:'uppercase', letterSpacing:'0.10em', marginBottom:12 }}>STARTER</div>
-              <div style={{ fontFamily:"'Outfit',sans-serif", fontWeight:800, fontSize:52, color:'#e4e1ed', marginBottom:4 }}>₹3,000</div>
+              <div className="text-[40px] md:text-[52px]" style={{ fontFamily:"'Outfit',sans-serif", fontWeight:800, color:'#e4e1ed', marginBottom:4 }}>₹3,000</div>
               <div style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:13, color:'rgba(228,225,237,0.30)', marginBottom:24 }}>/one-time payment</div>
               <div style={{ height:1, background:'rgba(255,255,255,0.07)', marginBottom:24 }} />
               {['1 page website','Mobile responsive','WhatsApp button','Google Maps embed','Contact form'].map(f => (
@@ -589,10 +601,10 @@ export default function Landing() {
             </motion.div>
 
             {/* Business */}
-            <motion.div {...scrollReveal} style={{ borderRadius:20, padding:36, position:'relative', background:'rgba(124,111,255,0.10)', border:'1px solid rgba(124,111,255,0.40)' }}>
+            <motion.div {...scrollReveal} className="p-6 md:p-9" style={{ borderRadius:20, position:'relative', background:'rgba(124,111,255,0.10)', border:'1px solid rgba(124,111,255,0.40)' }}>
               <div style={{ position:'absolute', top:16, right:16, background:'#7c6fff', color:'white', fontFamily:"'Plus Jakarta Sans',sans-serif", fontWeight:600, fontSize:10, textTransform:'uppercase', letterSpacing:'0.05em', borderRadius:9999, padding:'4px 10px' }}>Most Popular</div>
               <div style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontWeight:600, fontSize:12, color:'#a89fff', textTransform:'uppercase', letterSpacing:'0.10em', marginBottom:12 }}>BUSINESS</div>
-              <div className="text-gradient" style={{ fontFamily:"'Outfit',sans-serif", fontWeight:800, fontSize:52, marginBottom:4 }}>₹7,000</div>
+              <div className="text-gradient text-[40px] md:text-[52px]" style={{ fontFamily:"'Outfit',sans-serif", fontWeight:800, marginBottom:4 }}>₹7,000</div>
               <div style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:13, color:'rgba(228,225,237,0.30)', marginBottom:24 }}>/one-time payment</div>
               <div style={{ height:1, background:'rgba(124,111,255,0.20)', marginBottom:24 }} />
               {['Up to 5 pages','Mobile responsive','WhatsApp button','Google Maps embed','Contact form','Image gallery','Basic SEO setup','2 free revisions'].map(f => (
@@ -607,9 +619,9 @@ export default function Landing() {
             </motion.div>
 
             {/* Premium */}
-            <motion.div {...scrollReveal} className="glass-card" style={{ borderRadius:20, padding:36 }}>
+            <motion.div {...scrollReveal} className="glass-card p-6 md:p-9" style={{ borderRadius:20 }}>
               <div style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontWeight:600, fontSize:12, color:'rgba(228,225,237,0.30)', textTransform:'uppercase', letterSpacing:'0.10em', marginBottom:12 }}>PREMIUM</div>
-              <div style={{ fontFamily:"'Outfit',sans-serif", fontWeight:800, fontSize:52, color:'#e4e1ed', marginBottom:4 }}>₹12,000</div>
+              <div className="text-[40px] md:text-[52px]" style={{ fontFamily:"'Outfit',sans-serif", fontWeight:800, color:'#e4e1ed', marginBottom:4 }}>₹12,000</div>
               <div style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:13, color:'rgba(228,225,237,0.30)', marginBottom:24 }}>/one-time payment</div>
               <div style={{ height:1, background:'rgba(255,255,255,0.07)', marginBottom:24 }} />
               {['Up to 8 pages','All Business features','Online booking form','WhatsApp auto-reply bot','Instagram feed integration','Google review widget','Hindi + English support','Analytics dashboard','3 months WhatsApp support','Priority delivery (2 days)'].map(f => (
@@ -632,13 +644,13 @@ export default function Landing() {
       </motion.section>
 
       {/* FAQ */}
-      <motion.section {...scrollReveal} style={{ maxWidth:800, margin:'0 auto', padding:'72px 24px', position:'relative', zIndex:1 }}>
+      <motion.section {...scrollReveal} className="py-16 md:py-[72px] px-4 md:px-6" style={{ maxWidth:800, margin:'0 auto', position:'relative', zIndex:1 }}>
         <h2 style={{ fontFamily:"'Outfit',sans-serif", fontWeight:800, fontSize:'clamp(28px,4vw,52px)', textAlign:'center', marginBottom:64 }}>Questions you probably have</h2>
         <div style={{ display:'flex', flexDirection:'column', gap:12 }}>
           {faqs.map((faq, i) => (
             <motion.div key={i} layout className="glass-card" style={{ borderRadius:12, overflow:'hidden', cursor:'pointer' }} onClick={() => setOpenFaq(openFaq === i ? null : i)}>
               <div style={{ padding:'20px 24px', display:'flex', alignItems:'center', justifyContent:'space-between', gap:16 }}>
-                <span style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontWeight:600, fontSize:15, color:'#e4e1ed' }}>{faq.q}</span>
+                <span className="text-sm md:text-[15px] leading-snug" style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontWeight:600, color:'#e4e1ed' }}>{faq.q}</span>
                 <span style={{ color:'#7c6fff', fontSize:20, fontWeight:300, flexShrink:0, transition:'transform 0.3s', transform: openFaq === i ? 'rotate(45deg)' : 'none' }}>+</span>
               </div>
               <AnimatePresence>
@@ -654,21 +666,21 @@ export default function Landing() {
       </motion.section>
 
       {/* FINAL CTA */}
-      <motion.section {...scrollReveal} style={{ background:'#0e0e1a', borderTop:'1px solid rgba(255,255,255,0.06)', padding:'160px 24px', position:'relative', overflow:'hidden', zIndex:1, textAlign:'center' }}>
+      <motion.section {...scrollReveal} className="py-16 md:py-[160px] px-4 md:px-6" style={{ background:'#0e0e1a', borderTop:'1px solid rgba(255,255,255,0.06)', position:'relative', overflow:'hidden', zIndex:1, textAlign:'center' }}>
         <div style={{ position:'absolute', top:'50%', left:'50%', transform:'translate(-50%,-50%)', fontFamily:"'Outfit',sans-serif", fontWeight:800, fontSize:'clamp(80px,15vw,200px)', color:'rgba(255,255,255,0.02)', pointerEvents:'none', whiteSpace:'nowrap' }}>KALVIO</div>
         <div style={{ position:'relative', zIndex:1 }}>
           <p style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontWeight:500, fontSize:11, letterSpacing:'0.20em', textTransform:'uppercase', color:'#7c6fff', marginBottom:20 }}>LET'S BUILD SOMETHING</p>
-          <h2 className="text-gradient" style={{ fontFamily:"'Outfit',sans-serif", fontWeight:800, fontSize:'clamp(32px,5vw,56px)', lineHeight:1.15, marginBottom:20 }}>
+          <h2 className="text-gradient text-[36px] md:text-[56px]" style={{ fontFamily:"'Outfit',sans-serif", fontWeight:800, lineHeight:1.15, marginBottom:20 }}>
             Ready to get your<br />business online?
           </h2>
           <p style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:18, color:'rgba(228,225,237,0.50)', maxWidth:400, margin:'0 auto 40px' }}>Join businesses across India who trusted Kalvio Build.</p>
-          <div style={{ display:'flex', gap:16, justifyContent:'center', flexWrap:'wrap', marginBottom:20 }}>
-            <motion.button whileHover={{ y:-2, boxShadow:'0 20px 50px rgba(124,111,255,0.50)' }} whileTap={{ scale:0.97 }}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-5">
+            <motion.button className="w-full sm:w-auto" whileHover={{ y:-2, boxShadow:'0 20px 50px rgba(124,111,255,0.50)' }} whileTap={{ scale:0.97 }}
               onClick={() => navigate('/styles')}
               style={{ background:'linear-gradient(135deg,#7c6fff,#5646d7)', color:'white', fontFamily:"'Plus Jakarta Sans',sans-serif", fontWeight:700, fontSize:16, padding:'18px 40px', borderRadius:14, border:'none', cursor:'pointer', boxShadow:'0 10px 30px rgba(124,111,255,0.35)' }}>
               See All Styles →
             </motion.button>
-            <motion.button whileHover={{ background:'rgba(0,217,126,0.15)' }} whileTap={{ scale:0.97 }}
+            <motion.button className="w-full sm:w-auto" whileHover={{ background:'rgba(0,217,126,0.15)' }} whileTap={{ scale:0.97 }}
               onClick={() => window.open(`https://wa.me/${import.meta.env.VITE_WA_NUMBER}?text=${encodeURIComponent('Hello Kalvio Build! I want to discuss a website for my business.')}`, '_blank')}
               style={{ background:'rgba(0,217,126,0.08)', color:'#00d97e', fontFamily:"'Plus Jakarta Sans',sans-serif", fontWeight:700, fontSize:16, padding:'18px 40px', borderRadius:14, border:'1px solid rgba(0,217,126,0.30)', cursor:'pointer' }}>
               💬 Chat on WhatsApp
@@ -679,7 +691,7 @@ export default function Landing() {
       </motion.section>
 
       {/* FOOTER */}
-      <footer style={{ background:'#080810', borderTop:'1px solid rgba(255,255,255,0.06)', padding:'60px 48px 40px', position:'relative', zIndex:1 }}>
+      <footer className="pt-10 md:pt-[60px] pb-6 md:pb-10 px-4 md:px-12" style={{ background:'#080810', borderTop:'1px solid rgba(255,255,255,0.06)', position:'relative', zIndex:1 }}>
         <div style={{ maxWidth:1200, margin:'0 auto', display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:40 }} className="footer-grid">
           <div>
             <div style={{ fontFamily:"'Outfit',sans-serif", fontWeight:700, fontSize:20, color:'white', marginBottom:10 }}>
@@ -714,7 +726,7 @@ export default function Landing() {
             <div style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:12, color:'#00d97e', marginTop:4 }}>Reply within 2 hours</div>
           </div>
         </div>
-        <div style={{ maxWidth:1200, margin:'28px auto 0', paddingTop:20, borderTop:'1px solid rgba(255,255,255,0.06)', display:'flex', justifyContent:'space-between', flexWrap:'wrap', gap:10 }}>
+        <div className="flex flex-col md:flex-row justify-between items-center gap-2 text-center" style={{ maxWidth:1200, margin:'28px auto 0', paddingTop:20, borderTop:'1px solid rgba(255,255,255,0.06)' }}>
           <span style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:12, color:'rgba(228,225,237,0.25)' }}>© 2025 Kalvio Build. All rights reserved.</span>
           <span style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:12, color:'rgba(228,225,237,0.25)' }}>Made with ✦ in Bengaluru</span>
         </div>
