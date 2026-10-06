@@ -145,6 +145,10 @@ Done as 301s in `public/_redirects` (Cloudflare) and `vercel.json`, and in the a
   | `/demo/jewellery?name=…` (personalised) | 95 | 100 | 100 | 69* | 1.2 s | 2.9 s |
 
   \* Personalised links are deliberately `noindex`, so Lighthouse's "page is blocked from indexing" check fails.
+
+  On the live Cloudflare preview over the real network (`docs/lighthouse/live/`): `/` 94/100/100, `/demo/dentist`
+  95/100/100/100, `/demo/gym_fitness` 98/100/100/100, first paint 1.4–1.5 s. (SEO on `/` reads 69 there only because
+  Cloudflare marks preview deployments `noindex`; production is indexable.)
 - Screenshots at 375 and 1440 for every page: `docs/screenshots/after/<group>/`; before: `docs/screenshots/before/`;
   side by side: `docs/screenshots/before-after.webp`.
 
@@ -161,7 +165,7 @@ Done as 301s in `public/_redirects` (Cloudflare) and `vercel.json`, and in the a
 
 ## 9. Still yours to do or check
 
-1. **Cloudflare Pages:** connect the repo (5 minutes, `docs/DEPLOY.md`). It needs your Cloudflare login.
+1. **Cloudflare Pages:** project `kalvio-build` is created and the redesign is live as a preview at <https://redesign-2026.kalvio-build.pages.dev>. After merging, run `npm run deploy` for production, or add the API token so GitHub deploys automatically (`docs/DEPLOY.md`).
 2. **Kannada and Hindi** strings in `src/i18n/strings.ts` and the presets' headlines: first drafts, have them checked.
 3. **Landing FAQ** (`src/landing/faq.ts`): policy wording ("you pay only after you've seen it", what's included)
    should match how you actually work.

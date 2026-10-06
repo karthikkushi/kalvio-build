@@ -38,6 +38,8 @@ interface Env {
 export const onRequestGet: PagesFunction<Env> = async ({ request, env, params }) => {
   const url = new URL(request.url)
   const key = String(params.key)
+  // Branch and per-commit previews (<branch>.<project>.pages.dev) must never be indexed.
+  const isPreview = url.hostname.endsWith('.pages.dev') && url.hostname.split('.').length > 3
   const asset = (path: string) => env.ASSETS.fetch(new URL(path, url))
   const sp = url.searchParams
 
@@ -57,7 +59,7 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env, params })
     const headers = new Headers(page.headers)
     headers.delete('x-robots-tag')
     headers.set('content-type', 'text/html; charset=utf-8')
-    if (sp.get('name')) headers.set('x-robots-tag', 'noindex, nofollow')
+    if (sp.get('name') || isPreview) headers.set('x-robots-tag', 'noindex, nofollow')
     return new Response(page.body, { status: 200, headers })
   }
 
@@ -100,7 +102,7 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env, params })
   headers.set('content-type', 'text/html; charset=utf-8')
   headers.set('cache-control', 'public, max-age=300')
   // Samples for real shops carry demo prices and reviews: keep them out of search results.
-  if (personalised) headers.set('x-robots-tag', 'noindex, nofollow')
+  if (personalised || isPreview) headers.set('x-robots-tag', 'noindex, nofollow')
 
   return new HTMLRewriter()
     .on('html', { element: (e) => void e.setAttribute('data-edge', '') })

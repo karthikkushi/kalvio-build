@@ -1,6 +1,7 @@
 # Free sample links (`/demo`)
 
-This is the contract Lead Finder's **Make sample** button relies on. Keep it stable: add parameters, never rename or
+This is the contract Lead Finder's **Make sample** button relies on. Until production is deployed, try the links on
+the preview by replacing `kalvio-build.pages.dev` with `redesign-2026.kalvio-build.pages.dev`. Keep it stable: add parameters, never rename or
 remove them.
 
 ```

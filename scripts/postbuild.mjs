@@ -111,6 +111,10 @@ writeFileSync(
   ),
 )
 rmSync(join(dist, '.vite'), { recursive: true, force: true })
-// Retries: macOS Finder can drop a .DS_Store into the folder while it is being removed.
-if (existsSync('dist-ssr')) rmSync('dist-ssr', { recursive: true, force: true, maxRetries: 5, retryDelay: 100 })
+// Only cleanup: macOS Finder can drop a .DS_Store into the folder while it is being removed, so never fail on it.
+try {
+  if (existsSync('dist-ssr')) rmSync('dist-ssr', { recursive: true, force: true, maxRetries: 5, retryDelay: 100 })
+} catch (e) {
+  console.warn(`postbuild: could not remove dist-ssr (${e.code}); it is ignored by git and safe to delete`)
+}
 console.log(`postbuild: prerendered the landing page and ${count} sample pages for ${ssr.presets.length} businesses`)

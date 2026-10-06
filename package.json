@@ -11,7 +11,9 @@
     "lint": "eslint .",
     "test": "vitest run",
     "screenshots": "node scripts/screenshots.mjs",
-    "pages:dev": "wrangler pages dev dist --port 8788"
+    "pages:dev": "wrangler pages dev dist --port 8788",
+    "deploy:preview": "npm run build && wrangler pages deploy dist --project-name kalvio-build --branch \"$(git rev-parse --abbrev-ref HEAD)\"",
+    "deploy": "npm run build && wrangler pages deploy dist --project-name kalvio-build --branch main"
   },
   "dependencies": {
     "@fontsource/bricolage-grotesque": "^5.3.0",
