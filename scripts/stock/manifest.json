@@ -1,0 +1,881 @@
+{
+  "dentist": {
+    "hero": {
+      "id": "Fdku_oMrDvk",
+      "alt": "Bright, clean dental treatment room with a modern dental chair",
+      "focus": "50% 60%"
+    },
+    "doctor": {
+      "id": "SakqLf78KVo",
+      "alt": "Portrait of a smiling dentist in a white coat",
+      "focus": "50% 25%"
+    },
+    "smile": {
+      "id": "VG32kWGiSQo",
+      "alt": "Young woman with a broad, confident smile",
+      "focus": "50% 45%"
+    },
+    "care": {
+      "id": "vewtbb0swgA",
+      "alt": "Dentist examining a patient's teeth with a mirror",
+      "focus": "50% 30%"
+    },
+    "reception": {
+      "id": "oSvU6uLkXPI",
+      "alt": "Calm clinic waiting area with chairs and a reception desk",
+      "focus": "50% 60%"
+    }
+  },
+  "salon_beauty": {
+    "hero": {
+      "id": "KxHcyNOIO_M",
+      "alt": "Smiling bride with bridal makeup and traditional gold jewellery",
+      "focus": "50% 22%"
+    },
+    "bridal-1": {
+      "id": "ohENjR9w0bk",
+      "alt": "Bride in a red lehenga with gold jewellery and henna",
+      "focus": "50% 25%"
+    },
+    "bridal-2": {
+      "id": "Po-nggQqplE",
+      "alt": "Close-up of bridal eye makeup and nose ring",
+      "focus": "50% 30%"
+    },
+    "bridal-3": {
+      "id": "YL4xphQzZrw",
+      "alt": "Bride in profile with statement earrings and hair bun",
+      "focus": "50% 30%"
+    },
+    "engagement": {
+      "id": "inlZbiU4apA",
+      "alt": "Bride in a pastel outfit with soft curls and makeup",
+      "focus": "50% 25%"
+    },
+    "salon": {
+      "id": "lK8oXGycy88",
+      "alt": "Salon floor with round lit mirrors and styling chairs",
+      "focus": "50% 50%"
+    },
+    "hair-smoothing": {
+      "id": "TnyHlxVnyhk",
+      "alt": "Stylist straightening long dark hair",
+      "focus": "50% 50%"
+    },
+    "hair-styling": {
+      "id": "35NAaB_Nmx8",
+      "alt": "Stylist pinning an updo hairstyle",
+      "focus": "50% 40%"
+    },
+    "haircut": {
+      "id": "qUXoDVRfFww",
+      "alt": "Stylist trimming long straight hair with scissors",
+      "focus": "50% 50%"
+    }
+  },
+  "dermatologist": {
+    "hero": {
+      "id": "t-5HUPQffgk",
+      "alt": "Young woman with clear, healthy skin looking at the camera",
+      "focus": "55% 35%"
+    },
+    "doctor": {
+      "id": "uBb_ZDIrquc",
+      "alt": "Dermatologist in a white coat",
+      "focus": "50% 22%"
+    },
+    "glow": {
+      "id": "3prUTg-t5h4",
+      "alt": "Close-up of a woman's even-toned, glowing skin",
+      "focus": "50% 40%"
+    },
+    "hydrafacial": {
+      "id": "HtXyytr9304",
+      "alt": "Hydrafacial treatment on a patient's face",
+      "focus": "50% 40%"
+    },
+    "peel": {
+      "id": "Pe9IXUuC6QU",
+      "alt": "Chemical peel being applied with a brush",
+      "focus": "50% 40%"
+    },
+    "procedure": {
+      "id": "PqyzuzFiQfY",
+      "alt": "Skin procedure by a gloved specialist",
+      "focus": "50% 40%"
+    },
+    "consult": {
+      "id": "5CXYcw7ykV8",
+      "alt": "Skin specialist talking with a patient",
+      "focus": "50% 30%"
+    },
+    "result": {
+      "id": "Vx71zsOqtSU",
+      "alt": "Smiling woman checking her skin in a hand mirror",
+      "focus": "50% 35%"
+    }
+  },
+  "clinic": {
+    "hero": {
+      "id": "iyeUwItlIPk",
+      "alt": "Doctor listening to a patient across the consultation desk",
+      "focus": "55% 40%"
+    },
+    "doctor-1": {
+      "id": "MJ_BZMPuWYE",
+      "alt": "Portrait of a physician in a white coat",
+      "focus": "50% 25%"
+    },
+    "doctor-2": {
+      "id": "2G73aoMR-Go",
+      "alt": "Portrait of a smiling woman doctor in a white coat",
+      "focus": "50% 25%"
+    },
+    "reception": {
+      "id": "27zLImvxwV0",
+      "alt": "Clean clinic reception desk",
+      "focus": "50% 60%"
+    },
+    "corridor": {
+      "id": "Pk-KuizxQv8",
+      "alt": "Bright, clean clinic corridor with waiting benches",
+      "focus": "50% 55%"
+    }
+  },
+  "physio": {
+    "hero": {
+      "id": "uLWW09LLG04",
+      "alt": "Physiotherapist treating a patient's shoulder on a treatment table",
+      "focus": "50% 35%"
+    },
+    "knee": {
+      "id": "pbUWW-CBoqY",
+      "alt": "Physiotherapist assessing a patient's knee",
+      "focus": "50% 40%"
+    },
+    "exercise": {
+      "id": "inoZpsBQRqk",
+      "alt": "Guided strengthening exercise with light dumbbells",
+      "focus": "50% 40%"
+    },
+    "band": {
+      "id": "mvHuY-t4QII",
+      "alt": "Resistance band exercise with a therapist",
+      "focus": "50% 40%"
+    },
+    "back": {
+      "id": "hBLf2nvp-Yc",
+      "alt": "Manual therapy for back pain",
+      "focus": "50% 40%"
+    },
+    "therapist": {
+      "id": "SgD-QuJfIMk",
+      "alt": "Physiotherapist checking a patient's knee",
+      "focus": "40% 35%"
+    },
+    "rehab": {
+      "id": "tqTWbykzqNE",
+      "alt": "Senior patient doing knee rehabilitation exercises",
+      "focus": "50% 40%"
+    }
+  },
+  "eye_clinic": {
+    "hero": {
+      "id": "-yk2yfYwTiE",
+      "alt": "Modern optical store with frame walls and a fitting table",
+      "focus": "50% 55%"
+    },
+    "exam": {
+      "id": "bfcPP-LlZMI",
+      "alt": "Optometrist examining a patient's eyes with a slit lamp",
+      "focus": "50% 40%"
+    },
+    "trial": {
+      "id": "rcP7T6MPEIc",
+      "alt": "Eye test with a trial frame",
+      "focus": "50% 30%"
+    },
+    "chart": {
+      "id": "tRIx_NfMNYA",
+      "alt": "Glasses held up in front of an eye chart",
+      "focus": "50% 50%"
+    },
+    "frames": {
+      "id": "oqlEKLMmTNg",
+      "alt": "Frames on display in different colours",
+      "focus": "50% 50%"
+    },
+    "round": {
+      "id": "JlAf1fqaI9I",
+      "alt": "Round black frames on a wooden table",
+      "focus": "50% 50%"
+    },
+    "tryon": {
+      "id": "oQdpelfogoo",
+      "alt": "Smiling woman trying on new glasses",
+      "focus": "50% 35%"
+    }
+  },
+  "vet": {
+    "hero": {
+      "id": "u2H8mUzoF2Q",
+      "alt": "Small dog standing on the examination table at a vet clinic",
+      "focus": "50% 40%"
+    },
+    "team": {
+      "id": "7gcjFeXjayw",
+      "alt": "Vets smiling while holding a puppy",
+      "focus": "50% 40%"
+    },
+    "dachshund": {
+      "id": "E3K7xyAvQ8M",
+      "alt": "Dachshund looking up during a check-up",
+      "focus": "50% 35%"
+    },
+    "pom": {
+      "id": "ejxFIxygOww",
+      "alt": "Happy Pomeranian puppy",
+      "focus": "50% 40%"
+    },
+    "puppy": {
+      "id": "-R_7O2nk_6A",
+      "alt": "Owner cuddling a young puppy",
+      "focus": "50% 40%"
+    },
+    "vaccine": {
+      "id": "fQeLC7WlNm8",
+      "alt": "Vet giving a small dog an injection",
+      "focus": "50% 40%"
+    },
+    "cat": {
+      "id": "vh6henQFueg",
+      "alt": "Vet nurse holding a calm grey cat",
+      "focus": "50% 35%"
+    }
+  },
+  "pet_shop": {
+    "hero": {
+      "id": "O52UCkz_7W4",
+      "alt": "Pug and schnauzer outside a pet shop with a flower arch",
+      "focus": "50% 55%"
+    },
+    "store": {
+      "id": "EnYJvnxr-4Q",
+      "alt": "Shop owner holding a happy schnauzer inside the store",
+      "focus": "50% 30%"
+    },
+    "cat-food": {
+      "id": "Ky7dAFGwZ1A",
+      "alt": "Tabby cat sitting on stacked bags of pet food",
+      "focus": "50% 35%"
+    },
+    "dog-food": {
+      "id": "Qvbr5Uxgz_Q",
+      "alt": "Dog eating kibble from a bowl",
+      "focus": "50% 50%"
+    },
+    "clothes": {
+      "id": "tIWBJN8t7zE",
+      "alt": "French bulldog in a yellow T-shirt",
+      "focus": "50% 45%"
+    },
+    "scratcher": {
+      "id": "1hBWrLIDSCc",
+      "alt": "Kitten playing on a scratching post",
+      "focus": "50% 55%"
+    },
+    "toys": {
+      "id": "Yf2Vcwl7HgY",
+      "alt": "Cat playing with a soft toy",
+      "focus": "50% 55%"
+    },
+    "groom-trim": {
+      "id": "LpK2xddrElI",
+      "alt": "Groomer trimming a small white dog's face with scissors",
+      "focus": "40% 45%"
+    },
+    "groom-towel": {
+      "id": "ZVdZw2p08y4",
+      "alt": "Pomeranian wrapped in a pink towel after a bath",
+      "focus": "50% 40%"
+    },
+    "groom-brush": {
+      "id": "dHIRbh9En6I",
+      "alt": "Groomer brushing a white Spitz",
+      "focus": "55% 40%"
+    },
+    "groomed-1": {
+      "id": "hjzs2nA4y-k",
+      "alt": "Freshly groomed Shih Tzu with a red bow",
+      "focus": "50% 40%"
+    },
+    "groomed-2": {
+      "id": "_hoAqzp39tk",
+      "alt": "Smiling groomed dog in a green bandana",
+      "focus": "50% 40%"
+    },
+    "groomed-3": {
+      "id": "JGkGlJlgR1Y",
+      "alt": "Groomed dog in a floral bandana",
+      "focus": "50% 40%"
+    }
+  },
+  "gym_fitness": {
+    "hero": {
+      "id": "cCJQzTPkoFg",
+      "alt": "Woman pushing a weighted sled while her trainer coaches her",
+      "focus": "45% 40%"
+    },
+    "trainer-1": {
+      "id": "NC7ynqvd48A",
+      "alt": "Personal trainer on the gym floor",
+      "focus": "40% 35%"
+    },
+    "trainer-2": {
+      "id": "rD0poLlu57M",
+      "alt": "Trainer watching a member's deadlift form",
+      "focus": "40% 45%"
+    },
+    "progress": {
+      "id": "5p8vhHUEEgY",
+      "alt": "Trainer reviewing progress with a member on a tablet",
+      "focus": "50% 40%"
+    },
+    "floor": {
+      "id": "1RNQ11ZODJM",
+      "alt": "Gym floor with racks, benches and machines",
+      "focus": "50% 55%"
+    },
+    "weights": {
+      "id": "GNWUPn44-eg",
+      "alt": "Free-weights area with plates and power racks",
+      "focus": "50% 50%"
+    },
+    "kettlebells": {
+      "id": "uwk8IS-HfJ8",
+      "alt": "Row of kettlebells",
+      "focus": "50% 50%"
+    },
+    "yoga": {
+      "id": "NlNYWD3ONXc",
+      "alt": "Group yoga and meditation class in a bright studio",
+      "focus": "50% 55%"
+    },
+    "calm": {
+      "id": "NR5AxLbyNNI",
+      "alt": "Woman meditating on a yoga mat",
+      "focus": "50% 40%"
+    }
+  },
+  "jewellery": {
+    "hero": {
+      "id": "njVir8eVq1M",
+      "alt": "Woman in a green silk saree wearing a long gold temple necklace and jhumkas",
+      "focus": "50% 25%"
+    },
+    "bridal": {
+      "id": "T-PUQaJ8YEw",
+      "alt": "Bride in a red lehenga with a full gold bridal set",
+      "focus": "50% 30%"
+    },
+    "kundan": {
+      "id": "ACAHBwOsRSM",
+      "alt": "Kundan choker worn with a red bridal lehenga and mehendi",
+      "focus": "50% 40%"
+    },
+    "temple": {
+      "id": "G3Hrl6WzQYQ",
+      "alt": "Gold temple necklace with ruby and pearl details",
+      "focus": "50% 50%"
+    },
+    "set": {
+      "id": "LA0edB8tqC0",
+      "alt": "Gold necklace and earring set on display stands",
+      "focus": "50% 50%"
+    },
+    "display": {
+      "id": "vLIeyl_ml8s",
+      "alt": "Gold necklace and earrings in a showroom display case",
+      "focus": "50% 45%"
+    },
+    "ring": {
+      "id": "tUCYTL59cA0",
+      "alt": "Antique gold ring with an emerald",
+      "focus": "60% 50%"
+    },
+    "jhumka": {
+      "id": "Ll2oabAynTU",
+      "alt": "Gold jhumka earrings and chain",
+      "focus": "50% 50%"
+    },
+    "antique": {
+      "id": "KOEX6sdij9w",
+      "alt": "Antique kundan necklace with matching earrings",
+      "focus": "40% 50%"
+    },
+    "diamond": {
+      "id": "xu_zM4np434",
+      "alt": "Gold necklace with a diamond and pearl pendant",
+      "focus": "50% 55%"
+    },
+    "bangles": {
+      "id": "wreS7kv_tLE",
+      "alt": "Stack of ornate gold bangles",
+      "focus": "50% 50%"
+    },
+    "kada": {
+      "id": "ynts2uDw1ws",
+      "alt": "Pair of gold kadas on a velvet cushion",
+      "focus": "50% 50%"
+    },
+    "stone-bangles": {
+      "id": "itriu-lCKzs",
+      "alt": "Gold bangles set with red stones",
+      "focus": "50% 50%"
+    },
+    "model": {
+      "id": "Tu-aK8z8nQI",
+      "alt": "Woman wearing a layered pearl and gold necklace",
+      "focus": "50% 30%"
+    }
+  },
+  "clothing": {
+    "hero": {
+      "id": "8yawVKD8xf4",
+      "alt": "Woman in a royal blue silk saree with a red and gold border",
+      "focus": "50% 25%"
+    },
+    "silk": {
+      "id": "tjRs987fPfg",
+      "alt": "Model seated in a blue Kanjivaram-style silk saree",
+      "focus": "50% 30%"
+    },
+    "festive": {
+      "id": "MZtI8RnGGpM",
+      "alt": "Red and yellow festive silk saree",
+      "focus": "40% 30%"
+    },
+    "group": {
+      "id": "oXm1bSl87WY",
+      "alt": "Three women in matching purple printed sarees",
+      "focus": "50% 30%"
+    },
+    "bridal": {
+      "id": "Xqa_NWl4xEY",
+      "alt": "Woman in a pink and orange silk saree with gold jewellery",
+      "focus": "50% 25%"
+    },
+    "green": {
+      "id": "vaWRPp-ieMw",
+      "alt": "Woman in a green and orange silk saree with a nose ring",
+      "focus": "50% 25%"
+    },
+    "daily": {
+      "id": "ymK5XeYgaU4",
+      "alt": "Woman in a red cotton saree outdoors",
+      "focus": "50% 30%"
+    },
+    "fabric": {
+      "id": "udCX1mvNFos",
+      "alt": "Brocade and silk fabrics piled on the counter",
+      "focus": "50% 50%"
+    },
+    "rack": {
+      "id": "VdgSIq4khdA",
+      "alt": "Printed cotton sarees hanging on the shop rack",
+      "focus": "50% 50%"
+    },
+    "window": {
+      "id": "NLxe33-GgVU",
+      "alt": "Shop window with mannequins in silk sarees",
+      "focus": "40% 50%"
+    },
+    "stitching": {
+      "id": "upKXvfgKABY",
+      "alt": "Tailor stitching a garment on a sewing machine",
+      "focus": "50% 50%"
+    },
+    "threads": {
+      "id": "tX62O5F3AfU",
+      "alt": "Threads, measuring tape and tailoring scissors",
+      "focus": "50% 45%"
+    },
+    "kurta-cream": {
+      "id": "J-WjiWJnsdE",
+      "alt": "Man in a cream silk kurta",
+      "focus": "50% 30%"
+    },
+    "kurta-yellow": {
+      "id": "KbYXDew9uNk",
+      "alt": "Man in a yellow festive kurta",
+      "focus": "50% 30%"
+    },
+    "kurta-blue": {
+      "id": "sLRFg-VC2FY",
+      "alt": "Man in a navy kurta set",
+      "focus": "50% 25%"
+    }
+  },
+  "furniture_home": {
+    "hero": {
+      "id": "OtXADkUh3-I",
+      "alt": "Bright living room with a grey sofa and solid-wood side tables",
+      "focus": "50% 60%"
+    },
+    "sofa-sage": {
+      "id": "77JACslA8G0",
+      "alt": "Sage two-seater sofa with a teak coffee table",
+      "focus": "50% 55%"
+    },
+    "sofa-velvet": {
+      "id": "fZuleEfeA1Q",
+      "alt": "Bottle-green velvet three-seater sofa",
+      "focus": "50% 55%"
+    },
+    "sofa-leather": {
+      "id": "4Co4l84sJWg",
+      "alt": "Tan leather chesterfield-style sofa",
+      "focus": "50% 50%"
+    },
+    "sectional": {
+      "id": "U39FPHKfDu0",
+      "alt": "Modern L-shaped sofa in a calm living room",
+      "focus": "50% 55%"
+    },
+    "bedroom": {
+      "id": "XM-miHibz64",
+      "alt": "Bedroom with an upholstered bed and a leather bench",
+      "focus": "50% 55%"
+    },
+    "sideboard": {
+      "id": "YI2YkyaREHk",
+      "alt": "Teak sideboard with a round mirror",
+      "focus": "50% 55%"
+    },
+    "bed-blue": {
+      "id": "vOa-PSimwg4",
+      "alt": "Bed with wooden side tables against a blue wall",
+      "focus": "50% 55%"
+    },
+    "dining": {
+      "id": "Uaf1g970Hrk",
+      "alt": "Six-seater solid-wood dining set",
+      "focus": "50% 60%"
+    },
+    "dining-round": {
+      "id": "Rwb3barsoH8",
+      "alt": "Round teak dining table with stools",
+      "focus": "50% 50%"
+    },
+    "table-art": {
+      "id": "P1kzp3lIg4A",
+      "alt": "Sculptural wooden dining table base",
+      "focus": "50% 50%"
+    },
+    "workshop": {
+      "id": "v13x0qU4afA",
+      "alt": "Woodworking workshop with benches and hand tools",
+      "focus": "50% 50%"
+    },
+    "making": {
+      "id": "S-lveyCLmHw",
+      "alt": "Cabinet frame being assembled in the workshop",
+      "focus": "50% 50%"
+    },
+    "carpenter": {
+      "id": "PxlKOcj0a3Q",
+      "alt": "Carpenter smiling as he planes a plank of wood",
+      "focus": "45% 40%"
+    }
+  },
+  "events_photo": {
+    "hero": {
+      "id": "d9RsO9BHFVQ",
+      "alt": "Bride and groom in traditional wedding outfits under warm fairy lights",
+      "focus": "50% 30%"
+    },
+    "bride": {
+      "id": "lAY2TAhN06k",
+      "alt": "Bride smiling as her dupatta is adjusted",
+      "focus": "50% 30%"
+    },
+    "forest": {
+      "id": "SHFOaVaVe2A",
+      "alt": "Couple on a tree-lined path after their wedding",
+      "focus": "50% 55%"
+    },
+    "walk": {
+      "id": "2oQy4GAGxbk",
+      "alt": "Bride and groom walking hand in hand",
+      "focus": "50% 40%"
+    },
+    "mandap": {
+      "id": "7O422yG_b80",
+      "alt": "Couple seated under a flower-decorated mandap",
+      "focus": "50% 55%"
+    },
+    "hall": {
+      "id": "BEdxXAiRfRM",
+      "alt": "Wedding ritual in a lit-up hall",
+      "focus": "50% 55%"
+    },
+    "fire": {
+      "id": "lAze38kfdAs",
+      "alt": "Couple's hands joined over the sacred fire",
+      "focus": "50% 40%"
+    },
+    "mehendi": {
+      "id": "SUwPo4ErQCc",
+      "alt": "Hands with fresh mehendi held together",
+      "focus": "50% 50%"
+    },
+    "photographer": {
+      "id": "CxoEeNkJwUA",
+      "alt": "Photographer shooting a couple's portrait",
+      "focus": "40% 50%"
+    },
+    "film": {
+      "id": "z0JDhl_qNIQ",
+      "alt": "Videographer filming with a gimbal",
+      "focus": "50% 35%"
+    },
+    "haldi": {
+      "id": "YTEj-9pUH_k",
+      "alt": "Bride laughing during her haldi ceremony",
+      "focus": "50% 40%"
+    },
+    "haldi-2": {
+      "id": "CwQH94nSarc",
+      "alt": "Bride showered with haldi water",
+      "focus": "50% 30%"
+    },
+    "haldi-3": {
+      "id": "YVECUW7Juxs",
+      "alt": "Bride in yellow with marigold jewellery",
+      "focus": "50% 25%"
+    },
+    "decor": {
+      "id": "fJzmPe-a0eU",
+      "alt": "Aisle lined with white and pink flower arrangements",
+      "focus": "50% 55%"
+    }
+  },
+  "tuition": {
+    "hero": {
+      "id": "TcKmus54ij0",
+      "alt": "Two schoolgirls writing in their notebooks in class",
+      "focus": "45% 45%"
+    },
+    "class": {
+      "id": "nFx5TuNxz64",
+      "alt": "Students in uniform listening in a classroom",
+      "focus": "50% 45%"
+    },
+    "boys": {
+      "id": "YcW3A8QHcQQ",
+      "alt": "Two boys working through problems together",
+      "focus": "50% 40%"
+    },
+    "focus": {
+      "id": "xMYq46yAetM",
+      "alt": "Student concentrating on a workbook",
+      "focus": "40% 45%"
+    },
+    "teacher": {
+      "id": "w1s5H_3Zn48",
+      "alt": "Teacher explaining a concept to a group of students",
+      "focus": "60% 30%"
+    },
+    "mentor": {
+      "id": "rmiMkhvshoo",
+      "alt": "Smiling teacher greeting with folded hands",
+      "focus": "50% 30%"
+    },
+    "preschool": {
+      "id": "hXLkFpvKRys",
+      "alt": "Young children at a bright, colourful preschool classroom",
+      "focus": "50% 50%"
+    }
+  },
+  "restaurant_cafe": {
+    "hero": {
+      "id": "5oF7d_hPJG4",
+      "alt": "Crispy masala dosa with sambar and three chutneys",
+      "focus": "40% 50%"
+    },
+    "dosa-leaf": {
+      "id": "VIqcVqZ1uxM",
+      "alt": "Ghee roast dosa on a banana leaf with chutney and sambar",
+      "focus": "50% 50%"
+    },
+    "idli-vada": {
+      "id": "CkJBLkGW-zw",
+      "alt": "Idli, vada and dosa with chutney",
+      "focus": "50% 55%"
+    },
+    "chicken-fry": {
+      "id": "OycP9de4m6Y",
+      "alt": "Chicken ghee roast with chutneys",
+      "focus": "50% 50%"
+    },
+    "sambar": {
+      "id": "-Q5sWHJzHWc",
+      "alt": "Fresh sambar being strained",
+      "focus": "50% 50%"
+    },
+    "kitchen": {
+      "id": "bl4YpBZKZqM",
+      "alt": "Dosa tawa and steel vessels in the kitchen",
+      "focus": "50% 45%"
+    },
+    "meals": {
+      "id": "4pT9e68P_mU",
+      "alt": "South Indian meals on a banana leaf",
+      "focus": "50% 45%"
+    },
+    "fish-meal": {
+      "id": "YGrXmau5HzU",
+      "alt": "Fish fry meal with red rice and curry",
+      "focus": "50% 50%"
+    },
+    "biryani": {
+      "id": "ysmeQt1dzcw",
+      "alt": "Chicken dum biryani",
+      "focus": "50% 50%"
+    },
+    "interior": {
+      "id": "VgdfCJIc4U8",
+      "alt": "Cafe seating by tall windows",
+      "focus": "50% 55%"
+    },
+    "garden": {
+      "id": "B_4SL5mN1OA",
+      "alt": "Open-air garden seating with wooden tables",
+      "focus": "50% 55%"
+    },
+    "coffee": {
+      "id": "HLvrf_CN4fc",
+      "alt": "Freshly made coffee with latte art",
+      "focus": "50% 45%"
+    }
+  },
+  "bakery_sweets": {
+    "hero": {
+      "id": "3zgia9k593w",
+      "alt": "Colourful Indian sweets arranged in the shop display",
+      "focus": "50% 45%"
+    },
+    "assorted": {
+      "id": "wMPs7gJCNdc",
+      "alt": "Display case of assorted sweets and savouries",
+      "focus": "50% 50%"
+    },
+    "jalebi": {
+      "id": "KKnpil90IBw",
+      "alt": "Fresh jilebi stacked on the counter",
+      "focus": "50% 45%"
+    },
+    "counter": {
+      "id": "Wp-slwuk1CY",
+      "alt": "Trays of fresh sweets on the counter",
+      "focus": "50% 50%"
+    },
+    "cake-choc": {
+      "id": "LRIQuZyxKRM",
+      "alt": "Chocolate birthday cake with piped roses",
+      "focus": "50% 50%"
+    },
+    "cake-pink": {
+      "id": "ntfGWVbBiO0",
+      "alt": "Pink drip cake with sprinkles on a stand",
+      "focus": "50% 45%"
+    },
+    "cake-forest": {
+      "id": "6jHpcBPw7i8",
+      "alt": "Black forest cake with cherries",
+      "focus": "50% 50%"
+    },
+    "cake-truffle": {
+      "id": "hcEDfkiVmMI",
+      "alt": "Chocolate truffle cake with ganache drips",
+      "focus": "50% 50%"
+    },
+    "candles": {
+      "id": "d8s13D29QiE",
+      "alt": "Birthday cake with lit candles",
+      "focus": "50% 40%"
+    },
+    "cupcakes": {
+      "id": "-gDHgEcec6Q",
+      "alt": "Pink frosted cupcakes",
+      "focus": "50% 50%"
+    },
+    "breads": {
+      "id": "N4gtuEZ5gWc",
+      "alt": "Freshly baked breads in a basket",
+      "focus": "50% 50%"
+    },
+    "puffs": {
+      "id": "qZ5lPCPvdXE",
+      "alt": "Tray of fresh puffs and pastries",
+      "focus": "50% 50%"
+    },
+    "shelves": {
+      "id": "gKWvWZVRwZQ",
+      "alt": "Bakery counter full of pastries",
+      "focus": "50% 55%"
+    },
+    "baker": {
+      "id": "RndRFJ1v1kk",
+      "alt": "Baker at the counter in front of bread shelves",
+      "focus": "50% 50%"
+    }
+  },
+  "home_services": {
+    "hero": {
+      "id": "c314Gh8dXAo",
+      "alt": "Plumber fixing the pipes under a kitchen sink",
+      "focus": "40% 50%"
+    },
+    "bathroom": {
+      "id": "jaP5ClBdIyU",
+      "alt": "Plumber repairing a bathroom fixture",
+      "focus": "55% 50%"
+    },
+    "electrical": {
+      "id": "GXLPLG3_Vf4",
+      "alt": "Electrician working on a breaker panel",
+      "focus": "45% 40%"
+    },
+    "drill": {
+      "id": "UovTD1dG-lA",
+      "alt": "Technician drilling an exterior wall",
+      "focus": "60% 40%"
+    },
+    "cleaning": {
+      "id": "VRpjDw3WqqI",
+      "alt": "Cleaner washing a window",
+      "focus": "50% 40%"
+    },
+    "cleaner": {
+      "id": "FhsFUo-Wfc0",
+      "alt": "House cleaner carrying supplies upstairs",
+      "focus": "40% 40%"
+    },
+    "kitchen": {
+      "id": "_AK42TQRyCw",
+      "alt": "Spotless kitchen after a deep clean",
+      "focus": "50% 55%"
+    },
+    "tools": {
+      "id": "lDwKKjlHL2Y",
+      "alt": "Organised tool wall in the service van",
+      "focus": "50% 50%"
+    },
+    "handyman": {
+      "id": "EJU7A__krX0",
+      "alt": "Drill, brushes and wood on the workbench",
+      "focus": "50% 50%"
+    }
+  }
+}

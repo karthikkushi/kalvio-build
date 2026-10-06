@@ -1,0 +1,2888 @@
+{
+  "dentist": {
+    "hero": {
+      "id": "Fdku_oMrDvk",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Bright, clean dental treatment room with a modern dental chair",
+      "focus": "50% 60%",
+      "author": "Kari Bjorn Photography",
+      "authorUrl": "https://unsplash.com/@karibjorn",
+      "page": "https://unsplash.com/photos/a-dental-room-with-a-desk-and-chairs-Fdku_oMrDvk"
+    },
+    "doctor": {
+      "id": "SakqLf78KVo",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Portrait of a smiling dentist in a white coat",
+      "focus": "50% 25%",
+      "author": "Usman Yousaf",
+      "authorUrl": "https://unsplash.com/@usmanyousaf",
+      "page": "https://unsplash.com/photos/man-in-white-dress-shirt-wearing-black-framed-eyeglasses-SakqLf78KVo"
+    },
+    "smile": {
+      "id": "VG32kWGiSQo",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Young woman with a broad, confident smile",
+      "focus": "50% 45%",
+      "author": "Aatik Tasneem",
+      "authorUrl": "https://unsplash.com/@aatiktasneem",
+      "page": "https://unsplash.com/photos/a-young-woman-with-eyes-closed-smiling-broadly-smiling-VG32kWGiSQo"
+    },
+    "care": {
+      "id": "vewtbb0swgA",
+      "width": 1600,
+      "height": 2400,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Dentist examining a patient's teeth with a mirror",
+      "focus": "50% 30%",
+      "author": "Hush Naidoo Jade Photography",
+      "authorUrl": "https://unsplash.com/@hush52",
+      "page": "https://unsplash.com/photos/woman-holding-dentist-mirror-vewtbb0swgA"
+    },
+    "reception": {
+      "id": "oSvU6uLkXPI",
+      "width": 1600,
+      "height": 2330,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Calm clinic waiting area with chairs and a reception desk",
+      "focus": "50% 60%",
+      "author": "mahmoud azmy",
+      "authorUrl": "https://unsplash.com/@mahmoud_azmy",
+      "page": "https://unsplash.com/photos/a-large-room-with-a-tv-and-a-lot-of-chairs-oSvU6uLkXPI"
+    }
+  },
+  "salon_beauty": {
+    "hero": {
+      "id": "KxHcyNOIO_M",
+      "width": 1600,
+      "height": 2399,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Smiling bride with bridal makeup and traditional gold jewellery",
+      "focus": "50% 22%",
+      "author": "iKshana Productions",
+      "authorUrl": "https://unsplash.com/@ikshanaproductions",
+      "page": "https://unsplash.com/photos/a-smiling-woman-adorned-in-traditional-indian-jewelry-and-attire-KxHcyNOIO_M"
+    },
+    "bridal-1": {
+      "id": "ohENjR9w0bk",
+      "width": 1600,
+      "height": 2400,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Bride in a red lehenga with gold jewellery and henna",
+      "focus": "50% 25%",
+      "author": "Alok Verma",
+      "authorUrl": "https://unsplash.com/@theweddingfocus",
+      "page": "https://unsplash.com/photos/woman-in-red-bridal-outfit-ohENjR9w0bk"
+    },
+    "bridal-2": {
+      "id": "Po-nggQqplE",
+      "width": 1600,
+      "height": 2405,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Close-up of bridal eye makeup and nose ring",
+      "focus": "50% 30%",
+      "author": "gurpreet singh",
+      "authorUrl": "https://unsplash.com/@ajay_gill8054",
+      "page": "https://unsplash.com/photos/a-woman-in-a-red-and-gold-bridal-outfit-Po-nggQqplE"
+    },
+    "bridal-3": {
+      "id": "YL4xphQzZrw",
+      "width": 1600,
+      "height": 2405,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Bride in profile with statement earrings and hair bun",
+      "focus": "50% 30%",
+      "author": "gurpreet singh",
+      "authorUrl": "https://unsplash.com/@ajay_gill8054",
+      "page": "https://unsplash.com/photos/a-woman-in-a-red-and-gold-outfit-YL4xphQzZrw"
+    },
+    "engagement": {
+      "id": "inlZbiU4apA",
+      "width": 1600,
+      "height": 2400,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Bride in a pastel outfit with soft curls and makeup",
+      "focus": "50% 25%",
+      "author": "Vivek Baghel",
+      "authorUrl": "https://unsplash.com/@vivekbaghel",
+      "page": "https://unsplash.com/photos/woman-in-white-and-red-floral-dress-wearing-gold-crown-inlZbiU4apA"
+    },
+    "salon": {
+      "id": "lK8oXGycy88",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Salon floor with round lit mirrors and styling chairs",
+      "focus": "50% 50%",
+      "author": "Vinicius \"amnx\" Amano",
+      "authorUrl": "https://unsplash.com/@viniciusamano",
+      "page": "https://unsplash.com/photos/a-woman-getting-her-hair-done-in-a-salon-lK8oXGycy88"
+    },
+    "hair-smoothing": {
+      "id": "TnyHlxVnyhk",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Stylist straightening long dark hair",
+      "focus": "50% 50%",
+      "author": "Giselle Lazcano",
+      "authorUrl": "https://unsplash.com/@gisellelazcano",
+      "page": "https://unsplash.com/photos/person-holding-black-and-silver-hand-tool-TnyHlxVnyhk"
+    },
+    "hair-styling": {
+      "id": "35NAaB_Nmx8",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Stylist pinning an updo hairstyle",
+      "focus": "50% 40%",
+      "author": "engin akyurt",
+      "authorUrl": "https://unsplash.com/@enginakyurt",
+      "page": "https://unsplash.com/photos/woman-in-blue-shirt-holding-her-hair-35NAaB_Nmx8"
+    },
+    "haircut": {
+      "id": "qUXoDVRfFww",
+      "width": 1600,
+      "height": 2400,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Stylist trimming long straight hair with scissors",
+      "focus": "50% 50%",
+      "author": "Daria Andriianova",
+      "authorUrl": "https://unsplash.com/@dimores",
+      "page": "https://unsplash.com/photos/a-woman-cutting-her-hair-with-a-pair-of-scissors-qUXoDVRfFww"
+    }
+  },
+  "dermatologist": {
+    "hero": {
+      "id": "t-5HUPQffgk",
+      "width": 1600,
+      "height": 1065,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Young woman with clear, healthy skin looking at the camera",
+      "focus": "55% 35%",
+      "author": "Himanshu Dewangan",
+      "authorUrl": "https://unsplash.com/@himanshudewangan",
+      "page": "https://unsplash.com/photos/a-woman-poses-looking-directly-at-the-camera-t-5HUPQffgk"
+    },
+    "doctor": {
+      "id": "uBb_ZDIrquc",
+      "width": 1600,
+      "height": 2399,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Dermatologist in a white coat",
+      "focus": "50% 22%",
+      "author": "Jonathan Borba",
+      "authorUrl": "https://unsplash.com/@jonathanborba",
+      "page": "https://unsplash.com/photos/a-woman-wearing-a-white-jacket-and-black-shirt-uBb_ZDIrquc"
+    },
+    "glow": {
+      "id": "3prUTg-t5h4",
+      "width": 1600,
+      "height": 2400,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Close-up of a woman's even-toned, glowing skin",
+      "focus": "50% 40%",
+      "author": "Honey Yanibel Minaya Cruz",
+      "authorUrl": "https://unsplash.com/@honeyyanibel",
+      "page": "https://unsplash.com/photos/woman-with-black-hair-and-wearing-silver-ring-3prUTg-t5h4"
+    },
+    "hydrafacial": {
+      "id": "HtXyytr9304",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Hydrafacial treatment on a patient's face",
+      "focus": "50% 40%",
+      "author": "Look Studio",
+      "authorUrl": "https://unsplash.com/@lookphoto",
+      "page": "https://unsplash.com/photos/a-woman-getting-a-facial-peel-from-a-doctor-HtXyytr9304"
+    },
+    "peel": {
+      "id": "Pe9IXUuC6QU",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Chemical peel being applied with a brush",
+      "focus": "50% 40%",
+      "author": "Rosa Rafael",
+      "authorUrl": "https://unsplash.com/@rosarafael",
+      "page": "https://unsplash.com/photos/woman-receiving-facial-mask-treatment-at-spa-Pe9IXUuC6QU"
+    },
+    "procedure": {
+      "id": "PqyzuzFiQfY",
+      "width": 1600,
+      "height": 1064,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Skin procedure by a gloved specialist",
+      "focus": "50% 40%",
+      "author": "karelys Ruiz",
+      "authorUrl": "https://unsplash.com/@karelysruiz",
+      "page": "https://unsplash.com/photos/woman-receiving-facial-skincare-treatment-PqyzuzFiQfY"
+    },
+    "consult": {
+      "id": "5CXYcw7ykV8",
+      "width": 1600,
+      "height": 2399,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Skin specialist talking with a patient",
+      "focus": "50% 30%",
+      "author": "Nate Johnston",
+      "authorUrl": "https://unsplash.com/@natejohnston",
+      "page": "https://unsplash.com/photos/a-person-in-a-white-coat-5CXYcw7ykV8"
+    },
+    "result": {
+      "id": "Vx71zsOqtSU",
+      "width": 1600,
+      "height": 2133,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Smiling woman checking her skin in a hand mirror",
+      "focus": "50% 35%",
+      "author": "Sum Sum",
+      "authorUrl": "https://unsplash.com/@surprisechef",
+      "page": "https://unsplash.com/photos/young-woman-smiling-holding-a-mirror-looking-at-her-reflection-Vx71zsOqtSU"
+    }
+  },
+  "clinic": {
+    "hero": {
+      "id": "iyeUwItlIPk",
+      "width": 1600,
+      "height": 900,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Doctor listening to a patient across the consultation desk",
+      "focus": "55% 40%",
+      "author": "Vitaly Gariev",
+      "authorUrl": "https://unsplash.com/@silverkblack",
+      "page": "https://unsplash.com/photos/doctor-consults-with-patient-in-medical-office-iyeUwItlIPk"
+    },
+    "doctor-1": {
+      "id": "MJ_BZMPuWYE",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Portrait of a physician in a white coat",
+      "focus": "50% 25%",
+      "author": "Usman Yousaf",
+      "authorUrl": "https://unsplash.com/@usmanyousaf",
+      "page": "https://unsplash.com/photos/man-in-blue-dress-shirt-wearing-black-framed-eyeglasses-MJ_BZMPuWYE"
+    },
+    "doctor-2": {
+      "id": "2G73aoMR-Go",
+      "width": 1600,
+      "height": 2400,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Portrait of a smiling woman doctor in a white coat",
+      "focus": "50% 25%",
+      "author": "Ike Ellyana",
+      "authorUrl": "https://unsplash.com/@ikemotret20",
+      "page": "https://unsplash.com/photos/a-woman-in-a-lab-coat-smiles-outdoors-2G73aoMR-Go"
+    },
+    "reception": {
+      "id": "27zLImvxwV0",
+      "width": 1600,
+      "height": 2400,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Clean clinic reception desk",
+      "focus": "50% 60%",
+      "author": "Malcolm Choong 鍾声耀",
+      "authorUrl": "https://unsplash.com/@malcolm_choong",
+      "page": "https://unsplash.com/photos/modern-reception-desk-with-sign-overhead-27zLImvxwV0"
+    },
+    "corridor": {
+      "id": "Pk-KuizxQv8",
+      "width": 1600,
+      "height": 1200,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Bright, clean clinic corridor with waiting benches",
+      "focus": "50% 55%",
+      "author": "Tasha Kostyuk",
+      "authorUrl": "https://unsplash.com/@tashakostyuk",
+      "page": "https://unsplash.com/photos/empty-hospital-corridor-with-benches-and-doors-Pk-KuizxQv8"
+    }
+  },
+  "physio": {
+    "hero": {
+      "id": "uLWW09LLG04",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Physiotherapist treating a patient's shoulder on a treatment table",
+      "focus": "50% 35%",
+      "author": "Marc Zeman",
+      "authorUrl": "https://unsplash.com/@der_zeman",
+      "page": "https://unsplash.com/photos/a-woman-getting-a-back-massage-from-a-man-uLWW09LLG04"
+    },
+    "knee": {
+      "id": "pbUWW-CBoqY",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Physiotherapist assessing a patient's knee",
+      "focus": "50% 40%",
+      "author": "yury kirillov",
+      "authorUrl": "https://unsplash.com/@relievemassage",
+      "page": "https://unsplash.com/photos/a-man-getting-his-leg-examined-by-a-doctor-pbUWW-CBoqY"
+    },
+    "exercise": {
+      "id": "inoZpsBQRqk",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Guided strengthening exercise with light dumbbells",
+      "focus": "50% 40%",
+      "author": "Sincerely Media",
+      "authorUrl": "https://unsplash.com/@sincerelymedia",
+      "page": "https://unsplash.com/photos/a-man-and-a-woman-holding-dumbs-in-their-hands-inoZpsBQRqk"
+    },
+    "band": {
+      "id": "mvHuY-t4QII",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Resistance band exercise with a therapist",
+      "focus": "50% 40%",
+      "author": "Sincerely Media",
+      "authorUrl": "https://unsplash.com/@sincerelymedia",
+      "page": "https://unsplash.com/photos/a-person-holding-a-green-object-in-their-hand-mvHuY-t4QII"
+    },
+    "back": {
+      "id": "hBLf2nvp-Yc",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Manual therapy for back pain",
+      "focus": "50% 40%",
+      "author": "Toa Heftiba",
+      "authorUrl": "https://unsplash.com/@heftiba",
+      "page": "https://unsplash.com/photos/person-massaging-the-back-of-a-woman-hBLf2nvp-Yc"
+    },
+    "therapist": {
+      "id": "SgD-QuJfIMk",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Physiotherapist checking a patient's knee",
+      "focus": "40% 35%",
+      "author": "Cooperstown chiro",
+      "authorUrl": "https://unsplash.com/@cooperstownchiro",
+      "page": "https://unsplash.com/photos/a-woman-sitting-on-a-couch-with-a-man-in-the-background-SgD-QuJfIMk"
+    },
+    "rehab": {
+      "id": "tqTWbykzqNE",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Senior patient doing knee rehabilitation exercises",
+      "focus": "50% 40%",
+      "author": "Centre for Ageing Better",
+      "authorUrl": "https://unsplash.com/@ageing_better",
+      "page": "https://unsplash.com/photos/a-man-with-a-white-beard-sitting-in-a-gym-tqTWbykzqNE"
+    }
+  },
+  "eye_clinic": {
+    "hero": {
+      "id": "-yk2yfYwTiE",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Modern optical store with frame walls and a fitting table",
+      "focus": "50% 55%",
+      "author": "Takeshi Morisato",
+      "authorUrl": "https://unsplash.com/@takeshi_morisato",
+      "page": "https://unsplash.com/photos/black-wooden-table-and-chairs--yk2yfYwTiE"
+    },
+    "exam": {
+      "id": "bfcPP-LlZMI",
+      "width": 1600,
+      "height": 1200,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Optometrist examining a patient's eyes with a slit lamp",
+      "focus": "50% 40%",
+      "author": "John Kane",
+      "authorUrl": "https://unsplash.com/@johnkane",
+      "page": "https://unsplash.com/photos/a-man-and-a-woman-looking-through-a-camera-bfcPP-LlZMI"
+    },
+    "trial": {
+      "id": "rcP7T6MPEIc",
+      "width": 1600,
+      "height": 2400,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Eye test with a trial frame",
+      "focus": "50% 30%",
+      "author": "Hush Naidoo Jade Photography",
+      "authorUrl": "https://unsplash.com/@hush52",
+      "page": "https://unsplash.com/photos/person-wearing-loupe-glasses-rcP7T6MPEIc"
+    },
+    "chart": {
+      "id": "tRIx_NfMNYA",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Glasses held up in front of an eye chart",
+      "focus": "50% 50%",
+      "author": "Adolfo Félix",
+      "authorUrl": "https://unsplash.com/@adolfofelix",
+      "page": "https://unsplash.com/photos/black-framed-eyeglasses-tRIx_NfMNYA"
+    },
+    "frames": {
+      "id": "oqlEKLMmTNg",
+      "width": 1600,
+      "height": 1200,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Frames on display in different colours",
+      "focus": "50% 50%",
+      "author": "wu yi",
+      "authorUrl": "https://unsplash.com/@takeshi2",
+      "page": "https://unsplash.com/photos/brown-and-black-framed-eyeglasses-oqlEKLMmTNg"
+    },
+    "round": {
+      "id": "JlAf1fqaI9I",
+      "width": 1600,
+      "height": 2400,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Round black frames on a wooden table",
+      "focus": "50% 50%",
+      "author": "Bartosz Sujkowski",
+      "authorUrl": "https://unsplash.com/@art441",
+      "page": "https://unsplash.com/photos/round-black-framed-eyeglasses-on-table-JlAf1fqaI9I"
+    },
+    "tryon": {
+      "id": "oQdpelfogoo",
+      "width": 1600,
+      "height": 1060,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Smiling woman trying on new glasses",
+      "focus": "50% 35%",
+      "author": "IVAN CRUZ",
+      "authorUrl": "https://unsplash.com/@ivan_13",
+      "page": "https://unsplash.com/photos/woman-in-blue-denim-jacket-wearing-eyeglasses-oQdpelfogoo"
+    }
+  },
+  "vet": {
+    "hero": {
+      "id": "u2H8mUzoF2Q",
+      "width": 1600,
+      "height": 2400,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Small dog standing on the examination table at a vet clinic",
+      "focus": "50% 40%",
+      "author": "Anya Prygunova",
+      "authorUrl": "https://unsplash.com/@aprygunova",
+      "page": "https://unsplash.com/photos/a-person-holding-a-dog-u2H8mUzoF2Q"
+    },
+    "team": {
+      "id": "7gcjFeXjayw",
+      "width": 1600,
+      "height": 1065,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Vets smiling while holding a puppy",
+      "focus": "50% 40%",
+      "author": "Jonatan Bustos",
+      "authorUrl": "https://unsplash.com/@jonatanbustos25",
+      "page": "https://unsplash.com/photos/a-man-holding-a-small-dog-in-a-room-7gcjFeXjayw"
+    },
+    "dachshund": {
+      "id": "E3K7xyAvQ8M",
+      "width": 1600,
+      "height": 2400,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Dachshund looking up during a check-up",
+      "focus": "50% 35%",
+      "author": "Anya Prygunova",
+      "authorUrl": "https://unsplash.com/@aprygunova",
+      "page": "https://unsplash.com/photos/a-dog-wearing-a-baseball-glove-E3K7xyAvQ8M"
+    },
+    "pom": {
+      "id": "ejxFIxygOww",
+      "width": 1600,
+      "height": 2397,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Happy Pomeranian puppy",
+      "focus": "50% 40%",
+      "author": "Denys Sergushkin",
+      "authorUrl": "https://unsplash.com/@sergushkin",
+      "page": "https://unsplash.com/photos/brown-pomeranian-puppy-on-blue-textile-ejxFIxygOww"
+    },
+    "puppy": {
+      "id": "-R_7O2nk_6A",
+      "width": 1600,
+      "height": 2849,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Owner cuddling a young puppy",
+      "focus": "50% 40%",
+      "author": "DICSON",
+      "authorUrl": "https://unsplash.com/@smartdicson",
+      "page": "https://unsplash.com/photos/girl-in-gray-shirt-holding-white-short-coated-dog--R_7O2nk_6A"
+    },
+    "vaccine": {
+      "id": "fQeLC7WlNm8",
+      "width": 1600,
+      "height": 2400,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Vet giving a small dog an injection",
+      "focus": "50% 40%",
+      "author": "Alexander Mass",
+      "authorUrl": "https://unsplash.com/@alexandermassph",
+      "page": "https://unsplash.com/photos/veterinarian-gives-injection-to-a-small-dog-fQeLC7WlNm8"
+    },
+    "cat": {
+      "id": "vh6henQFueg",
+      "width": 1600,
+      "height": 2399,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Vet nurse holding a calm grey cat",
+      "focus": "50% 35%",
+      "author": "ooneiroslyl",
+      "authorUrl": "https://unsplash.com/@ooneiroslyl",
+      "page": "https://unsplash.com/photos/a-woman-holding-a-cat-in-her-arms-vh6henQFueg"
+    }
+  },
+  "pet_shop": {
+    "hero": {
+      "id": "O52UCkz_7W4",
+      "width": 1600,
+      "height": 2000,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Pug and schnauzer outside a pet shop with a flower arch",
+      "focus": "50% 55%",
+      "author": "Sebastian Coman Travel",
+      "authorUrl": "https://unsplash.com/@sebcomantravel",
+      "page": "https://unsplash.com/photos/shallow-focus-photo-of-pawn-pug-O52UCkz_7W4"
+    },
+    "store": {
+      "id": "EnYJvnxr-4Q",
+      "width": 1600,
+      "height": 2000,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Shop owner holding a happy schnauzer inside the store",
+      "focus": "50% 30%",
+      "author": "Sebastian Coman Travel",
+      "authorUrl": "https://unsplash.com/@sebcomantravel",
+      "page": "https://unsplash.com/photos/woman-holding-dog-EnYJvnxr-4Q"
+    },
+    "cat-food": {
+      "id": "Ky7dAFGwZ1A",
+      "width": 1600,
+      "height": 2400,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Tabby cat sitting on stacked bags of pet food",
+      "focus": "50% 35%",
+      "author": "Rodrigo Araya",
+      "authorUrl": "https://unsplash.com/@rodrigotypo",
+      "page": "https://unsplash.com/photos/tabby-cat-on-dog-food-bags-Ky7dAFGwZ1A"
+    },
+    "dog-food": {
+      "id": "Qvbr5Uxgz_Q",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Dog eating kibble from a bowl",
+      "focus": "50% 50%",
+      "author": "Ayla Verschueren",
+      "authorUrl": "https://unsplash.com/@moob",
+      "page": "https://unsplash.com/photos/a-brown-and-white-dog-eating-food-out-of-a-bowl-Qvbr5Uxgz_Q"
+    },
+    "clothes": {
+      "id": "tIWBJN8t7zE",
+      "width": 1600,
+      "height": 1069,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "French bulldog in a yellow T-shirt",
+      "focus": "50% 45%",
+      "author": "Karsten Winegeart",
+      "authorUrl": "https://unsplash.com/@_karsten",
+      "page": "https://unsplash.com/photos/brown-french-bulldog-in-yellow-shirt-holding-blue-ceramic-mug-tIWBJN8t7zE"
+    },
+    "scratcher": {
+      "id": "1hBWrLIDSCc",
+      "width": 1600,
+      "height": 2700,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Kitten playing on a scratching post",
+      "focus": "50% 55%",
+      "author": "Willian Justen de Vasconcellos",
+      "authorUrl": "https://unsplash.com/@willianjusten",
+      "page": "https://unsplash.com/photos/gray-cat-leaning-on-scratch-post-and-looking-on-hanged-fur-fish-1hBWrLIDSCc"
+    },
+    "toys": {
+      "id": "Yf2Vcwl7HgY",
+      "width": 1600,
+      "height": 2133,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Cat playing with a soft toy",
+      "focus": "50% 55%",
+      "author": "Melissa De Yoe",
+      "authorUrl": "https://unsplash.com/@meli55a",
+      "page": "https://unsplash.com/photos/a-black-and-white-cat-playing-with-a-toy-Yf2Vcwl7HgY"
+    },
+    "groom-trim": {
+      "id": "LpK2xddrElI",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Groomer trimming a small white dog's face with scissors",
+      "focus": "40% 45%",
+      "author": "Buddy AN",
+      "authorUrl": "https://unsplash.com/@stbuddyp",
+      "page": "https://unsplash.com/photos/a-small-white-dog-being-cut-with-a-pair-of-scissors-LpK2xddrElI"
+    },
+    "groom-towel": {
+      "id": "ZVdZw2p08y4",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Pomeranian wrapped in a pink towel after a bath",
+      "focus": "50% 40%",
+      "author": "Hayffield L",
+      "authorUrl": "https://unsplash.com/@hayffield",
+      "page": "https://unsplash.com/photos/brown-pomeranian-wearing-pink-towel-ZVdZw2p08y4"
+    },
+    "groom-brush": {
+      "id": "dHIRbh9En6I",
+      "width": 1600,
+      "height": 1065,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Groomer brushing a white Spitz",
+      "focus": "55% 40%",
+      "author": "Александр Гросс",
+      "authorUrl": "https://unsplash.com/@boney",
+      "page": "https://unsplash.com/photos/man-brushing-dog-hair-dHIRbh9En6I"
+    },
+    "groomed-1": {
+      "id": "hjzs2nA4y-k",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Freshly groomed Shih Tzu with a red bow",
+      "focus": "50% 40%",
+      "author": "Edson Torres",
+      "authorUrl": "https://unsplash.com/@edsonfotopet",
+      "page": "https://unsplash.com/photos/a-brown-and-white-dog-with-a-red-bow-on-its-head-hjzs2nA4y-k"
+    },
+    "groomed-2": {
+      "id": "_hoAqzp39tk",
+      "width": 1600,
+      "height": 2400,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Smiling groomed dog in a green bandana",
+      "focus": "50% 40%",
+      "author": "Karsten Winegeart",
+      "authorUrl": "https://unsplash.com/@_karsten",
+      "page": "https://unsplash.com/photos/a-small-dog-wearing-a-green-bandana-_hoAqzp39tk"
+    },
+    "groomed-3": {
+      "id": "JGkGlJlgR1Y",
+      "width": 1600,
+      "height": 2400,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Groomed dog in a floral bandana",
+      "focus": "50% 40%",
+      "author": "Karsten Winegeart",
+      "authorUrl": "https://unsplash.com/@_karsten",
+      "page": "https://unsplash.com/photos/a-small-white-dog-sitting-on-a-pink-background-JGkGlJlgR1Y"
+    }
+  },
+  "gym_fitness": {
+    "hero": {
+      "id": "cCJQzTPkoFg",
+      "width": 1600,
+      "height": 1068,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Woman pushing a weighted sled while her trainer coaches her",
+      "focus": "45% 40%",
+      "author": "TSquared Lab",
+      "authorUrl": "https://unsplash.com/@tsquaredlab",
+      "page": "https://unsplash.com/photos/woman-performs-exercise-with-trainer-at-gym-cCJQzTPkoFg"
+    },
+    "trainer-1": {
+      "id": "NC7ynqvd48A",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Personal trainer on the gym floor",
+      "focus": "40% 35%",
+      "author": "Sergio Kian",
+      "authorUrl": "https://unsplash.com/@sergiokian",
+      "page": "https://unsplash.com/photos/a-man-in-a-white-shirt-is-standing-in-a-gym-NC7ynqvd48A"
+    },
+    "trainer-2": {
+      "id": "rD0poLlu57M",
+      "width": 1600,
+      "height": 900,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Trainer watching a member's deadlift form",
+      "focus": "40% 45%",
+      "author": "Vitaly Gariev",
+      "authorUrl": "https://unsplash.com/@silverkblack",
+      "page": "https://unsplash.com/photos/woman-lifting-weights-with-trainer-watching-rD0poLlu57M"
+    },
+    "progress": {
+      "id": "5p8vhHUEEgY",
+      "width": 1600,
+      "height": 900,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Trainer reviewing progress with a member on a tablet",
+      "focus": "50% 40%",
+      "author": "Vitaly Gariev",
+      "authorUrl": "https://unsplash.com/@silverkblack",
+      "page": "https://unsplash.com/photos/trainer-discusses-progress-with-client-using-tablet-in-gym-5p8vhHUEEgY"
+    },
+    "floor": {
+      "id": "1RNQ11ZODJM",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Gym floor with racks, benches and machines",
+      "focus": "50% 55%",
+      "author": "Ambitious Studio* | Rick Barrett",
+      "authorUrl": "https://unsplash.com/@weareambitious",
+      "page": "https://unsplash.com/photos/a-gym-filled-with-lots-of-machines-and-weights-1RNQ11ZODJM"
+    },
+    "weights": {
+      "id": "GNWUPn44-eg",
+      "width": 1600,
+      "height": 1200,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Free-weights area with plates and power racks",
+      "focus": "50% 50%",
+      "author": "Jinish Shah",
+      "authorUrl": "https://unsplash.com/@jinishshah_",
+      "page": "https://unsplash.com/photos/a-gym-filled-with-lots-of-exercise-equipment-GNWUPn44-eg"
+    },
+    "kettlebells": {
+      "id": "uwk8IS-HfJ8",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Row of kettlebells",
+      "focus": "50% 50%",
+      "author": "Ambitious Studio* | Rick Barrett",
+      "authorUrl": "https://unsplash.com/@weareambitious",
+      "page": "https://unsplash.com/photos/black-and-red-kettle-bell-lot-uwk8IS-HfJ8"
+    },
+    "yoga": {
+      "id": "NlNYWD3ONXc",
+      "width": 1600,
+      "height": 1200,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Group yoga and meditation class in a bright studio",
+      "focus": "50% 55%",
+      "author": "Abhayaranya Yoga Ashram",
+      "authorUrl": "https://unsplash.com/@abhayaranya_yoga_ashram",
+      "page": "https://unsplash.com/photos/group-of-people-meditating-in-a-yoga-studio-NlNYWD3ONXc"
+    },
+    "calm": {
+      "id": "NR5AxLbyNNI",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Woman meditating on a yoga mat",
+      "focus": "50% 40%",
+      "author": "Abhayaranya Yoga Ashram",
+      "authorUrl": "https://unsplash.com/@abhayaranyayogaashram",
+      "page": "https://unsplash.com/photos/woman-meditating-on-a-yoga-mat-outdoors-NR5AxLbyNNI"
+    }
+  },
+  "jewellery": {
+    "hero": {
+      "id": "njVir8eVq1M",
+      "width": 1600,
+      "height": 2399,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Woman in a green silk saree wearing a long gold temple necklace and jhumkas",
+      "focus": "50% 25%",
+      "author": "Sabesh Photography LTD",
+      "authorUrl": "https://unsplash.com/@sabesh",
+      "page": "https://unsplash.com/photos/a-woman-wearing-a-green-sari-and-jewelry-njVir8eVq1M"
+    },
+    "bridal": {
+      "id": "T-PUQaJ8YEw",
+      "width": 1600,
+      "height": 2400,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Bride in a red lehenga with a full gold bridal set",
+      "focus": "50% 30%",
+      "author": "Dollar Gill",
+      "authorUrl": "https://unsplash.com/@dollargill",
+      "page": "https://unsplash.com/photos/woman-wearing-wedding-sari-looking-downwards-T-PUQaJ8YEw"
+    },
+    "kundan": {
+      "id": "ACAHBwOsRSM",
+      "width": 1600,
+      "height": 2400,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Kundan choker worn with a red bridal lehenga and mehendi",
+      "focus": "50% 40%",
+      "author": "AMISH THAKKAR",
+      "authorUrl": "https://unsplash.com/@amishthakkar",
+      "page": "https://unsplash.com/photos/gold-colored-necklace-ACAHBwOsRSM"
+    },
+    "temple": {
+      "id": "G3Hrl6WzQYQ",
+      "width": 1600,
+      "height": 1109,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Gold temple necklace with ruby and pearl details",
+      "focus": "50% 50%",
+      "author": "Vaibhav Nagare",
+      "authorUrl": "https://unsplash.com/@vaibhavnagare",
+      "page": "https://unsplash.com/photos/gold-and-purple-beaded-necklace-G3Hrl6WzQYQ"
+    },
+    "set": {
+      "id": "LA0edB8tqC0",
+      "width": 1600,
+      "height": 1289,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Gold necklace and earring set on display stands",
+      "focus": "50% 50%",
+      "author": "Zayed Ahmed Zadu",
+      "authorUrl": "https://unsplash.com/@zayed_ahmed_zadu",
+      "page": "https://unsplash.com/photos/gold-necklace-and-earrings-displayed-on-white-stands-LA0edB8tqC0"
+    },
+    "display": {
+      "id": "vLIeyl_ml8s",
+      "width": 1600,
+      "height": 1107,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Gold necklace and earrings in a showroom display case",
+      "focus": "50% 45%",
+      "author": "Shruti Singh",
+      "authorUrl": "https://unsplash.com/@halyzia",
+      "page": "https://unsplash.com/photos/a-gold-necklace-and-earring-set-in-a-display-case-vLIeyl_ml8s"
+    },
+    "ring": {
+      "id": "tUCYTL59cA0",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Antique gold ring with an emerald",
+      "focus": "60% 50%",
+      "author": "MAYANK GEHLOT",
+      "authorUrl": "https://unsplash.com/@mg_clickers",
+      "page": "https://unsplash.com/photos/gold-and-blue-ring-on-black-textile-tUCYTL59cA0"
+    },
+    "jhumka": {
+      "id": "Ll2oabAynTU",
+      "width": 1600,
+      "height": 1064,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Gold jhumka earrings and chain",
+      "focus": "50% 50%",
+      "author": "Dhanashree Chavan",
+      "authorUrl": "https://unsplash.com/@salmon_skin_roll_",
+      "page": "https://unsplash.com/photos/a-close-up-of-a-necklace-on-a-table-Ll2oabAynTU"
+    },
+    "antique": {
+      "id": "KOEX6sdij9w",
+      "width": 1600,
+      "height": 900,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Antique kundan necklace with matching earrings",
+      "focus": "40% 50%",
+      "author": "Hiya Jewellery",
+      "authorUrl": "https://unsplash.com/@hiyajewellery",
+      "page": "https://unsplash.com/photos/gold-and-red-beaded-necklace-KOEX6sdij9w"
+    },
+    "diamond": {
+      "id": "xu_zM4np434",
+      "width": 1600,
+      "height": 1600,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Gold necklace with a diamond and pearl pendant",
+      "focus": "50% 55%",
+      "author": "PRAHANT STUDIO",
+      "authorUrl": "https://unsplash.com/@prahantstudio",
+      "page": "https://unsplash.com/photos/a-gold-necklace-with-pearls-on-a-red-background-xu_zM4np434"
+    },
+    "bangles": {
+      "id": "wreS7kv_tLE",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Stack of ornate gold bangles",
+      "focus": "50% 50%",
+      "author": "Zayed Ahmed Zadu",
+      "authorUrl": "https://unsplash.com/@zayed_ahmed_zadu",
+      "page": "https://unsplash.com/photos/a-stack-of-ornate-gold-bangles-on-a-dark-surface-wreS7kv_tLE"
+    },
+    "kada": {
+      "id": "ynts2uDw1ws",
+      "width": 1600,
+      "height": 1600,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Pair of gold kadas on a velvet cushion",
+      "focus": "50% 50%",
+      "author": "Sanjay Jain",
+      "authorUrl": "https://unsplash.com/@manojornaments__12",
+      "page": "https://unsplash.com/photos/a-pair-of-gold-bracelets-sitting-on-top-of-a-velvet-cushion-ynts2uDw1ws"
+    },
+    "stone-bangles": {
+      "id": "itriu-lCKzs",
+      "width": 1600,
+      "height": 1126,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Gold bangles set with red stones",
+      "focus": "50% 50%",
+      "author": "Akhilesh Sharma",
+      "authorUrl": "https://unsplash.com/@fotonium",
+      "page": "https://unsplash.com/photos/gold-and-red-beaded-accessory-itriu-lCKzs"
+    },
+    "model": {
+      "id": "Tu-aK8z8nQI",
+      "width": 1600,
+      "height": 2000,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Woman wearing a layered pearl and gold necklace",
+      "focus": "50% 30%",
+      "author": "Ardy Arjun",
+      "authorUrl": "https://unsplash.com/@ardyastic",
+      "page": "https://unsplash.com/photos/a-woman-wearing-a-green-sari-and-jewelry-Tu-aK8z8nQI"
+    }
+  },
+  "clothing": {
+    "hero": {
+      "id": "8yawVKD8xf4",
+      "width": 1600,
+      "height": 2400,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Woman in a royal blue silk saree with a red and gold border",
+      "focus": "50% 25%",
+      "author": "Bulbul Ahmed",
+      "authorUrl": "https://unsplash.com/@bulbul252",
+      "page": "https://unsplash.com/photos/woman-in-blue-and-red-sari-dress-8yawVKD8xf4"
+    },
+    "silk": {
+      "id": "tjRs987fPfg",
+      "width": 1600,
+      "height": 1062,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Model seated in a blue Kanjivaram-style silk saree",
+      "focus": "50% 30%",
+      "author": "Bulbul Ahmed",
+      "authorUrl": "https://unsplash.com/@bulbul252",
+      "page": "https://unsplash.com/photos/woman-in-blue-and-yellow-sari-dress-tjRs987fPfg"
+    },
+    "festive": {
+      "id": "MZtI8RnGGpM",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Red and yellow festive silk saree",
+      "focus": "40% 30%",
+      "author": "Bulbul Ahmed",
+      "authorUrl": "https://unsplash.com/@bulbul252",
+      "page": "https://unsplash.com/photos/woman-in-yellow-and-red-sari-dress-MZtI8RnGGpM"
+    },
+    "group": {
+      "id": "oXm1bSl87WY",
+      "width": 1600,
+      "height": 2400,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Three women in matching purple printed sarees",
+      "focus": "50% 30%",
+      "author": "Bulbul Ahmed",
+      "authorUrl": "https://unsplash.com/@bulbul252",
+      "page": "https://unsplash.com/photos/3-women-in-purple-and-pink-sari-oXm1bSl87WY"
+    },
+    "bridal": {
+      "id": "Xqa_NWl4xEY",
+      "width": 1600,
+      "height": 2400,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Woman in a pink and orange silk saree with gold jewellery",
+      "focus": "50% 25%",
+      "author": "Sabesh Photography LTD",
+      "authorUrl": "https://unsplash.com/@sabesh",
+      "page": "https://unsplash.com/photos/woman-in-sari-with-gold-jewelry-Xqa_NWl4xEY"
+    },
+    "green": {
+      "id": "vaWRPp-ieMw",
+      "width": 1600,
+      "height": 2000,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Woman in a green and orange silk saree with a nose ring",
+      "focus": "50% 25%",
+      "author": "Vishwanath Negi",
+      "authorUrl": "https://unsplash.com/@uk11photography",
+      "page": "https://unsplash.com/photos/a-woman-in-a-green-and-orange-sari-vaWRPp-ieMw"
+    },
+    "daily": {
+      "id": "ymK5XeYgaU4",
+      "width": 1600,
+      "height": 2400,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Woman in a red cotton saree outdoors",
+      "focus": "50% 30%",
+      "author": "Samrat Khadka",
+      "authorUrl": "https://unsplash.com/@samrat_khadka",
+      "page": "https://unsplash.com/photos/woman-in-red-long-sleeve-dress-standing-on-purple-flower-field-during-daytime-ymK5XeYgaU4"
+    },
+    "fabric": {
+      "id": "udCX1mvNFos",
+      "width": 1600,
+      "height": 900,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Brocade and silk fabrics piled on the counter",
+      "focus": "50% 50%",
+      "author": "Jainica Dhingra",
+      "authorUrl": "https://unsplash.com/@jainica",
+      "page": "https://unsplash.com/photos/a-pile-of-different-types-of-cloths-on-a-table-udCX1mvNFos"
+    },
+    "rack": {
+      "id": "VdgSIq4khdA",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Printed cotton sarees hanging on the shop rack",
+      "focus": "50% 50%",
+      "author": "Wolfgang Hasselmann",
+      "authorUrl": "https://unsplash.com/@wolfgang_hasselmann",
+      "page": "https://unsplash.com/photos/colorful-textiles-with-intricate-patterns-displayed-on-hangers-VdgSIq4khdA"
+    },
+    "window": {
+      "id": "NLxe33-GgVU",
+      "width": 1600,
+      "height": 1236,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Shop window with mannequins in silk sarees",
+      "focus": "40% 50%",
+      "author": "Ranmali Kirinde",
+      "authorUrl": "https://unsplash.com/@ranmali_k",
+      "page": "https://unsplash.com/photos/mannequins-in-traditional-indian-saris-displayed-in-store-window-NLxe33-GgVU"
+    },
+    "stitching": {
+      "id": "upKXvfgKABY",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Tailor stitching a garment on a sewing machine",
+      "focus": "50% 50%",
+      "author": "Collab Media",
+      "authorUrl": "https://unsplash.com/@collab_media",
+      "page": "https://unsplash.com/photos/a-woman-using-a-sewing-machine-to-sew-clothes-upKXvfgKABY"
+    },
+    "threads": {
+      "id": "tX62O5F3AfU",
+      "width": 1600,
+      "height": 2240,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Threads, measuring tape and tailoring scissors",
+      "focus": "50% 45%",
+      "author": "Darling Arias",
+      "authorUrl": "https://unsplash.com/@darlingarias",
+      "page": "https://unsplash.com/photos/threads-with-spools-beside-scissors-tX62O5F3AfU"
+    },
+    "kurta-cream": {
+      "id": "J-WjiWJnsdE",
+      "width": 1600,
+      "height": 1280,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Man in a cream silk kurta",
+      "focus": "50% 30%",
+      "author": "Abhishek Rai",
+      "authorUrl": "https://unsplash.com/@realabhishekrai",
+      "page": "https://unsplash.com/photos/a-man-standing-in-front-of-a-wall-wearing-a-yellow-shirt-J-WjiWJnsdE"
+    },
+    "kurta-yellow": {
+      "id": "KbYXDew9uNk",
+      "width": 1600,
+      "height": 2240,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Man in a yellow festive kurta",
+      "focus": "50% 30%",
+      "author": "Noor Alam",
+      "authorUrl": "https://unsplash.com/@itsmenoor2022",
+      "page": "https://unsplash.com/photos/a-man-in-a-yellow-kurta-and-white-pants-sits-KbYXDew9uNk"
+    },
+    "kurta-blue": {
+      "id": "sLRFg-VC2FY",
+      "width": 1600,
+      "height": 2240,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Man in a navy kurta set",
+      "focus": "50% 25%",
+      "author": "Noor Alam",
+      "authorUrl": "https://unsplash.com/@itsmenoor2022",
+      "page": "https://unsplash.com/photos/a-man-in-a-blue-kurta-and-pants-smiles-sLRFg-VC2FY"
+    }
+  },
+  "furniture_home": {
+    "hero": {
+      "id": "OtXADkUh3-I",
+      "width": 1600,
+      "height": 2400,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Bright living room with a grey sofa and solid-wood side tables",
+      "focus": "50% 60%",
+      "author": "Minh Pham",
+      "authorUrl": "https://unsplash.com/@minhphamdesign",
+      "page": "https://unsplash.com/photos/a-living-room-filled-with-furniture-and-a-large-window-OtXADkUh3-I"
+    },
+    "sofa-sage": {
+      "id": "77JACslA8G0",
+      "width": 1600,
+      "height": 1200,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Sage two-seater sofa with a teak coffee table",
+      "focus": "50% 55%",
+      "author": "Katja Rooke",
+      "authorUrl": "https://unsplash.com/@rooke",
+      "page": "https://unsplash.com/photos/gray-2-seat-sofa-near-brown-wooden-coffee-table-77JACslA8G0"
+    },
+    "sofa-velvet": {
+      "id": "fZuleEfeA1Q",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Bottle-green velvet three-seater sofa",
+      "focus": "50% 55%",
+      "author": "Phillip Goldsberry",
+      "authorUrl": "https://unsplash.com/@phillipgold",
+      "page": "https://unsplash.com/photos/green-fabric-sofa-fZuleEfeA1Q"
+    },
+    "sofa-leather": {
+      "id": "4Co4l84sJWg",
+      "width": 1600,
+      "height": 1600,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Tan leather chesterfield-style sofa",
+      "focus": "50% 50%",
+      "author": "personalgraphic.com",
+      "authorUrl": "https://unsplash.com/@personal_graphic",
+      "page": "https://unsplash.com/photos/a-brown-leather-couch-sitting-on-top-of-a-white-floor-4Co4l84sJWg"
+    },
+    "sectional": {
+      "id": "U39FPHKfDu0",
+      "width": 1600,
+      "height": 1136,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Modern L-shaped sofa in a calm living room",
+      "focus": "50% 55%",
+      "author": "Kam Idris",
+      "authorUrl": "https://unsplash.com/@ka_idris",
+      "page": "https://unsplash.com/photos/a-room-with-a-couch-and-a-table-U39FPHKfDu0"
+    },
+    "bedroom": {
+      "id": "XM-miHibz64",
+      "width": 1600,
+      "height": 900,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Bedroom with an upholstered bed and a leather bench",
+      "focus": "50% 55%",
+      "author": "Spacejoy",
+      "authorUrl": "https://unsplash.com/@spacejoy",
+      "page": "https://unsplash.com/photos/bedroom-with-bed-and-wall-art-XM-miHibz64"
+    },
+    "sideboard": {
+      "id": "YI2YkyaREHk",
+      "width": 1600,
+      "height": 1600,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Teak sideboard with a round mirror",
+      "focus": "50% 55%",
+      "author": "Spacejoy",
+      "authorUrl": "https://unsplash.com/@spacejoy",
+      "page": "https://unsplash.com/photos/brown-wooden-table-with-chairs-YI2YkyaREHk"
+    },
+    "bed-blue": {
+      "id": "vOa-PSimwg4",
+      "width": 1600,
+      "height": 900,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Bed with wooden side tables against a blue wall",
+      "focus": "50% 55%",
+      "author": "Spacejoy",
+      "authorUrl": "https://unsplash.com/@spacejoy",
+      "page": "https://unsplash.com/photos/bedroom-with-blue-walls-and-bed-vOa-PSimwg4"
+    },
+    "dining": {
+      "id": "Uaf1g970Hrk",
+      "width": 1600,
+      "height": 2400,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Six-seater solid-wood dining set",
+      "focus": "50% 60%",
+      "author": "Jonathan Borba",
+      "authorUrl": "https://unsplash.com/@jonathanborba",
+      "page": "https://unsplash.com/photos/a-dining-room-with-a-table-and-chairs-Uaf1g970Hrk"
+    },
+    "dining-round": {
+      "id": "Rwb3barsoH8",
+      "width": 1600,
+      "height": 2400,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Round teak dining table with stools",
+      "focus": "50% 50%",
+      "author": "Talles Alves",
+      "authorUrl": "https://unsplash.com/@deffyall",
+      "page": "https://unsplash.com/photos/plants-on-brown-wooden-table-indoors-Rwb3barsoH8"
+    },
+    "table-art": {
+      "id": "P1kzp3lIg4A",
+      "width": 1600,
+      "height": 2400,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Sculptural wooden dining table base",
+      "focus": "50% 50%",
+      "author": "Stefan Lehner",
+      "authorUrl": "https://unsplash.com/@st_lehner",
+      "page": "https://unsplash.com/photos/a-table-made-out-of-wooden-sticks-and-a-clock-P1kzp3lIg4A"
+    },
+    "workshop": {
+      "id": "v13x0qU4afA",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Woodworking workshop with benches and hand tools",
+      "focus": "50% 50%",
+      "author": "Adam Patterson",
+      "authorUrl": "https://unsplash.com/@adampatterson",
+      "page": "https://unsplash.com/photos/brown-wooden-table-with-white-printer-papers-v13x0qU4afA"
+    },
+    "making": {
+      "id": "S-lveyCLmHw",
+      "width": 1600,
+      "height": 1060,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Cabinet frame being assembled in the workshop",
+      "focus": "50% 50%",
+      "author": "Ryno Marais",
+      "authorUrl": "https://unsplash.com/@ryno_marais",
+      "page": "https://unsplash.com/photos/a-wooden-frame-with-a-bottle-of-glue-on-top-of-it-S-lveyCLmHw"
+    },
+    "carpenter": {
+      "id": "PxlKOcj0a3Q",
+      "width": 1600,
+      "height": 1068,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Carpenter smiling as he planes a plank of wood",
+      "focus": "45% 40%",
+      "author": "Ali Mkumbwa",
+      "authorUrl": "https://unsplash.com/@mkumbwajr",
+      "page": "https://unsplash.com/photos/a-man-smiles-as-he-works-on-a-piece-of-wood-PxlKOcj0a3Q"
+    }
+  },
+  "events_photo": {
+    "hero": {
+      "id": "d9RsO9BHFVQ",
+      "width": 1600,
+      "height": 2400,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Bride and groom in traditional wedding outfits under warm fairy lights",
+      "focus": "50% 30%",
+      "author": "ARTO SURAJ",
+      "authorUrl": "https://unsplash.com/@artosuraj",
+      "page": "https://unsplash.com/photos/a-bride-and-groom-posing-for-a-picture-d9RsO9BHFVQ"
+    },
+    "bride": {
+      "id": "lAY2TAhN06k",
+      "width": 1600,
+      "height": 2400,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Bride smiling as her dupatta is adjusted",
+      "focus": "50% 30%",
+      "author": "AMISH THAKKAR",
+      "authorUrl": "https://unsplash.com/@amishthakkar",
+      "page": "https://unsplash.com/photos/woman-in-red-and-gold-floral-hijab-lAY2TAhN06k"
+    },
+    "forest": {
+      "id": "SHFOaVaVe2A",
+      "width": 1600,
+      "height": 2400,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Couple on a tree-lined path after their wedding",
+      "focus": "50% 55%",
+      "author": "iKshana Productions",
+      "authorUrl": "https://unsplash.com/@ikshanaproductions",
+      "page": "https://unsplash.com/photos/a-bride-and-groom-standing-on-a-path-in-the-woods-SHFOaVaVe2A"
+    },
+    "walk": {
+      "id": "2oQy4GAGxbk",
+      "width": 1600,
+      "height": 2448,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Bride and groom walking hand in hand",
+      "focus": "50% 40%",
+      "author": "iKshana Productions",
+      "authorUrl": "https://unsplash.com/@ikshanaproductions",
+      "page": "https://unsplash.com/photos/a-bride-and-groom-walking-down-a-path-2oQy4GAGxbk"
+    },
+    "mandap": {
+      "id": "7O422yG_b80",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Couple seated under a flower-decorated mandap",
+      "focus": "50% 55%",
+      "author": "AMISH THAKKAR",
+      "authorUrl": "https://unsplash.com/@amishthakkar",
+      "page": "https://unsplash.com/photos/wedding-ceremony-under-floral-canopy-7O422yG_b80"
+    },
+    "hall": {
+      "id": "BEdxXAiRfRM",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Wedding ritual in a lit-up hall",
+      "focus": "50% 55%",
+      "author": "AMISH THAKKAR",
+      "authorUrl": "https://unsplash.com/@amishthakkar",
+      "page": "https://unsplash.com/photos/wedding-couple-performing-ritual-in-ballroom-BEdxXAiRfRM"
+    },
+    "fire": {
+      "id": "lAze38kfdAs",
+      "width": 1600,
+      "height": 2400,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Couple's hands joined over the sacred fire",
+      "focus": "50% 40%",
+      "author": "One Horizon Productions",
+      "authorUrl": "https://unsplash.com/@onehorizonproductions",
+      "page": "https://unsplash.com/photos/a-close-up-of-two-people-holding-hands-lAze38kfdAs"
+    },
+    "mehendi": {
+      "id": "SUwPo4ErQCc",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Hands with fresh mehendi held together",
+      "focus": "50% 50%",
+      "author": "Love Arya",
+      "authorUrl": "https://unsplash.com/@lovearya",
+      "page": "https://unsplash.com/photos/hands-with-henna-holding-in-celebration-SUwPo4ErQCc"
+    },
+    "photographer": {
+      "id": "CxoEeNkJwUA",
+      "width": 1600,
+      "height": 1068,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Photographer shooting a couple's portrait",
+      "focus": "40% 50%",
+      "author": "Chris",
+      "authorUrl": "https://unsplash.com/@chris_ainsworth22",
+      "page": "https://unsplash.com/photos/man-in-black-t-shirt-holding-black-dslr-camera-CxoEeNkJwUA"
+    },
+    "film": {
+      "id": "z0JDhl_qNIQ",
+      "width": 1600,
+      "height": 2400,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Videographer filming with a gimbal",
+      "focus": "50% 35%",
+      "author": "Jakob Owens",
+      "authorUrl": "https://unsplash.com/@jakobowens1",
+      "page": "https://unsplash.com/photos/man-holding-camera-taking-photos-z0JDhl_qNIQ"
+    },
+    "haldi": {
+      "id": "YTEj-9pUH_k",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Bride laughing during her haldi ceremony",
+      "focus": "50% 40%",
+      "author": "ARTO SURAJ",
+      "authorUrl": "https://unsplash.com/@artosuraj",
+      "page": "https://unsplash.com/photos/a-young-girl-is-getting-her-face-painted-YTEj-9pUH_k"
+    },
+    "haldi-2": {
+      "id": "CwQH94nSarc",
+      "width": 1600,
+      "height": 2400,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Bride showered with haldi water",
+      "focus": "50% 30%",
+      "author": "Arun Prakash",
+      "authorUrl": "https://unsplash.com/@its_arunprakash",
+      "page": "https://unsplash.com/photos/a-woman-is-covered-in-yellow-powder-and-water-CwQH94nSarc"
+    },
+    "haldi-3": {
+      "id": "YVECUW7Juxs",
+      "width": 1600,
+      "height": 2405,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Bride in yellow with marigold jewellery",
+      "focus": "50% 25%",
+      "author": "Arun Prakash",
+      "authorUrl": "https://unsplash.com/@its_arunprakash",
+      "page": "https://unsplash.com/photos/a-woman-in-a-yellow-sari-holding-a-garland-YVECUW7Juxs"
+    },
+    "decor": {
+      "id": "fJzmPe-a0eU",
+      "width": 1600,
+      "height": 1068,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Aisle lined with white and pink flower arrangements",
+      "focus": "50% 55%",
+      "author": "Shardayyy Photography",
+      "authorUrl": "https://unsplash.com/@shardayyy",
+      "page": "https://unsplash.com/photos/selective-focus-photography-white-and-pink-isle-flower-arrangement-fJzmPe-a0eU"
+    }
+  },
+  "tuition": {
+    "hero": {
+      "id": "TcKmus54ij0",
+      "width": 1600,
+      "height": 900,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Two schoolgirls writing in their notebooks in class",
+      "focus": "45% 45%",
+      "author": "Swastik Arora",
+      "authorUrl": "https://unsplash.com/@swastikarora",
+      "page": "https://unsplash.com/photos/two-young-girls-sitting-at-a-desk-in-a-classroom-TcKmus54ij0",
+      "raw": "https://images.unsplash.com/photo-1692269725911-87697c558be1"
+    },
+    "class": {
+      "id": "nFx5TuNxz64",
+      "width": 1600,
+      "height": 900,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Students in uniform listening in a classroom",
+      "focus": "50% 45%",
+      "author": "Swastik Arora",
+      "authorUrl": "https://unsplash.com/@swastikarora",
+      "page": "https://unsplash.com/photos/a-group-of-young-children-sitting-in-a-classroom-nFx5TuNxz64",
+      "raw": "https://images.unsplash.com/photo-1692269725836-fbd72e98883f"
+    },
+    "boys": {
+      "id": "YcW3A8QHcQQ",
+      "width": 1600,
+      "height": 900,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Two boys working through problems together",
+      "focus": "50% 40%",
+      "author": "Swastik Arora",
+      "authorUrl": "https://unsplash.com/@swastikarora",
+      "page": "https://unsplash.com/photos/two-young-boys-sitting-at-a-table-with-books-YcW3A8QHcQQ",
+      "raw": "https://images.unsplash.com/photo-1692269726060-9c604e06f63b"
+    },
+    "focus": {
+      "id": "xMYq46yAetM",
+      "width": 1600,
+      "height": 966,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Student concentrating on a workbook",
+      "focus": "40% 45%",
+      "author": "Swastik Arora",
+      "authorUrl": "https://unsplash.com/@swastikarora",
+      "page": "https://unsplash.com/photos/two-young-boys-sitting-at-a-desk-with-a-book-xMYq46yAetM",
+      "raw": "https://images.unsplash.com/photo-1692269725827-699e04a11cdf"
+    },
+    "teacher": {
+      "id": "w1s5H_3Zn48",
+      "width": 1600,
+      "height": 1065,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Teacher explaining a concept to a group of students",
+      "focus": "60% 30%",
+      "author": "Wonderlane",
+      "authorUrl": "https://unsplash.com/@wonderlane",
+      "page": "https://unsplash.com/photos/woman-holding-microphone-w1s5H_3Zn48",
+      "raw": "https://images.unsplash.com/photo-1551731409-43eb3e517a1a"
+    },
+    "mentor": {
+      "id": "rmiMkhvshoo",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Smiling teacher greeting with folded hands",
+      "focus": "50% 30%",
+      "author": "Skytech Aviation",
+      "authorUrl": "https://unsplash.com/@skytechaviation0",
+      "page": "https://unsplash.com/photos/women-in-uniform-greet-with-hands-pressed-together-rmiMkhvshoo",
+      "raw": "https://images.unsplash.com/photo-1774850743402-71b7456e567d"
+    },
+    "preschool": {
+      "id": "hXLkFpvKRys",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Young children at a bright, colourful preschool classroom",
+      "focus": "50% 50%",
+      "author": "Mario Heller",
+      "authorUrl": "https://unsplash.com/@heller_mario",
+      "page": "https://unsplash.com/photos/a-group-of-children-sitting-at-desks-in-a-classroom-hXLkFpvKRys",
+      "raw": "https://images.unsplash.com/photo-1636202339022-7d67f7447e3a"
+    }
+  },
+  "restaurant_cafe": {
+    "hero": {
+      "id": "5oF7d_hPJG4",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Crispy masala dosa with sambar and three chutneys",
+      "focus": "40% 50%",
+      "author": "Deepal Tamang",
+      "authorUrl": "https://unsplash.com/@deepal_tamang",
+      "page": "https://unsplash.com/photos/dosa-with-masala-and-chutney-breakfast-5oF7d_hPJG4",
+      "raw": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976"
+    },
+    "dosa-leaf": {
+      "id": "VIqcVqZ1uxM",
+      "width": 1600,
+      "height": 1200,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Ghee roast dosa on a banana leaf with chutney and sambar",
+      "focus": "50% 50%",
+      "author": "Zoshua Colah",
+      "authorUrl": "https://unsplash.com/@zoshuacolah",
+      "page": "https://unsplash.com/photos/dosa-with-chutney-and-sambar-breakfast-VIqcVqZ1uxM",
+      "raw": "https://images.unsplash.com/photo-1694849789325-914b71ab4075"
+    },
+    "idli-vada": {
+      "id": "CkJBLkGW-zw",
+      "width": 1600,
+      "height": 2133,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Idli, vada and dosa with chutney",
+      "focus": "50% 55%",
+      "author": "Susmitha Veganosaurus",
+      "authorUrl": "https://unsplash.com/@veganosaurus",
+      "page": "https://unsplash.com/photos/south-indian-breakfast-with-dosa-idli-CkJBLkGW-zw",
+      "raw": "https://images.unsplash.com/photo-1787024231387-edccb8c44700"
+    },
+    "chicken-fry": {
+      "id": "OycP9de4m6Y",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Chicken ghee roast with chutneys",
+      "focus": "50% 50%",
+      "author": "Paul",
+      "authorUrl": "https://unsplash.com/@paul19977",
+      "page": "https://unsplash.com/photos/a-plate-of-food-OycP9de4m6Y",
+      "raw": "https://images.unsplash.com/photo-1668236499396-a62d2d1cb0cf"
+    },
+    "sambar": {
+      "id": "-Q5sWHJzHWc",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Fresh sambar being strained",
+      "focus": "50% 50%",
+      "author": "fuseviews",
+      "authorUrl": "https://unsplash.com/@fusewiews",
+      "page": "https://unsplash.com/photos/a-person-holding-a-spoon-over-a-pot-of-soup--Q5sWHJzHWc",
+      "raw": "https://images.unsplash.com/photo-1725483990551-d9268479f3f4"
+    },
+    "kitchen": {
+      "id": "bl4YpBZKZqM",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Dosa tawa and steel vessels in the kitchen",
+      "focus": "50% 45%",
+      "author": "Anirudh",
+      "authorUrl": "https://unsplash.com/@lanirudhreddy",
+      "page": "https://unsplash.com/photos/a-couple-of-people-stand-near-each-other-bl4YpBZKZqM",
+      "raw": "https://images.unsplash.com/photo-1665206221363-568ea2f7b195"
+    },
+    "meals": {
+      "id": "4pT9e68P_mU",
+      "width": 1600,
+      "height": 2134,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "South Indian meals on a banana leaf",
+      "focus": "50% 45%",
+      "author": "Zoshua Colah",
+      "authorUrl": "https://unsplash.com/@zoshuacolah",
+      "page": "https://unsplash.com/photos/delicious-indian-meal-served-on-a-platter-4pT9e68P_mU",
+      "raw": "https://images.unsplash.com/photo-1742281258189-3b933879867a"
+    },
+    "fish-meal": {
+      "id": "YGrXmau5HzU",
+      "width": 1600,
+      "height": 2133,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Fish fry meal with red rice and curry",
+      "focus": "50% 50%",
+      "author": "Snehal Patange",
+      "authorUrl": "https://unsplash.com/@snehal_pandkar_patange",
+      "page": "https://unsplash.com/photos/a-delicious-meal-with-fried-fish-and-curry-YGrXmau5HzU",
+      "raw": "https://images.unsplash.com/photo-1756741987051-a6a38f28838b"
+    },
+    "biryani": {
+      "id": "ysmeQt1dzcw",
+      "width": 1600,
+      "height": 1045,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Chicken dum biryani",
+      "focus": "50% 50%",
+      "author": "Mario Raj",
+      "authorUrl": "https://unsplash.com/@chefmariii",
+      "page": "https://unsplash.com/photos/a-white-bowl-filled-with-rice-and-meat-ysmeQt1dzcw",
+      "raw": "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a"
+    },
+    "interior": {
+      "id": "VgdfCJIc4U8",
+      "width": 1600,
+      "height": 1200,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Cafe seating by tall windows",
+      "focus": "50% 55%",
+      "author": "Praveen Gupta",
+      "authorUrl": "https://unsplash.com/@praveeeeeeeen",
+      "page": "https://unsplash.com/photos/two-round-brown-wooden-tables-and-gray-chairs-set-VgdfCJIc4U8",
+      "raw": "https://images.unsplash.com/photo-1579018183467-a60b8dc9dd78"
+    },
+    "garden": {
+      "id": "B_4SL5mN1OA",
+      "width": 1600,
+      "height": 1200,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Open-air garden seating with wooden tables",
+      "focus": "50% 55%",
+      "author": "Ravi Sharma",
+      "authorUrl": "https://unsplash.com/@ravinepz",
+      "page": "https://unsplash.com/photos/a-restaurant-with-wooden-tables-and-chairs-and-green-cushions-B_4SL5mN1OA",
+      "raw": "https://images.unsplash.com/photo-1640114162784-20c35f7aec3f"
+    },
+    "coffee": {
+      "id": "HLvrf_CN4fc",
+      "width": 1600,
+      "height": 2400,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Freshly made coffee with latte art",
+      "focus": "50% 45%",
+      "author": "Akshansh Kumar",
+      "authorUrl": "https://unsplash.com/@akshanshkumar",
+      "page": "https://unsplash.com/photos/a-person-is-holding-a-cup-of-coffee-HLvrf_CN4fc",
+      "raw": "https://images.unsplash.com/photo-1733247682420-83e246f85a0a"
+    }
+  },
+  "bakery_sweets": {
+    "hero": {
+      "id": "3zgia9k593w",
+      "width": 1600,
+      "height": 2133,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Colourful Indian sweets arranged in the shop display",
+      "focus": "50% 45%",
+      "author": "Sadia Alam",
+      "authorUrl": "https://unsplash.com/@sadiaalam",
+      "page": "https://unsplash.com/photos/assortment-of-colorful-indian-sweets-displayed-in-a-shop-3zgia9k593w",
+      "raw": "https://images.unsplash.com/photo-1758910536889-43ce7b3199fd"
+    },
+    "assorted": {
+      "id": "wMPs7gJCNdc",
+      "width": 1600,
+      "height": 900,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Display case of assorted sweets and savouries",
+      "focus": "50% 50%",
+      "author": "Bonala Yellender",
+      "authorUrl": "https://unsplash.com/@yellender",
+      "page": "https://unsplash.com/photos/a-display-case-filled-with-various-delicious-pastries-and-sweets-wMPs7gJCNdc",
+      "raw": "https://images.unsplash.com/photo-1782033032439-a2c656ca2f59"
+    },
+    "jalebi": {
+      "id": "KKnpil90IBw",
+      "width": 1600,
+      "height": 1073,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Fresh jilebi stacked on the counter",
+      "focus": "50% 45%",
+      "author": "Zoshua Colah",
+      "authorUrl": "https://unsplash.com/@zoshuacolah",
+      "page": "https://unsplash.com/photos/stack-of-golden-fried-sweet-rings-at-a-market-stall-KKnpil90IBw",
+      "raw": "https://images.unsplash.com/photo-1760263217152-009971f0bccc"
+    },
+    "counter": {
+      "id": "Wp-slwuk1CY",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Trays of fresh sweets on the counter",
+      "focus": "50% 50%",
+      "author": "Reubx",
+      "authorUrl": "https://unsplash.com/@reubx",
+      "page": "https://unsplash.com/photos/a-buffet-table-filled-with-different-types-of-food-Wp-slwuk1CY",
+      "raw": "https://images.unsplash.com/photo-1649140041688-0f75446e707e"
+    },
+    "cake-choc": {
+      "id": "LRIQuZyxKRM",
+      "width": 1600,
+      "height": 1280,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Chocolate birthday cake with piped roses",
+      "focus": "50% 50%",
+      "author": "Stephen Wheeler",
+      "authorUrl": "https://unsplash.com/@stephen2002",
+      "page": "https://unsplash.com/photos/chocolate-birthday-cake-with-icing-roses-LRIQuZyxKRM",
+      "raw": "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a"
+    },
+    "cake-pink": {
+      "id": "ntfGWVbBiO0",
+      "width": 1600,
+      "height": 2768,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Pink drip cake with sprinkles on a stand",
+      "focus": "50% 45%",
+      "author": "Deva Williamson",
+      "authorUrl": "https://unsplash.com/@biglaughkitchen",
+      "page": "https://unsplash.com/photos/fondant-cake-with-stand-ntfGWVbBiO0",
+      "raw": "https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec"
+    },
+    "cake-forest": {
+      "id": "6jHpcBPw7i8",
+      "width": 1600,
+      "height": 1847,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Black forest cake with cherries",
+      "focus": "50% 50%",
+      "author": "Jacob Thomas",
+      "authorUrl": "https://unsplash.com/@jacob225",
+      "page": "https://unsplash.com/photos/chocolate-cake-with-cherries-and-cream-6jHpcBPw7i8",
+      "raw": "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62"
+    },
+    "cake-truffle": {
+      "id": "hcEDfkiVmMI",
+      "width": 1600,
+      "height": 2408,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Chocolate truffle cake with ganache drips",
+      "focus": "50% 50%",
+      "author": "kaouther djouada",
+      "authorUrl": "https://unsplash.com/@__kaouther_",
+      "page": "https://unsplash.com/photos/chocolate-mousse-cake-with-sugar-pearls-hcEDfkiVmMI",
+      "raw": "https://images.unsplash.com/photo-1602351447937-745cb720612f"
+    },
+    "candles": {
+      "id": "d8s13D29QiE",
+      "width": 1600,
+      "height": 2416,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Birthday cake with lit candles",
+      "focus": "50% 40%",
+      "author": "Aneta Pawlik",
+      "authorUrl": "https://unsplash.com/@anetakpawlik",
+      "page": "https://unsplash.com/photos/birthday-cake-with-lit-candles-d8s13D29QiE",
+      "raw": "https://images.unsplash.com/photo-1545696563-af8f6ec2295a"
+    },
+    "cupcakes": {
+      "id": "-gDHgEcec6Q",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Pink frosted cupcakes",
+      "focus": "50% 50%",
+      "author": "Robert Anderson",
+      "authorUrl": "https://unsplash.com/@fochrist1",
+      "page": "https://unsplash.com/photos/pink-cupcakes-on-tray--gDHgEcec6Q",
+      "raw": "https://images.unsplash.com/photo-1578922864601-79dcc7cbcea9"
+    },
+    "breads": {
+      "id": "N4gtuEZ5gWc",
+      "width": 1600,
+      "height": 900,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Freshly baked breads in a basket",
+      "focus": "50% 50%",
+      "author": "mohamed hassouna",
+      "authorUrl": "https://unsplash.com/@mhassouna931",
+      "page": "https://unsplash.com/photos/brown-bread-on-brown-wicker-basket-N4gtuEZ5gWc",
+      "raw": "https://images.unsplash.com/photo-1608198093002-ad4e005484ec"
+    },
+    "puffs": {
+      "id": "qZ5lPCPvdXE",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Tray of fresh puffs and pastries",
+      "focus": "50% 50%",
+      "author": "Mink Mingle",
+      "authorUrl": "https://unsplash.com/@minkmingle",
+      "page": "https://unsplash.com/photos/close-up-photography-of-baked-treats-on-tray-qZ5lPCPvdXE",
+      "raw": "https://images.unsplash.com/photo-1483695028939-5bb13f8648b0"
+    },
+    "shelves": {
+      "id": "gKWvWZVRwZQ",
+      "width": 1600,
+      "height": 2133,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Bakery counter full of pastries",
+      "focus": "50% 55%",
+      "author": "Sitraka",
+      "authorUrl": "https://unsplash.com/@srakotoarivelo7",
+      "page": "https://unsplash.com/photos/a-bakery-filled-with-lots-of-different-types-of-pastries-gKWvWZVRwZQ",
+      "raw": "https://images.unsplash.com/photo-1705972018470-a89eda1c6ce4"
+    },
+    "baker": {
+      "id": "RndRFJ1v1kk",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Baker at the counter in front of bread shelves",
+      "focus": "50% 50%",
+      "author": "Andy Li",
+      "authorUrl": "https://unsplash.com/@andylid0",
+      "page": "https://unsplash.com/photos/man-in-white-dress-shirt-standing-in-front-of-brown-wooden-shelf-RndRFJ1v1kk",
+      "raw": "https://images.unsplash.com/photo-1587241321921-91a834d6d191"
+    }
+  },
+  "home_services": {
+    "hero": {
+      "id": "c314Gh8dXAo",
+      "width": 1600,
+      "height": 1200,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Plumber fixing the pipes under a kitchen sink",
+      "focus": "40% 50%",
+      "author": "Timur Shakerzianov",
+      "authorUrl": "https://unsplash.com/@shaker_jpg",
+      "page": "https://unsplash.com/photos/a-man-working-on-a-pipe-in-a-wall-c314Gh8dXAo",
+      "raw": "https://images.unsplash.com/photo-1676210134188-4c05dd172f89"
+    },
+    "bathroom": {
+      "id": "jaP5ClBdIyU",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Plumber repairing a bathroom fixture",
+      "focus": "55% 50%",
+      "author": "bhagya laxmi",
+      "authorUrl": "https://unsplash.com/@bhagya_laxmi",
+      "page": "https://unsplash.com/photos/a-plumber-repairs-plumbing-in-a-bathroom-jaP5ClBdIyU",
+      "raw": "https://images.unsplash.com/photo-1749532125405-70950966b0e5"
+    },
+    "electrical": {
+      "id": "GXLPLG3_Vf4",
+      "width": 1600,
+      "height": 900,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Electrician working on a breaker panel",
+      "focus": "45% 40%",
+      "author": "Raze Solar",
+      "authorUrl": "https://unsplash.com/@razesolar",
+      "page": "https://unsplash.com/photos/electrician-working-on-electrical-panel-GXLPLG3_Vf4",
+      "raw": "https://images.unsplash.com/photo-1660330589693-99889d60181e"
+    },
+    "drill": {
+      "id": "UovTD1dG-lA",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Technician drilling an exterior wall",
+      "focus": "60% 40%",
+      "author": "Jimmy Nilsson Masth",
+      "authorUrl": "https://unsplash.com/@jimmynilssonmasth",
+      "page": "https://unsplash.com/photos/a-man-with-a-driller-and-a-hat-on-UovTD1dG-lA",
+      "raw": "https://images.unsplash.com/photo-1646640381839-02748ae8ddf0"
+    },
+    "cleaning": {
+      "id": "VRpjDw3WqqI",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Cleaner washing a window",
+      "focus": "50% 40%",
+      "author": "CDC",
+      "authorUrl": "https://unsplash.com/@cdc",
+      "page": "https://unsplash.com/photos/woman-in-white-long-sleeve-shirt-and-blue-denim-jeans-standing-beside-white-wooden-framed-glass-VRpjDw3WqqI",
+      "raw": "https://images.unsplash.com/photo-1581578731548-c64695cc6952"
+    },
+    "cleaner": {
+      "id": "FhsFUo-Wfc0",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "House cleaner carrying supplies upstairs",
+      "focus": "40% 40%",
+      "author": "Josue Michel",
+      "authorUrl": "https://unsplash.com/@josuemichelphotography",
+      "page": "https://unsplash.com/photos/woman-cleaning-stairs-in-home-FhsFUo-Wfc0",
+      "raw": "https://images.unsplash.com/photo-1646980241033-cd7abda2ee88"
+    },
+    "kitchen": {
+      "id": "_AK42TQRyCw",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Spotless kitchen after a deep clean",
+      "focus": "50% 55%",
+      "author": "Lotus Design N Print",
+      "authorUrl": "https://unsplash.com/@lotusdnp",
+      "page": "https://unsplash.com/photos/dining-set-photography-_AK42TQRyCw",
+      "raw": "https://images.unsplash.com/photo-1541123437800-1bb1317badc2"
+    },
+    "tools": {
+      "id": "lDwKKjlHL2Y",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Organised tool wall in the service van",
+      "focus": "50% 50%",
+      "author": "Anton Savinov",
+      "authorUrl": "https://unsplash.com/@tonchik",
+      "page": "https://unsplash.com/photos/a-bunch-of-tools-hanging-up-on-a-wall-lDwKKjlHL2Y",
+      "raw": "https://images.unsplash.com/photo-1731694411560-050e5b91e943"
+    },
+    "handyman": {
+      "id": "EJU7A__krX0",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Drill, brushes and wood on the workbench",
+      "focus": "50% 50%",
+      "author": "benjamin lehman",
+      "authorUrl": "https://unsplash.com/@abject",
+      "page": "https://unsplash.com/photos/a-couple-of-tools-that-are-sitting-on-a-table-EJU7A__krX0",
+      "raw": "https://images.unsplash.com/photo-1645651964715-d200ce0939cc"
+    }
+  }
+}

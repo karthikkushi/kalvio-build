@@ -1,0 +1,19 @@
+{
+  "url": "/demo/restaurant_cafe",
+  "fetchTime": "2026-10-06T10:15:54.136Z",
+  "performance": 95,
+  "accessibility": 100,
+  "bestPractices": 100,
+  "seo": 100,
+  "fcp": "1.2 s",
+  "lcp": "2.8 s",
+  "tbt": "50 ms",
+  "cls": "0",
+  "failing": [
+    "largest-contentful-paint",
+    "max-potential-fid",
+    "unused-javascript",
+    "image-delivery-insight",
+    "network-dependency-tree-insight"
+  ]
+}

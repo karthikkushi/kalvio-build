@@ -1,0 +1,197 @@
+import type { BusinessPreset } from '../types'
+
+export const physio: BusinessPreset = {
+  key: 'physio',
+  label: 'Physiotherapy clinic',
+  schemaType: 'Physiotherapy',
+  region: 'IN',
+  defaultTheme: 'fresh-local',
+  demo: {
+    name: 'Movewell Physiotherapy',
+    area: 'HSR Layout',
+    city: 'Bengaluru',
+    phone: '+91 80 4718 2233',
+    street: '2nd Floor, 27th Main, Sector 1',
+    since: 2016,
+  },
+  hero: {
+    image: 'hero',
+    headline: {
+      en: 'Back, neck and knee pain treated in {area}. At the clinic or at home.',
+      kn: '{area} ನಲ್ಲಿ ಬೆನ್ನು, ಕುತ್ತಿಗೆ ಮತ್ತು ಮೊಣಕಾಲು ನೋವಿಗೆ ಚಿಕಿತ್ಸೆ. ಕ್ಲಿನಿಕ್‌ನಲ್ಲಿ ಅಥವಾ ಮನೆಯಲ್ಲೇ.',
+      hi: '{area} में कमर, गर्दन और घुटने के दर्द का इलाज। क्लिनिक में या घर पर।',
+    },
+    subline: {
+      en: 'Hands-on treatment plus a simple exercise plan, so the pain doesn’t come back.',
+      kn: 'ಕೈಯಾರೆ ಚಿಕಿತ್ಸೆ ಮತ್ತು ಸರಳ ವ್ಯಾಯಾಮ ಯೋಜನೆ, ನೋವು ಮತ್ತೆ ಬರದಂತೆ.',
+      hi: 'हाथों से इलाज और आसान एक्सरसाइज़ प्लान, ताकि दर्द दोबारा न लौटे।',
+    },
+    chips: ['Home visits available', '45-minute one-to-one sessions', 'Post-surgery rehab'],
+  },
+  primaryCta: { en: 'Book a session', kn: 'ಸೆಷನ್ ಬುಕ್ ಮಾಡಿ', hi: 'सेशन बुक करें' },
+  rating: { value: 4.9, count: 236 },
+  badges: [
+    { label: 'BPT, MPT qualified', icon: 'award' },
+    { label: 'IAP member', icon: 'shield' },
+    { label: 'Home visits', icon: 'home' },
+    { label: 'Sports rehab', icon: 'activity' },
+  ],
+  timings: [
+    { days: 'Mon – Sat', hours: '7:00 AM – 12:00 PM, 4:00 – 9:00 PM' },
+    { days: 'Sunday', hours: '8:00 AM – 12:00 PM' },
+  ],
+  timingsNote: 'Early slots from 7 AM, so you can come before work.',
+  reviews: [
+    {
+      name: 'Rohan Desai',
+      when: '3 weeks ago',
+      stars: 5,
+      text: 'Two years of lower back pain from sitting at a desk. Six sessions plus the exercises they taught me, and I’m finally pain-free.',
+    },
+    {
+      name: 'Kamala Subramanian',
+      when: '2 months ago',
+      stars: 5,
+      text: 'They came home for my mother after her knee replacement. Patient and punctual, and she now walks without support.',
+    },
+    {
+      name: 'Arjun Prakash',
+      when: '1 month ago',
+      stars: 5,
+      text: 'Sprained my ankle playing football. A good mix of hands-on work and strengthening. Back on the field in four weeks.',
+    },
+  ],
+  faq: [
+    {
+      q: 'Do I need a doctor’s referral?',
+      a: 'No, you can come directly. If you need a scan or a doctor’s opinion, we’ll tell you honestly.',
+    },
+    {
+      q: 'How many sessions will I need?',
+      a: 'Most back and neck pain improves in 4–6 sessions. Rehab after surgery usually takes 3–6 weeks.',
+    },
+    { q: 'What should I wear?', a: 'Loose, comfortable clothes. Shorts help if we’re working on your knee.' },
+    {
+      q: 'Do you treat sports injuries?',
+      a: 'Yes: sprains, tennis elbow, runner’s knee, ACL rehab and return-to-sport training.',
+    },
+    {
+      q: 'Is it covered by insurance?',
+      a: 'Physiotherapy after a hospital stay is often covered. We give itemised bills for your claim.',
+    },
+  ],
+  offers: [
+    { season: 'dasara', title: 'Dasara offer', text: 'Free posture assessment with any 5-session pack. Till 21 October.' },
+    { season: 'diwali', title: 'Diwali offer', text: '5 sessions for ₹3,500 (usually ₹3,750). Book before 12 November.' },
+    { season: 'summer', title: 'Summer sports camp', text: 'Injury screening for young athletes at ₹499.' },
+  ],
+  sections: [
+    {
+      kind: 'features',
+      id: 'conditions',
+      nav: 'Conditions',
+      title: 'Conditions we treat',
+      items: [
+        { title: 'Back pain & slip disc', desc: 'Desk-job back pain, sciatica and disc problems, without surgery where possible.', icon: 'activity' },
+        { title: 'Neck & shoulder pain', desc: 'Stiff neck, frozen shoulder and pain from phone and laptop use.', icon: 'bolt' },
+        { title: 'Knee pain & arthritis', desc: 'Strengthening and pain relief for worn or injured knees.', icon: 'heart' },
+        { title: 'Sports injuries', desc: 'Sprains, ligament tears and a safe plan back to your sport.', icon: 'dumbbell' },
+        { title: 'After surgery', desc: 'Rehab after knee or hip replacement, fractures and spine surgery.', icon: 'stethoscope' },
+        { title: 'Stroke & neuro rehab', desc: 'Balance, walking and daily-life skills, at home or at the clinic.', icon: 'users' },
+      ],
+    },
+    {
+      kind: 'plans',
+      id: 'packages',
+      nav: 'Packages',
+      title: 'Sessions and packages',
+      plans: [
+        {
+          name: 'Single session',
+          price: 800,
+          period: 'session',
+          features: ['45 minutes, one-to-one', 'Full assessment on the first visit', 'Home exercise sheet'],
+        },
+        {
+          name: '5-session pack',
+          price: 3750,
+          period: '5 sessions',
+          highlight: true,
+          note: 'Most chosen',
+          features: ['₹750 per session', 'Valid for 30 days', 'Progress check at session 5', 'WhatsApp support between visits'],
+        },
+        {
+          name: 'Home visit',
+          price: 1200,
+          period: 'visit',
+          features: ['Therapist comes to you', 'Portable equipment', 'Ideal after surgery or for seniors'],
+        },
+      ],
+      footnote: 'Prices include GST.',
+    },
+    { kind: 'offer', id: 'offer' },
+    {
+      kind: 'team',
+      id: 'therapist',
+      nav: 'Therapist',
+      title: 'Your physiotherapist',
+      people: [
+        {
+          name: 'Dr. Priyanka Menon (PT)',
+          role: 'Lead physiotherapist',
+          quals: 'BPT, MPT (Orthopaedics)',
+          years: 9,
+          image: 'therapist',
+          bio: 'Priyanka has treated runners, IT professionals with desk-job back pain and seniors after knee replacement. She explains what’s causing your pain and what you can do about it at home.',
+          languages: ['English', 'Kannada', 'Malayalam', 'Hindi'],
+        },
+      ],
+    },
+    {
+      kind: 'about',
+      id: 'home-visits',
+      title: 'Can’t travel? We come home.',
+      body: [
+        'After surgery, a fall, or for elderly parents, our therapist visits with portable equipment and sets up a routine your family can help with between sessions.',
+        'Home visits cover a 6 km radius around the clinic.',
+      ],
+      image: 'rehab',
+      points: ['Same-day visits when booked by 11 AM', 'Female therapist on request', 'Family taught the exercises'],
+    },
+    {
+      kind: 'gallery',
+      id: 'clinic',
+      title: 'At the clinic',
+      style: 'grid',
+      items: [
+        { image: 'knee', caption: 'Detailed assessment on the first visit' },
+        { image: 'exercise', caption: 'Guided strengthening' },
+        { image: 'band', caption: 'Simple exercises you can repeat at home' },
+      ],
+    },
+    { kind: 'reviews', id: 'reviews', nav: 'Reviews', title: 'What patients say' },
+    {
+      kind: 'booking',
+      id: 'book',
+      nav: 'Book',
+      title: 'Book a session',
+      intro: 'Tell us where it hurts and when you’re free. We confirm on WhatsApp.',
+      fields: [
+        { name: 'name', label: 'Your name', type: 'text', required: true },
+        { name: 'phone', label: 'Phone number', type: 'tel', required: true },
+        {
+          name: 'problem',
+          label: 'Problem',
+          type: 'select',
+          options: ['Back pain', 'Neck pain', 'Knee pain', 'Shoulder pain', 'Sports injury', 'After surgery', 'Something else'],
+        },
+        { name: 'where', label: 'Where', type: 'select', options: ['At the clinic', 'Home visit'] },
+        { name: 'date', label: 'Preferred date', type: 'date' },
+      ],
+      submit: { en: 'Book on WhatsApp', kn: 'WhatsApp ನಲ್ಲಿ ಬುಕ್ ಮಾಡಿ', hi: 'WhatsApp पर बुक करें' },
+    },
+    { kind: 'timings', id: 'visit', nav: 'Visit', title: 'Timings and location' },
+    { kind: 'faq', id: 'faq', nav: 'FAQ', title: 'Questions patients ask' },
+  ],
+  description: '{name}, {area}, {city}. Physiotherapy for back, neck and knee pain, sports injuries and post-surgery rehab. Clinic and home visits.',
+}

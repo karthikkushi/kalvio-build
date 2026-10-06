@@ -1,0 +1,18 @@
+{
+  "url": "/demo/gym_fitness",
+  "fetchTime": "2026-10-06T14:38:57.170Z",
+  "performance": 98,
+  "accessibility": 100,
+  "bestPractices": 100,
+  "seo": 100,
+  "fcp": "1.4 s",
+  "lcp": "2.2 s",
+  "tbt": "60 ms",
+  "cls": "0.001",
+  "failing": [
+    "max-potential-fid",
+    "unused-javascript",
+    "forced-reflow-insight",
+    "network-dependency-tree-insight"
+  ]
+}

@@ -1,0 +1,176 @@
+import type { BusinessPreset } from '../types'
+
+export const clothing: BusinessPreset = {
+  key: 'clothing',
+  label: 'Saree & ethnic wear boutique',
+  schemaType: 'ClothingStore',
+  region: 'IN',
+  defaultTheme: 'warm-boutique',
+  demo: {
+    name: 'Kanchana Silks & Boutique',
+    area: 'Gandhi Bazaar',
+    city: 'Bengaluru',
+    phone: '+91 80 2667 1188',
+    street: '27, Gandhi Bazaar Main Road, Basavanagudi',
+    since: 1998,
+  },
+  hero: {
+    image: 'hero',
+    headline: {
+      en: 'Pure silk sarees from Kanchipuram and Mysore, in {area} since 1998.',
+      kn: '{area} ನಲ್ಲಿ 1998ರಿಂದ ಕಾಂಚೀಪುರಂ ಮತ್ತು ಮೈಸೂರು ಶುದ್ಧ ರೇಷ್ಮೆ ಸೀರೆಗಳು.',
+      hi: '{area} में 1998 से कांचीपुरम और मैसूर की शुद्ध सिल्क साड़ियाँ।',
+    },
+    subline: {
+      en: 'Silk-mark certified sarees, festive wear and blouse stitching in 5 days. See new arrivals on WhatsApp before you visit.',
+      kn: 'ಸಿಲ್ಕ್-ಮಾರ್ಕ್ ಪ್ರಮಾಣಿತ ಸೀರೆಗಳು, ಹಬ್ಬದ ಉಡುಪುಗಳು ಮತ್ತು 5 ದಿನಗಳಲ್ಲಿ ಬ್ಲೌಸ್ ಹೊಲಿಗೆ.',
+      hi: 'सिल्क-मार्क सर्टिफ़ाइड साड़ियाँ, त्योहार के कपड़े और 5 दिनों में ब्लाउज़ सिलाई।',
+    },
+    chips: ['Silk Mark certified', 'Blouse stitching in 5 days', 'Video call shopping'],
+  },
+  primaryCta: { en: 'See new arrivals', kn: 'ಹೊಸ ಸಂಗ್ರಹ ನೋಡಿ', hi: 'नया कलेक्शन देखें' },
+  rating: { value: 4.8, count: 538 },
+  badges: [
+    { label: 'Silk Mark certified', icon: 'shield' },
+    { label: 'Direct from weavers', icon: 'users' },
+    { label: 'In-house tailoring', icon: 'scissors' },
+    { label: 'Ships across India', icon: 'truck' },
+  ],
+  timings: [{ days: 'Every day', hours: '10:00 AM – 9:00 PM' }],
+  timingsNote: 'Busy on weekends before festivals. Weekday mornings are the calmest time to choose a bridal saree.',
+  reviews: [
+    {
+      name: 'Shobha Prakash',
+      when: '2 weeks ago',
+      stars: 5,
+      text: 'Bought my daughter’s muhurtham saree here. Genuine Kanchipuram with the silk mark tag, and they showed us how to check the zari.',
+    },
+    {
+      name: 'Anitha Krishnamurthy',
+      when: '1 month ago',
+      stars: 5,
+      text: 'I live in Pune now and shop over video call. They show every saree in daylight and courier it the same week. Blouse fitting is always perfect.',
+    },
+    {
+      name: 'Rekha Shenoy',
+      when: '2 months ago',
+      stars: 5,
+      text: 'Reasonable prices for pure silk and no pressure to buy. The tailor understood exactly the blouse design I wanted.',
+    },
+  ],
+  faq: [
+    { q: 'How do I know the silk is pure?', a: 'Every pure silk saree carries the Silk Mark tag. We’ll also show you the burn test on a thread if you like.' },
+    {
+      q: 'Can I shop without visiting?',
+      a: 'Yes. Book a WhatsApp video call and we’ll show sarees in daylight. Pay by UPI and we courier anywhere in India.',
+    },
+    { q: 'How long does blouse stitching take?', a: '5 days normally, 2 days express for ₹300 extra. Bring a well-fitting blouse for measurements.' },
+    { q: 'Do you do fall, pico and tassels?', a: 'Yes, ready in 24 hours. Free with sarees above ₹10,000.' },
+    { q: 'Do you have menswear?', a: 'Yes: silk kurtas, dhotis and veshti-shirt sets for weddings and festivals.' },
+  ],
+  offers: [
+    { season: 'dasara', title: 'Dasara collection', text: 'New Mysore silk arrivals, with free blouse stitching on sarees above ₹8,000. Till 21 October.' },
+    { season: 'diwali', title: 'Diwali offer', text: 'Flat 15% off festive wear, plus free fall and pico on every saree.' },
+    { season: 'wedding', title: 'Wedding season', text: 'Bridal saree appointments with a private trial room. 10% off family orders above ₹50,000.' },
+    { season: 'ugadi', title: 'Ugadi collection', text: 'Fresh cotton and soft silk sarees for summer festivals.' },
+  ],
+  sections: [
+    {
+      kind: 'gallery',
+      id: 'collections',
+      nav: 'Collections',
+      title: 'Collections',
+      style: 'grid',
+      items: [
+        { image: 'silk', caption: 'Kanchipuram silk' },
+        { image: 'bridal', caption: 'Bridal & muhurtham' },
+        { image: 'festive', caption: 'Festive soft silk' },
+        { image: 'green', caption: 'Mysore crepe silk' },
+        { image: 'daily', caption: 'Cotton & daily wear' },
+        { image: 'kurta-cream', caption: 'Men’s silk kurtas' },
+      ],
+    },
+    {
+      kind: 'services',
+      id: 'new',
+      nav: 'New arrivals',
+      title: 'New this week',
+      intro: 'Tap Order to see more photos and colours on WhatsApp.',
+      layout: 'cards',
+      groups: [
+        {
+          items: [
+            { name: 'Kanchipuram pure silk', desc: 'Contrast border, pure zari', price: 18500, image: 'window', tag: 'New' },
+            { name: 'Soft silk festive saree', desc: 'Lightweight, easy drape', price: 6800, image: 'festive' },
+            { name: 'Printed cotton sarees', desc: 'Office and daily wear', price: 1450, image: 'rack' },
+            { name: 'Men’s festive kurta', desc: 'Silk blend, sizes 38–46', price: 2900, image: 'kurta-yellow' },
+            { name: 'Family coordinates', desc: 'Matching sarees for functions', price: 4200, image: 'group' },
+          ],
+        },
+      ],
+    },
+    { kind: 'offer', id: 'offer' },
+    {
+      kind: 'services',
+      id: 'stitching',
+      nav: 'Stitching',
+      title: 'Tailoring and stitching',
+      intro: 'Done in-house by our own tailors, so the fit is right the first time.',
+      layout: 'list',
+      groups: [
+        {
+          title: 'Blouses',
+          items: [
+            { name: 'Simple blouse', price: 650, prefix: '' },
+            { name: 'Designer blouse', desc: 'Patterns, piping, tassels', price: 1200 },
+            { name: 'Bridal blouse with aari work', price: 4500 },
+          ],
+        },
+        {
+          title: 'Saree finishing',
+          items: [
+            { name: 'Fall & pico', desc: 'Ready in 24 hours', price: 150, prefix: '' },
+            { name: 'Tassels (kuchu)', price: 250 },
+            { name: 'Pre-pleating & ironing', price: 300, prefix: '' },
+          ],
+        },
+      ],
+    },
+    {
+      kind: 'about',
+      id: 'story',
+      nav: 'Our story',
+      title: 'Bought directly from the weavers',
+      body: [
+        'For over 25 years we have travelled to Kanchipuram, Arani and Mysore to buy from weaving families, so you pay for the silk and not for middlemen.',
+        'Can’t visit? Book a video call. We’ll show you sarees in daylight, hold them for 2 days and courier anywhere in India.',
+      ],
+      image: 'stitching',
+      points: ['Video call shopping', 'Courier across India', 'Easy exchange within 7 days'],
+    },
+    { kind: 'reviews', id: 'reviews', nav: 'Reviews', title: 'What customers say' },
+    {
+      kind: 'booking',
+      id: 'book',
+      nav: 'Enquire',
+      title: 'Custom stitching or a video-call appointment',
+      intro: 'Tell us what you need and we’ll reply on WhatsApp with options and a time.',
+      fields: [
+        { name: 'name', label: 'Your name', type: 'text', required: true },
+        { name: 'phone', label: 'Phone number', type: 'tel', required: true },
+        {
+          name: 'need',
+          label: 'I’m looking for',
+          type: 'select',
+          options: ['Bridal saree', 'Festive saree', 'Blouse stitching', 'Men’s wear', 'Video call shopping'],
+        },
+        { name: 'date', label: 'Function date', type: 'date' },
+        { name: 'notes', label: 'Colours, budget or design ideas', type: 'textarea', placeholder: 'e.g. peacock blue, under ₹20,000' },
+      ],
+      submit: { en: 'Send on WhatsApp', kn: 'WhatsApp ನಲ್ಲಿ ಕಳುಹಿಸಿ', hi: 'WhatsApp पर भेजें' },
+    },
+    { kind: 'timings', id: 'visit', nav: 'Visit', title: 'Visit the store' },
+    { kind: 'faq', id: 'faq', nav: 'FAQ', title: 'Good to know' },
+  ],
+  description: '{name}, {area}, {city}. Silk Mark certified Kanchipuram and Mysore silk sarees, festive wear and blouse stitching. Shop in store or on video call.',
+}
