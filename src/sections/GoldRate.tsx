@@ -28,7 +28,7 @@ export function GoldRate({ id, title, rates, updated, example, tone }: Props) {
               </div>
             ))}
           </dl>
-          <p className="mt-3 text-sm text-muted">Sample rate, updated {updated}. Call or WhatsApp for today’s exact price.</p>
+          <p className="mt-3 text-sm text-muted">Sample rate, updated {updated}. Call or message us for today’s exact price.</p>
         </div>
         {ex && (
           <aside className="rounded-card bg-surface-alt p-5 shadow-card sm:p-7" data-reveal aria-labelledby={`${id}-example`}>

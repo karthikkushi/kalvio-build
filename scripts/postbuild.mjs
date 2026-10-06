@@ -13,7 +13,8 @@ const ORIGIN = process.env.SITE_ORIGIN ?? 'https://kalvio-build.pages.dev'
 const manifestPath = join(dist, '.vite/manifest.json')
 const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'))
 const ssr = await import(pathToFileURL(join(process.cwd(), 'dist-ssr/entry-prerender.js')).href)
-const shell = readFileSync(join(dist, 'index.html'), 'utf8')
+// index.html hard-codes the default origin for og:image; swap in SITE_ORIGIN when a custom domain is set.
+const shell = readFileSync(join(dist, 'index.html'), 'utf8').replaceAll('https://kalvio-build.pages.dev', ORIGIN)
 const assets = readdirSync(join(dist, 'assets'))
 
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
@@ -66,14 +67,13 @@ for (const preset of ssr.presets) {
       .replace(/(<meta name="description" content=")[^"]*/, `$1${esc(r.description)}`)
       .replace(/(<meta property="og:title" content=")[^"]*/, `$1${esc(r.title)}`)
       .replace(/(<meta property="og:description" content=")[^"]*/, `$1${esc(r.description)}`)
-      .replace(/(<meta property="og:image" content=")[^"]*/, `$1/og/${preset.key}.png`)
+      .replace(/(<meta property="og:image" content=")[^"]*/, `$1${ORIGIN}/og/${preset.key}.jpg`)
       .replace(/(<meta name="theme-color" content=")[^"]*/, `$1${r.themeColor}`)
       .replace(/<link rel="stylesheet"[^>]*>/, `<style>${css}</style>`)
       .replace('<!--app-head-->', head)
       .replace('<div id="root"></div>', `<div id="root">${r.html}</div>`)
       // The page is already painted; let the hero photo and fonts win the bandwidth race over JavaScript.
       .replace('<script type="module" crossorigin src=', '<script type="module" crossorigin fetchpriority="low" src=')
-      .replace(/<link rel="modulepreload" crossorigin href=/g, '<link rel="modulepreload" crossorigin fetchpriority="low" href=')
 
     mkdirSync(join(dist, '_demo', preset.key), { recursive: true })
     writeFileSync(join(dist, '_demo', preset.key, `${themeKey}.html`), html)
@@ -85,6 +85,32 @@ for (const preset of ssr.presets) {
   }
 }
 writeFileSync(join(dist, '_demo', 'defaults.json'), JSON.stringify(ssr.defaults()))
+
+// The empty app shell becomes 404.html (Cloudflare Pages serves it for unknown paths, with a 404 status);
+// index.html gets the prerendered landing page.
+const lowPriority = (html) =>
+  html
+    .replace('<script type="module" crossorigin src=', '<script type="module" crossorigin fetchpriority="low" src=')
+    .replace(/<link rel="modulepreload" crossorigin href=/g, '<link rel="modulepreload" crossorigin fetchpriority="low" href=')
+writeFileSync(join(dist, '404.html'), shell.replace('<!--app-head-->', '<meta name="robots" content="noindex">'))
+const landingChunks = [...deps('src/pages/Landing.tsx')]
+  .filter((k) => !entryDeps.has(k))
+  .map((k) => `<link rel="modulepreload" crossorigin fetchpriority="low" href="/${manifest[k].file}">`)
+  .join('')
+const landingFont = fontFile("'Outfit'", 700)
+writeFileSync(
+  join(dist, 'index.html'),
+  lowPriority(
+    shell
+      .replace(/<link rel="stylesheet"[^>]*>/, `<style>${css}</style>`)
+      .replace(
+        '<!--app-head-->',
+        [landingFont ? `<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/${landingFont}">` : '', landingChunks, `<link rel="canonical" href="${ORIGIN}/">`].join(''),
+      )
+      .replace('<div id="root"></div>', `<div id="root">${ssr.renderLanding()}</div>`),
+  ),
+)
 rmSync(join(dist, '.vite'), { recursive: true, force: true })
-if (existsSync('dist-ssr')) rmSync('dist-ssr', { recursive: true, force: true })
-console.log(`postbuild: prerendered ${count} pages for ${ssr.presets.length} businesses`)
+// Retries: macOS Finder can drop a .DS_Store into the folder while it is being removed.
+if (existsSync('dist-ssr')) rmSync('dist-ssr', { recursive: true, force: true, maxRetries: 5, retryDelay: 100 })
+console.log(`postbuild: prerendered the landing page and ${count} sample pages for ${ssr.presets.length} businesses`)

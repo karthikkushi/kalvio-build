@@ -1,0 +1,19 @@
+{
+  "url": "/",
+  "fetchTime": "2026-10-06T10:15:15.435Z",
+  "performance": 95,
+  "accessibility": 100,
+  "bestPractices": 100,
+  "seo": 100,
+  "fcp": "1.2 s",
+  "lcp": "2.9 s",
+  "tbt": "80 ms",
+  "cls": "0.002",
+  "failing": [
+    "largest-contentful-paint",
+    "unused-javascript",
+    "forced-reflow-insight",
+    "image-delivery-insight",
+    "network-dependency-tree-insight"
+  ]
+}

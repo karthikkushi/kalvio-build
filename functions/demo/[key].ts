@@ -43,13 +43,23 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env, params })
 
   const all = await (await asset('/_demo/defaults.json')).json<Record<string, Defaults>>()
   const d = all[key]
-  const lang = sp.get('lang')
-  // Unknown business, or Kannada/Hindi (rendered in the browser only): hand over to the app.
-  if (!d || lang === 'kn' || lang === 'hi') return asset('/')
+  if (!d) {
+    const notFound = await asset('/404.html')
+    return new Response(notFound.body, { status: 404, headers: { 'content-type': 'text/html; charset=utf-8' } })
+  }
 
   const theme = resolveThemeKey(sp.get('theme')) ?? d.theme
   const page = await asset(`/_demo/${key}/${theme}.html`)
-  if (!page.ok) return asset('/')
+  // Kannada / Hindi text is rendered in the browser. The page's own script keeps the English
+  // version hidden until then, because this response is not marked data-edge.
+  const lang = sp.get('lang')
+  if (lang === 'kn' || lang === 'hi') {
+    const headers = new Headers(page.headers)
+    headers.delete('x-robots-tag')
+    headers.set('content-type', 'text/html; charset=utf-8')
+    if (sp.get('name')) headers.set('x-robots-tag', 'noindex, nofollow')
+    return new Response(page.body, { status: 200, headers })
+  }
 
   const nameParam = cleanParam(sp.get('name'), PARAM_LIMITS.name)
   const areaParam = cleanParam(sp.get('area'), PARAM_LIMITS.area)
@@ -99,7 +109,7 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env, params })
       element: (e) => void e.setAttribute('content', description),
     })
     .on('meta[property="og:title"]', { element: (e) => void e.setAttribute('content', title) })
-    .on('meta[property="og:image"]', { element: (e) => void e.setAttribute('content', `${url.origin}/og/${key}.png`) })
+    .on('meta[property="og:image"]', { element: (e) => void e.setAttribute('content', `${url.origin}/og/${key}.jpg`) })
     .on('meta[property="og:url"]', { element: (e) => void e.setAttribute('content', pageUrl) })
     .on('link[rel="canonical"]', { element: (e) => void e.setAttribute('href', `${url.origin}/demo/${key}`) })
     .on('head', {

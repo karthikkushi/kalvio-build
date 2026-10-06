@@ -39,7 +39,7 @@ export default function Demo() {
       canonical: `${window.location.origin}/demo/${p.key}`,
       icon: monogramFavicon(ctx.monogram, ctx.theme),
       themeColor: ctx.theme.colors.bg,
-      image: `${window.location.origin}/og/${p.key}.png`,
+      image: `${window.location.origin}/og/${p.key}.jpg`,
       lang: ctx.lang,
     })
   }, [ctx])

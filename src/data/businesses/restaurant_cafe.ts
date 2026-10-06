@@ -1,0 +1,163 @@
+import type { BusinessPreset } from '../types'
+
+export const restaurant_cafe: BusinessPreset = {
+  key: 'restaurant_cafe',
+  label: 'Restaurant',
+  schemaType: 'Restaurant',
+  region: 'IN',
+  defaultTheme: 'fresh-local',
+  demo: {
+    name: 'Kudla Kitchen',
+    area: 'Banashankari',
+    city: 'Bengaluru',
+    phone: '+91 80 2671 9900',
+    street: '58, 50 Feet Road, 2nd Stage',
+    since: 2016,
+  },
+  hero: {
+    image: 'hero',
+    headline: {
+      en: 'Crisp dosas, ghee roast and fish meals in {area}. Mangalore taste, Bengaluru prices.',
+      kn: '{area} ನಲ್ಲಿ ಗರಿಗರಿ ದೋಸೆ, ಘೀ ರೋಸ್ಟ್ ಮತ್ತು ಮೀನಿನ ಊಟ. ಮಂಗಳೂರು ರುಚಿ.',
+      hi: '{area} में कुरकुरा डोसा, घी रोस्ट और फ़िश मील। मैंगलोर का स्वाद।',
+    },
+    subline: {
+      en: 'Breakfast from 7 AM, meals at lunch, coastal specials at dinner. Dine in, take away, or order on Swiggy and Zomato.',
+      kn: 'ಬೆಳಿಗ್ಗೆ 7ರಿಂದ ತಿಂಡಿ, ಮಧ್ಯಾಹ್ನ ಊಟ, ರಾತ್ರಿ ಕರಾವಳಿ ವಿಶೇಷಗಳು.',
+      hi: 'सुबह 7 बजे से नाश्ता, दोपहर में मील, रात में कोस्टल स्पेशल।',
+    },
+    chips: ['Pure veg kitchen section', 'Family seating for 60', 'Free parking'],
+  },
+  primaryCta: { en: 'Book a table', kn: 'ಟೇಬಲ್ ಬುಕ್ ಮಾಡಿ', hi: 'टेबल बुक करें' },
+  rating: { value: 4.6, count: 1284 },
+  badges: [
+    { label: 'FSSAI licensed', icon: 'shield' },
+    { label: 'Separate veg kitchen', icon: 'leaf' },
+    { label: 'Family friendly', icon: 'users' },
+    { label: 'Swiggy & Zomato', icon: 'truck' },
+  ],
+  timings: [
+    { days: 'Every day', hours: '7:00 AM – 11:00 PM' },
+    { days: 'Kitchen break', hours: '3:30 – 6:30 PM (snacks only)' },
+  ],
+  timingsNote: 'Weekend lunches get busy. Book a table to skip the wait.',
+  reviews: [
+    {
+      name: 'Nagesh Bhat',
+      when: '1 week ago',
+      stars: 5,
+      text: 'The neer dosa and chicken ghee roast taste exactly like Mangalore. Generous portions and quick service even on a Sunday.',
+    },
+    {
+      name: 'Shalini Iyer',
+      when: '3 weeks ago',
+      stars: 5,
+      text: 'We’re vegetarian and appreciated the separate veg kitchen. Masala dosa and filter coffee are our weekend ritual now.',
+    },
+    {
+      name: 'Rahul D’Souza',
+      when: '1 month ago',
+      stars: 4,
+      text: 'Fish meals were fresh and the curry was spot on. Can get crowded at lunch, so book ahead.',
+    },
+  ],
+  faq: [
+    { q: 'Is there vegetarian food?', a: 'Yes. Vegetarian dishes are cooked in a separate kitchen with separate vessels.' },
+    { q: 'Do you take table bookings?', a: 'Yes, for lunch and dinner. Book on WhatsApp or call; we hold tables for 15 minutes.' },
+    { q: 'Do you cater for functions?', a: 'Yes, from 30 to 500 people, veg and non-veg. Ask for the catering menu on WhatsApp.' },
+    { q: 'Is there parking?', a: 'Free parking for cars and two-wheelers next to the restaurant.' },
+    { q: 'Do you deliver?', a: 'Through Swiggy and Zomato within 5 km, or call for takeaway.' },
+  ],
+  offers: [
+    { season: 'dasara', title: 'Dasara special thali', text: 'Festive veg thali with holige and payasa, ₹249. Till 21 October.' },
+    { season: 'diwali', title: 'Diwali family feast', text: 'Feast for 4 with ghee roast, fish fry, neer dosa and dessert, ₹1,499.' },
+    { season: 'sankranti', title: 'Sankranti special', text: 'Ellu bella and pongal combo on the house with every meal on 14–15 January.' },
+  ],
+  sections: [
+    {
+      kind: 'services',
+      id: 'menu',
+      nav: 'Menu',
+      title: 'Menu',
+      intro: 'Our most ordered dishes. The full menu is on Swiggy and Zomato.',
+      layout: 'menu',
+      delivery: true,
+      groups: [
+        {
+          title: 'Breakfast (7–11:30 AM)',
+          items: [
+            { name: 'Masala dosa', desc: 'With sambar and two chutneys', price: 90, prefix: '', veg: true, tag: 'Bestseller' },
+            { name: 'Idli vada', desc: '2 idli, 1 vada', price: 70, prefix: '', veg: true },
+            { name: 'Neer dosa with coconut chutney', price: 80, prefix: '', veg: true },
+            { name: 'Filter coffee', price: 30, prefix: '', veg: true },
+          ],
+        },
+        {
+          title: 'Meals (12–3:30 PM)',
+          items: [
+            { name: 'South Indian veg meals', desc: 'Unlimited rice, sambar, rasam, 2 palyas', price: 160, prefix: '', veg: true },
+            { name: 'Fish meals', desc: 'Fish curry, fry of the day, red rice', price: 280, prefix: '', veg: false },
+            { name: 'Chicken dum biryani', price: 260, prefix: '', veg: false },
+          ],
+        },
+        {
+          title: 'Coastal specials',
+          items: [
+            { name: 'Chicken ghee roast', desc: 'Our signature, with 2 neer dosas', price: 340, prefix: '', veg: false, tag: 'Signature' },
+            { name: 'Prawn masala', price: 380, prefix: '', veg: false },
+            { name: 'Mushroom ghee roast', price: 260, prefix: '', veg: true },
+            { name: 'Kori rotti', desc: 'Chicken curry with crisp rice wafers', price: 320, prefix: '', veg: false },
+          ],
+        },
+      ],
+      footnote: 'Prices include GST. Spice level can be adjusted, just ask.',
+    },
+    { kind: 'offer', id: 'offer' },
+    {
+      kind: 'gallery',
+      id: 'food',
+      nav: 'Food',
+      title: 'From our kitchen',
+      style: 'insta',
+      items: [
+        { image: 'dosa-leaf', caption: 'Ghee roast dosa' },
+        { image: 'chicken-fry', caption: 'Chicken ghee roast' },
+        { image: 'meals', caption: 'Veg meals on banana leaf' },
+        { image: 'fish-meal', caption: 'Fish meals' },
+        { image: 'idli-vada', caption: 'Idli vada' },
+        { image: 'biryani', caption: 'Dum biryani' },
+      ],
+    },
+    {
+      kind: 'about',
+      id: 'story',
+      nav: 'Our story',
+      title: 'Recipes from a Mangalore home kitchen',
+      body: [
+        'Kudla Kitchen started with Shobha akka’s family recipes: ghee roast masala ground fresh every morning, coconut from Mangalore and fish bought daily.',
+        'Breakfast is pure vegetarian, cooked in a separate kitchen. Coastal specials are served from noon.',
+      ],
+      image: 'garden',
+      points: ['Masala ground fresh daily', 'Fish delivered every morning', 'Separate pure-veg kitchen'],
+    },
+    { kind: 'reviews', id: 'reviews', nav: 'Reviews', title: 'What diners say' },
+    {
+      kind: 'booking',
+      id: 'book',
+      nav: 'Book',
+      title: 'Book a table',
+      intro: 'We’ll confirm on WhatsApp and hold your table for 15 minutes.',
+      fields: [
+        { name: 'name', label: 'Your name', type: 'text', required: true },
+        { name: 'phone', label: 'Phone number', type: 'tel', required: true },
+        { name: 'guests', label: 'Guests', type: 'select', options: ['2', '3', '4', '5', '6', '7–10', '10+'] },
+        { name: 'date', label: 'Date', type: 'date', required: true },
+        { name: 'time', label: 'Time', type: 'select', options: ['12:30 PM', '1:30 PM', '2:30 PM', '7:30 PM', '8:30 PM', '9:30 PM'] },
+      ],
+      submit: { en: 'Book on WhatsApp', kn: 'WhatsApp ನಲ್ಲಿ ಬುಕ್ ಮಾಡಿ', hi: 'WhatsApp पर बुक करें' },
+    },
+    { kind: 'timings', id: 'visit', nav: 'Visit', title: 'Timings and location' },
+    { kind: 'faq', id: 'faq', nav: 'FAQ', title: 'Good to know' },
+  ],
+  description: '{name}, {area}, {city}. Dosas, meals and Mangalorean specials like chicken ghee roast and fish meals. Book a table or order on Swiggy and Zomato.',
+}

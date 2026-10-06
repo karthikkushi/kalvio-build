@@ -1,12 +1,14 @@
 import { Navigation, Phone } from 'lucide-react'
 import { ActionLink } from '../components/DemoActions'
-import { WhatsAppIcon } from '../components/Icon'
+import { MessageIcon } from '../components/MessageIcon'
 import { UI, t } from '../i18n/strings'
 import { useDemo } from '../lib/demo'
+import { useMessaging } from '../lib/messaging'
 
 /** Sticky Call · WhatsApp · Directions bar on phones. Hidden from 1024 px up, where the header has these. */
 export function ActionBar() {
   const { lang, directionsUrl } = useDemo()
+  const m = useMessaging()
   return (
     <nav aria-label="Quick actions" className="fixed inset-x-0 bottom-0 z-40 border-t border-line bg-surface pb-[env(safe-area-inset-bottom)] lg:hidden">
       <div className="mx-auto grid max-w-xl grid-cols-3 gap-2 p-2">
@@ -15,8 +17,8 @@ export function ActionBar() {
           {t(UI.call, lang)}
         </ActionLink>
         <ActionLink kind="whatsapp" className="btn btn-wa min-h-12 px-2 text-[15px]">
-          <WhatsAppIcon size={18} />
-          WhatsApp
+          <MessageIcon size={18} />
+          {m.sms ? 'Text' : 'WhatsApp'}
         </ActionLink>
         <a href={directionsUrl} data-p-href="directions" target="_blank" rel="noopener" className="btn btn-ghost min-h-12 px-2 text-[15px]">
           <Navigation size={18} aria-hidden="true" />

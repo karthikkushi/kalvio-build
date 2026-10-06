@@ -1,6 +1,10 @@
+import { useEffect } from 'react'
 import { Link } from 'react-router'
 
 export default function NotFound() {
+  useEffect(() => {
+    document.title = 'Page not found | Kalvio Build'
+  }, [])
   return (
     <main className="grid min-h-svh place-items-center bg-[#14121f] p-6 text-center text-white">
       <div>

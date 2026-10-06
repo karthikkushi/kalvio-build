@@ -1,0 +1,20 @@
+{
+  "url": "/demo/salon_beauty",
+  "fetchTime": "2026-10-06T10:15:41.520Z",
+  "performance": 97,
+  "accessibility": 100,
+  "bestPractices": 100,
+  "seo": 100,
+  "fcp": "1.2 s",
+  "lcp": "2.6 s",
+  "tbt": "50 ms",
+  "cls": "0",
+  "failing": [
+    "largest-contentful-paint",
+    "max-potential-fid",
+    "unused-javascript",
+    "forced-reflow-insight",
+    "image-delivery-insight",
+    "network-dependency-tree-insight"
+  ]
+}

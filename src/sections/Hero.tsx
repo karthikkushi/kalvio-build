@@ -1,12 +1,14 @@
 import { Check, MapPin, Phone } from 'lucide-react'
 import { ActionLink } from '../components/DemoActions'
-import { Icon, WhatsAppIcon } from '../components/Icon'
+import { Icon } from '../components/Icon'
+import { MessageIcon } from '../components/MessageIcon'
 import { Img } from '../components/Img'
 import { Monogram } from '../components/Monogram'
 import { Stars } from '../components/Stars'
 import { tRich } from '../i18n/rich'
 import { t } from '../i18n/strings'
 import { useDemo } from '../lib/demo'
+import { useMessaging } from '../lib/messaging'
 import { NAME_BASE_CLASS, nameSizeClass } from '../lib/personalise'
 import { stockImage } from '../lib/stock'
 
@@ -26,6 +28,7 @@ const NAME_PAD = {
 /** First screen: shop name, area and phone on the photo like a signboard, then the headline and proof. */
 export function Hero() {
   const d = useDemo()
+  const m = useMessaging()
   const p = d.preset
   const img = stockImage(p.key, p.hero.image)
   const hasBooking = p.sections.some((s) => s.kind === 'booking')
@@ -82,7 +85,7 @@ export function Hero() {
                 text={p.primaryAction.text.replace('{name}', d.name)}
                 className="btn btn-primary flex-auto px-5 whitespace-nowrap sm:flex-none sm:px-6"
               >
-                <WhatsAppIcon size={19} /> {t(p.primaryCta, d.lang)}
+                <MessageIcon size={19} /> {t(p.primaryCta, d.lang)}
               </ActionLink>
             ) : hasBooking ? (
               <a href="#book" className="btn btn-primary flex-auto px-5 whitespace-nowrap sm:flex-none sm:px-6">
@@ -94,7 +97,7 @@ export function Hero() {
               </ActionLink>
             )}
             <ActionLink kind="whatsapp" className="btn btn-ghost flex-auto px-5 whitespace-nowrap sm:flex-none sm:px-6">
-              <WhatsAppIcon size={19} className="text-wa" /> WhatsApp
+              <MessageIcon size={19} className="text-wa" /> {m.label}
             </ActionLink>
           </div>
 

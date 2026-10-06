@@ -1,0 +1,20 @@
+{
+  "url": "/demo/jewellery?name=Sri%20Venkateshwara%20Jewellers&area=Malleshwaram&phone=9845012345",
+  "fetchTime": "2026-10-06T10:16:06.994Z",
+  "performance": 95,
+  "accessibility": 100,
+  "bestPractices": 100,
+  "seo": 69,
+  "fcp": "1.2 s",
+  "lcp": "2.9 s",
+  "tbt": "60 ms",
+  "cls": "0",
+  "failing": [
+    "largest-contentful-paint",
+    "max-potential-fid",
+    "unused-javascript",
+    "is-crawlable",
+    "image-delivery-insight",
+    "network-dependency-tree-insight"
+  ]
+}

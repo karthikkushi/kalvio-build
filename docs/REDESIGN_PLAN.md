@@ -1,6 +1,6 @@
 # Kalvio Build redesign plan (2026)
 
-Branch: `redesign-2026`. Status: **system built, 2 of 17 businesses done, waiting for your OK on the theme directions.**
+Branch: `redesign-2026`. Status: **all 17 businesses, landing page, enquiry storage and Cloudflare setup done.** Decisions (6 Oct 2026): all six themes approved; enquiries go to Lead Finder through `web_enquiry` (option a); hosting moves to Cloudflare Pages.
 
 ## 1. What I found (current site, 6 Oct 2026)
 
@@ -47,14 +47,14 @@ badges), seasonal offer banner, reviews (clearly marked as samples), timings wit
 
 | key | default theme | business-specific sections |
 |---|---|---|
-| `dentist` ✅ | Clean Clinical | treatments with prices, doctor profile + qualifications, before/after slider, clinic gallery, appointment booking |
+| `dentist` | Clean Clinical | treatments with prices, doctor profile + qualifications, before/after slider, clinic gallery, appointment booking |
 | `dermatologist` | Warm Boutique | treatments, before/after, doctor profile, consultation booking |
 | `clinic` | Clean Clinical | specialities, doctors + OPD timetable, emergency call strip, consultation fees |
 | `physio` | Fresh Local | conditions treated, session packages, home-visit option, therapist profile |
 | `eye_clinic` | Clean Clinical | eye tests with prices, frame brands, doctor, book an eye test |
 | `vet` | Soft Friendly | services, vaccination schedule table, 24×7 emergency strip, vet profile |
 | `pet_shop` | Soft Friendly | product cards, grooming menu, home delivery on WhatsApp |
-| `salon_beauty` ✅ | Warm Boutique | bridal packages, salon menu with prices, Instagram-style grid, studio story, trial booking |
+| `salon_beauty` | Warm Boutique | bridal packages, salon menu with prices, Instagram-style grid, studio story, trial booking |
 | `gym_fitness` | Bold Studio | membership plans, trainers, class timetable, free-trial booking |
 | `jewellery` | Luxe Dark | today's gold rate (editable), collections lookbook, BIS hallmark, "WhatsApp for price" |
 | `clothing` | Warm Boutique | collections, new arrivals, festive offers, custom stitching enquiry |
@@ -65,8 +65,8 @@ badges), seasonal offer banner, reviews (clearly marked as samples), timings wit
 | `bakery_sweets` | Warm Boutique | cake catalogue, custom cake order form, festival boxes |
 | `home_services` | Fresh Local | US English and $, service areas, licensed & insured badges, instant quote form |
 
-Still to add to the section library: a `cards` layout for products with photos (pet shop, bakery, clothing, furniture)
-and Swiggy/Zomato buttons. Both are already typed in `src/data/types.ts`.
+The section library also has product cards with an "Order on WhatsApp" button, a gold-rate board with a worked bill,
+a stacked timetable for phones, an emergency call strip, and Swiggy/Zomato buttons.
 
 ## 4. File structure
 
@@ -82,18 +82,18 @@ src/
   sections/*.tsx              Hero, Services, Plans, Team, BeforeAfter, Gallery, Features, Schedule, About,
                               GoldRate, Booking, Reviews, Faq, Timings, OfferBanner, Closing, Footer, ActionBar, Ribbon
   config/site.ts              Kalvio contact details (WhatsApp, email, city)
-  config/pricing.ts           landing page prices (to do)
+  config/pricing.ts           landing page prices
   config/seasons.ts           Dasara / Diwali / wedding season / US seasons, editable dates
   i18n/strings.ts             en / kn / hi for hero and CTA strings
   lib/                        demo context from URL params, phone parsing, monogram, contrast, reveal, meta
-  pages/Demo.tsx, Home.tsx    routes (Home is a temporary index until the landing page)
+  pages/                      Landing, Demo (+ DemoView), NotFound
 scripts/
   stock/manifest.json         curated Unsplash photo IDs per business
   stock/fetch.mjs             downloads, makes AVIF + WebP at 480/800/1200/1600, writes CREDITS.md
   screenshots.mjs             375 + 1440 screenshots of any paths
-  postbuild.mjs               per-business HTML shells with OG tags (to do)
+  postbuild.mjs               prerenders the landing page and every business × theme
 public/stock/<key>/           self-hosted photos (no hot-linking), CREDITS.md
-docs/                         this plan, DEMO_LINKS.md (to do), screenshots, previews
+docs/                         this plan, DEMO_LINKS.md, DEPLOY.md, screenshots, Lighthouse results
 ```
 
 ## 5. The `/demo` link and WhatsApp previews
@@ -127,39 +127,44 @@ sample ratings aren't real.
 | `/styles/minimalism` | `/demo/clinic?theme=clean-clinical` |
 | `/styles/liquid-glass` | `/demo/salon_beauty?theme=luxe-dark` |
 
-These are done client-side already. The 301s in `vercel.json` (or `_redirects` on Cloudflare) come with the deploy.
+Done as 301s in `public/_redirects` (Cloudflare) and `vercel.json`, and in the app as a fallback.
 
-## 7. Evidence so far
+## 7. Evidence
 
-- `npm test`: 97 passing (theme contrast in all 6 themes, phone parsing, monograms).
-- `npm run lint` and `tsc`: clean.
-- Lighthouse mobile on `/demo/dentist` (production build, local, simulated slow 4G): **Performance 94,
-  Accessibility 100, Best Practices 100, SEO 92**. FCP 2.1 s, LCP 2.7 s, CLS 0, TBT 30 ms. SEO was 92 only because
-  `robots.txt` was missing (now added). To reach the ~1.5 s first paint: per-business HTML with hero preload and
-  modulepreload (step 5.1).
-- JS for a demo page: 83 KB (React + router) + 23 KB (sections) + 3 KB (preset), gzipped.
+- `npm test`: 238 passing. Covers contrast in every theme, every preset's photos/sections/seasons, the `/demo`
+  link contract (fallbacks, phone formats, sanitising, seasons, US formatting) and the catalog.
+- `npm run lint` and both type-checks are clean.
+- Lighthouse mobile (production build served by Cloudflare's local runtime, simulated slow 4G), in `docs/lighthouse/`:
 
-## 8. Build order
+  | page | Perf | A11y | Best pr. | SEO | first paint | LCP |
+  |---|---|---|---|---|---|---|
+  | `/` | 95 | 100 | 100 | 100 | 1.2 s | 2.9 s |
+  | `/demo/dentist` | 97 | 100 | 100 | 100 | 1.2 s | 2.5 s |
+  | `/demo/salon_beauty` | 97 | 100 | 100 | 100 | 1.2 s | 2.6 s |
+  | `/demo/restaurant_cafe` | 95 | 100 | 100 | 100 | 1.2 s | 2.8 s |
+  | `/demo/jewellery?name=…` (personalised) | 95 | 100 | 100 | 69* | 1.2 s | 2.9 s |
 
-1. ✅ System: themes, sections, `/demo` route, personalisation, dentist + salon presets.
-2. Health: `dermatologist`, `clinic`, `physio`, `eye_clinic`, `vet` (dentist done).
-3. Beauty & fitness: `pet_shop`, `gym_fitness` (salon done).
-4. Big-ticket retail: `jewellery`, `clothing`, `furniture_home`, `events_photo`.
-5. Services & food: `tuition`, `restaurant_cafe`, `bakery_sweets`.
-6. Home services (US): `home_services`.
-7. Landing page, `config/pricing.ts`, `docs/DEMO_LINKS.md`, OG images and HTML shells, redirects, PR with before/after.
+  \* Personalised links are deliberately `noindex`, so Lighthouse's "page is blocked from indexing" check fails.
+- Screenshots at 375 and 1440 for every page: `docs/screenshots/after/<group>/`; before: `docs/screenshots/before/`;
+  side by side: `docs/screenshots/before-after.webp`.
 
-After each group: 375/1440 screenshots of every business in it, plus Lighthouse on one.
+## 8. What was built, by step
 
-## 9. Decisions I need from you
+1. System: themes, sections, `/demo` route, personalisation, prerendering, edge function.
+2. Health: `dentist`, `dermatologist`, `clinic`, `physio`, `eye_clinic`, `vet`.
+3. Beauty & fitness: `salon_beauty`, `pet_shop`, `gym_fitness`.
+4. Big-ticket retail: `jewellery` (gold rate + worked bill), `clothing`, `furniture_home`, `events_photo`.
+5. Services & food: `tuition`, `restaurant_cafe` (veg marks, Swiggy/Zomato), `bakery_sweets` (custom cake form).
+6. Home services (US): `home_services`, with "Text us" (SMS) instead of WhatsApp, US phone format and dollars.
+7. Landing page with live phone preview, "make your own sample" form, enquiry form to Lead Finder, pricing config
+   (`?region=us` adds USD), FAQ, honest copy only. `docs/DEMO_LINKS.md`, `docs/DEPLOY.md`, OG images, redirects.
 
-1. **Theme directions:** go ahead with these six, or change any?
-2. **Enquiry form storage:** (a) a `web_enquiry` RPC in the Lead Finder Supabase project, or (b) a free form backend.
-   Until then, every form and button hands off to WhatsApp, and nothing is lost.
-3. **Hosting:** Vercel Hobby is for non-commercial use only. I recommend moving to Cloudflare Pages (free, commercial
-   use allowed, Pages Functions for the preview step).
-4. **Kannada and Hindi:** the hero/CTA translations are my first drafts. Please have Shreya or a native speaker check
-   them.
+## 9. Still yours to do or check
 
-Note: the frontend-design, Superpowers and Design plugins are enabled on your account but weren't loaded in this
-session (they were enabled after it started). I followed their practices by hand. A new session will load them.
+1. **Cloudflare Pages:** connect the repo (5 minutes, `docs/DEPLOY.md`). It needs your Cloudflare login.
+2. **Kannada and Hindi** strings in `src/i18n/strings.ts` and the presets' headlines: first drafts, have them checked.
+3. **Landing FAQ** (`src/landing/faq.ts`): policy wording ("you pay only after you've seen it", what's included)
+   should match how you actually work.
+4. **Seasonal dates** (`src/config/seasons.ts`): approximate festival windows, check them each year.
+5. **Lead Finder:** copy `supabase/leadfinder/20261006_web_enquiry.sql` into the leadfinder repo's migrations (it is
+   already applied to the database), and add the Make sample button using the snippet in `docs/DEMO_LINKS.md`.

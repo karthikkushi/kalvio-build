@@ -25,11 +25,12 @@ export const UI = {
     kn: 'ಇದು 5 ದಿನಗಳಲ್ಲಿ ಲೈವ್ ಆಗಬಹುದು.',
     hi: 'यह 5 दिनों में लाइव हो सकती है।',
   },
+  closingBodyUS: { en: 'Your photos, your services, your real Google reviews, live in 5 days. One-time price, no monthly lock-in.' },
   closingCta: { en: 'Reply YES on WhatsApp', kn: 'WhatsApp ನಲ್ಲಿ YES ಕಳುಹಿಸಿ', hi: 'WhatsApp पर YES भेजें' },
   closingBody: {
-    en: 'Your photos, your prices, your real Google reviews. Website from ₹3,000, one-time.',
-    kn: 'ನಿಮ್ಮ ಫೋಟೋಗಳು, ನಿಮ್ಮ ದರಗಳು, ನಿಮ್ಮ ನಿಜವಾದ Google ವಿಮರ್ಶೆಗಳು. ವೆಬ್‌ಸೈಟ್ ₹3,000 ರಿಂದ.',
-    hi: 'आपकी फ़ोटो, आपके दाम, आपके असली Google रिव्यू। वेबसाइट ₹3,000 से।',
+    en: 'Your photos, your prices, your real Google reviews. Website from {price}, one-time.',
+    kn: 'ನಿಮ್ಮ ಫೋಟೋಗಳು, ನಿಮ್ಮ ದರಗಳು, ನಿಮ್ಮ ನಿಜವಾದ Google ವಿಮರ್ಶೆಗಳು. ವೆಬ್‌ಸೈಟ್ {price} ರಿಂದ.',
+    hi: 'आपकी फ़ोटो, आपके दाम, आपके असली Google रिव्यू। वेबसाइट {price} से।',
   },
 } satisfies Record<string, Localized>
 

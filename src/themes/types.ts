@@ -11,6 +11,9 @@ export type ThemeKey = (typeof THEME_KEYS)[number]
 /** How the hero photo is framed. Same markup, different shape. */
 export type HeroFrame = 'inset' | 'arch' | 'bleed'
 
+/** Kalvio Build's own brand, built from the same tokens so shared components work on the landing page. */
+export type BrandTheme = Omit<Theme, 'key'> & { key: 'kalvio' }
+
 export interface Theme {
   key: ThemeKey
   label: string

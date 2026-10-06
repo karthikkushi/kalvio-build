@@ -3,10 +3,12 @@
  * Renders every business in every theme to static HTML, so the first screen paints before JavaScript.
  */
 import { renderToString } from 'react-dom/server'
+import { MemoryRouter } from 'react-router'
 import type { BusinessPreset } from './data/types'
 import { buildDemo } from './lib/demo'
 import { stockImage } from './lib/stock'
 import { DemoView } from './pages/DemoView'
+import Landing from './pages/Landing'
 import { THEME_KEYS, THEMES } from './themes'
 
 const modules = import.meta.glob<Record<string, BusinessPreset>>('./data/businesses/*.ts', { eager: true })
@@ -33,6 +35,15 @@ export function render(preset: BusinessPreset, themeKey: (typeof THEME_KEYS)[num
     displayFont: theme.fonts.display,
     displayWeight: theme.fonts.displayWeight,
   }
+}
+
+/** The agency landing page, prerendered into dist/index.html. */
+export function renderLanding() {
+  return renderToString(
+    <MemoryRouter initialEntries={['/']}>
+      <Landing />
+    </MemoryRouter>,
+  )
 }
 
 /** What the edge function needs to personalise a page, keyed by business. */

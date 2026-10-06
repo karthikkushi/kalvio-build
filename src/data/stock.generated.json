@@ -2130,5 +2130,759 @@
       "authorUrl": "https://unsplash.com/@shardayyy",
       "page": "https://unsplash.com/photos/selective-focus-photography-white-and-pink-isle-flower-arrangement-fJzmPe-a0eU"
     }
+  },
+  "tuition": {
+    "hero": {
+      "id": "TcKmus54ij0",
+      "width": 1600,
+      "height": 900,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Two schoolgirls writing in their notebooks in class",
+      "focus": "45% 45%",
+      "author": "Swastik Arora",
+      "authorUrl": "https://unsplash.com/@swastikarora",
+      "page": "https://unsplash.com/photos/two-young-girls-sitting-at-a-desk-in-a-classroom-TcKmus54ij0",
+      "raw": "https://images.unsplash.com/photo-1692269725911-87697c558be1"
+    },
+    "class": {
+      "id": "nFx5TuNxz64",
+      "width": 1600,
+      "height": 900,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Students in uniform listening in a classroom",
+      "focus": "50% 45%",
+      "author": "Swastik Arora",
+      "authorUrl": "https://unsplash.com/@swastikarora",
+      "page": "https://unsplash.com/photos/a-group-of-young-children-sitting-in-a-classroom-nFx5TuNxz64",
+      "raw": "https://images.unsplash.com/photo-1692269725836-fbd72e98883f"
+    },
+    "boys": {
+      "id": "YcW3A8QHcQQ",
+      "width": 1600,
+      "height": 900,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Two boys working through problems together",
+      "focus": "50% 40%",
+      "author": "Swastik Arora",
+      "authorUrl": "https://unsplash.com/@swastikarora",
+      "page": "https://unsplash.com/photos/two-young-boys-sitting-at-a-table-with-books-YcW3A8QHcQQ",
+      "raw": "https://images.unsplash.com/photo-1692269726060-9c604e06f63b"
+    },
+    "focus": {
+      "id": "xMYq46yAetM",
+      "width": 1600,
+      "height": 966,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Student concentrating on a workbook",
+      "focus": "40% 45%",
+      "author": "Swastik Arora",
+      "authorUrl": "https://unsplash.com/@swastikarora",
+      "page": "https://unsplash.com/photos/two-young-boys-sitting-at-a-desk-with-a-book-xMYq46yAetM",
+      "raw": "https://images.unsplash.com/photo-1692269725827-699e04a11cdf"
+    },
+    "teacher": {
+      "id": "w1s5H_3Zn48",
+      "width": 1600,
+      "height": 1065,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Teacher explaining a concept to a group of students",
+      "focus": "60% 30%",
+      "author": "Wonderlane",
+      "authorUrl": "https://unsplash.com/@wonderlane",
+      "page": "https://unsplash.com/photos/woman-holding-microphone-w1s5H_3Zn48",
+      "raw": "https://images.unsplash.com/photo-1551731409-43eb3e517a1a"
+    },
+    "mentor": {
+      "id": "rmiMkhvshoo",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Smiling teacher greeting with folded hands",
+      "focus": "50% 30%",
+      "author": "Skytech Aviation",
+      "authorUrl": "https://unsplash.com/@skytechaviation0",
+      "page": "https://unsplash.com/photos/women-in-uniform-greet-with-hands-pressed-together-rmiMkhvshoo",
+      "raw": "https://images.unsplash.com/photo-1774850743402-71b7456e567d"
+    },
+    "preschool": {
+      "id": "hXLkFpvKRys",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Young children at a bright, colourful preschool classroom",
+      "focus": "50% 50%",
+      "author": "Mario Heller",
+      "authorUrl": "https://unsplash.com/@heller_mario",
+      "page": "https://unsplash.com/photos/a-group-of-children-sitting-at-desks-in-a-classroom-hXLkFpvKRys",
+      "raw": "https://images.unsplash.com/photo-1636202339022-7d67f7447e3a"
+    }
+  },
+  "restaurant_cafe": {
+    "hero": {
+      "id": "5oF7d_hPJG4",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Crispy masala dosa with sambar and three chutneys",
+      "focus": "40% 50%",
+      "author": "Deepal Tamang",
+      "authorUrl": "https://unsplash.com/@deepal_tamang",
+      "page": "https://unsplash.com/photos/dosa-with-masala-and-chutney-breakfast-5oF7d_hPJG4",
+      "raw": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976"
+    },
+    "dosa-leaf": {
+      "id": "VIqcVqZ1uxM",
+      "width": 1600,
+      "height": 1200,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Ghee roast dosa on a banana leaf with chutney and sambar",
+      "focus": "50% 50%",
+      "author": "Zoshua Colah",
+      "authorUrl": "https://unsplash.com/@zoshuacolah",
+      "page": "https://unsplash.com/photos/dosa-with-chutney-and-sambar-breakfast-VIqcVqZ1uxM",
+      "raw": "https://images.unsplash.com/photo-1694849789325-914b71ab4075"
+    },
+    "idli-vada": {
+      "id": "CkJBLkGW-zw",
+      "width": 1600,
+      "height": 2133,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Idli, vada and dosa with chutney",
+      "focus": "50% 55%",
+      "author": "Susmitha Veganosaurus",
+      "authorUrl": "https://unsplash.com/@veganosaurus",
+      "page": "https://unsplash.com/photos/south-indian-breakfast-with-dosa-idli-CkJBLkGW-zw",
+      "raw": "https://images.unsplash.com/photo-1787024231387-edccb8c44700"
+    },
+    "chicken-fry": {
+      "id": "OycP9de4m6Y",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Chicken ghee roast with chutneys",
+      "focus": "50% 50%",
+      "author": "Paul",
+      "authorUrl": "https://unsplash.com/@paul19977",
+      "page": "https://unsplash.com/photos/a-plate-of-food-OycP9de4m6Y",
+      "raw": "https://images.unsplash.com/photo-1668236499396-a62d2d1cb0cf"
+    },
+    "sambar": {
+      "id": "-Q5sWHJzHWc",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Fresh sambar being strained",
+      "focus": "50% 50%",
+      "author": "fuseviews",
+      "authorUrl": "https://unsplash.com/@fusewiews",
+      "page": "https://unsplash.com/photos/a-person-holding-a-spoon-over-a-pot-of-soup--Q5sWHJzHWc",
+      "raw": "https://images.unsplash.com/photo-1725483990551-d9268479f3f4"
+    },
+    "kitchen": {
+      "id": "bl4YpBZKZqM",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Dosa tawa and steel vessels in the kitchen",
+      "focus": "50% 45%",
+      "author": "Anirudh",
+      "authorUrl": "https://unsplash.com/@lanirudhreddy",
+      "page": "https://unsplash.com/photos/a-couple-of-people-stand-near-each-other-bl4YpBZKZqM",
+      "raw": "https://images.unsplash.com/photo-1665206221363-568ea2f7b195"
+    },
+    "meals": {
+      "id": "4pT9e68P_mU",
+      "width": 1600,
+      "height": 2134,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "South Indian meals on a banana leaf",
+      "focus": "50% 45%",
+      "author": "Zoshua Colah",
+      "authorUrl": "https://unsplash.com/@zoshuacolah",
+      "page": "https://unsplash.com/photos/delicious-indian-meal-served-on-a-platter-4pT9e68P_mU",
+      "raw": "https://images.unsplash.com/photo-1742281258189-3b933879867a"
+    },
+    "fish-meal": {
+      "id": "YGrXmau5HzU",
+      "width": 1600,
+      "height": 2133,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Fish fry meal with red rice and curry",
+      "focus": "50% 50%",
+      "author": "Snehal Patange",
+      "authorUrl": "https://unsplash.com/@snehal_pandkar_patange",
+      "page": "https://unsplash.com/photos/a-delicious-meal-with-fried-fish-and-curry-YGrXmau5HzU",
+      "raw": "https://images.unsplash.com/photo-1756741987051-a6a38f28838b"
+    },
+    "biryani": {
+      "id": "ysmeQt1dzcw",
+      "width": 1600,
+      "height": 1045,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Chicken dum biryani",
+      "focus": "50% 50%",
+      "author": "Mario Raj",
+      "authorUrl": "https://unsplash.com/@chefmariii",
+      "page": "https://unsplash.com/photos/a-white-bowl-filled-with-rice-and-meat-ysmeQt1dzcw",
+      "raw": "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a"
+    },
+    "interior": {
+      "id": "VgdfCJIc4U8",
+      "width": 1600,
+      "height": 1200,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Cafe seating by tall windows",
+      "focus": "50% 55%",
+      "author": "Praveen Gupta",
+      "authorUrl": "https://unsplash.com/@praveeeeeeeen",
+      "page": "https://unsplash.com/photos/two-round-brown-wooden-tables-and-gray-chairs-set-VgdfCJIc4U8",
+      "raw": "https://images.unsplash.com/photo-1579018183467-a60b8dc9dd78"
+    },
+    "garden": {
+      "id": "B_4SL5mN1OA",
+      "width": 1600,
+      "height": 1200,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Open-air garden seating with wooden tables",
+      "focus": "50% 55%",
+      "author": "Ravi Sharma",
+      "authorUrl": "https://unsplash.com/@ravinepz",
+      "page": "https://unsplash.com/photos/a-restaurant-with-wooden-tables-and-chairs-and-green-cushions-B_4SL5mN1OA",
+      "raw": "https://images.unsplash.com/photo-1640114162784-20c35f7aec3f"
+    },
+    "coffee": {
+      "id": "HLvrf_CN4fc",
+      "width": 1600,
+      "height": 2400,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Freshly made coffee with latte art",
+      "focus": "50% 45%",
+      "author": "Akshansh Kumar",
+      "authorUrl": "https://unsplash.com/@akshanshkumar",
+      "page": "https://unsplash.com/photos/a-person-is-holding-a-cup-of-coffee-HLvrf_CN4fc",
+      "raw": "https://images.unsplash.com/photo-1733247682420-83e246f85a0a"
+    }
+  },
+  "bakery_sweets": {
+    "hero": {
+      "id": "3zgia9k593w",
+      "width": 1600,
+      "height": 2133,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Colourful Indian sweets arranged in the shop display",
+      "focus": "50% 45%",
+      "author": "Sadia Alam",
+      "authorUrl": "https://unsplash.com/@sadiaalam",
+      "page": "https://unsplash.com/photos/assortment-of-colorful-indian-sweets-displayed-in-a-shop-3zgia9k593w",
+      "raw": "https://images.unsplash.com/photo-1758910536889-43ce7b3199fd"
+    },
+    "assorted": {
+      "id": "wMPs7gJCNdc",
+      "width": 1600,
+      "height": 900,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Display case of assorted sweets and savouries",
+      "focus": "50% 50%",
+      "author": "Bonala Yellender",
+      "authorUrl": "https://unsplash.com/@yellender",
+      "page": "https://unsplash.com/photos/a-display-case-filled-with-various-delicious-pastries-and-sweets-wMPs7gJCNdc",
+      "raw": "https://images.unsplash.com/photo-1782033032439-a2c656ca2f59"
+    },
+    "jalebi": {
+      "id": "KKnpil90IBw",
+      "width": 1600,
+      "height": 1073,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Fresh jilebi stacked on the counter",
+      "focus": "50% 45%",
+      "author": "Zoshua Colah",
+      "authorUrl": "https://unsplash.com/@zoshuacolah",
+      "page": "https://unsplash.com/photos/stack-of-golden-fried-sweet-rings-at-a-market-stall-KKnpil90IBw",
+      "raw": "https://images.unsplash.com/photo-1760263217152-009971f0bccc"
+    },
+    "counter": {
+      "id": "Wp-slwuk1CY",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Trays of fresh sweets on the counter",
+      "focus": "50% 50%",
+      "author": "Reubx",
+      "authorUrl": "https://unsplash.com/@reubx",
+      "page": "https://unsplash.com/photos/a-buffet-table-filled-with-different-types-of-food-Wp-slwuk1CY",
+      "raw": "https://images.unsplash.com/photo-1649140041688-0f75446e707e"
+    },
+    "cake-choc": {
+      "id": "LRIQuZyxKRM",
+      "width": 1600,
+      "height": 1280,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Chocolate birthday cake with piped roses",
+      "focus": "50% 50%",
+      "author": "Stephen Wheeler",
+      "authorUrl": "https://unsplash.com/@stephen2002",
+      "page": "https://unsplash.com/photos/chocolate-birthday-cake-with-icing-roses-LRIQuZyxKRM",
+      "raw": "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a"
+    },
+    "cake-pink": {
+      "id": "ntfGWVbBiO0",
+      "width": 1600,
+      "height": 2768,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Pink drip cake with sprinkles on a stand",
+      "focus": "50% 45%",
+      "author": "Deva Williamson",
+      "authorUrl": "https://unsplash.com/@biglaughkitchen",
+      "page": "https://unsplash.com/photos/fondant-cake-with-stand-ntfGWVbBiO0",
+      "raw": "https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec"
+    },
+    "cake-forest": {
+      "id": "6jHpcBPw7i8",
+      "width": 1600,
+      "height": 1847,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Black forest cake with cherries",
+      "focus": "50% 50%",
+      "author": "Jacob Thomas",
+      "authorUrl": "https://unsplash.com/@jacob225",
+      "page": "https://unsplash.com/photos/chocolate-cake-with-cherries-and-cream-6jHpcBPw7i8",
+      "raw": "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62"
+    },
+    "cake-truffle": {
+      "id": "hcEDfkiVmMI",
+      "width": 1600,
+      "height": 2408,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Chocolate truffle cake with ganache drips",
+      "focus": "50% 50%",
+      "author": "kaouther djouada",
+      "authorUrl": "https://unsplash.com/@__kaouther_",
+      "page": "https://unsplash.com/photos/chocolate-mousse-cake-with-sugar-pearls-hcEDfkiVmMI",
+      "raw": "https://images.unsplash.com/photo-1602351447937-745cb720612f"
+    },
+    "candles": {
+      "id": "d8s13D29QiE",
+      "width": 1600,
+      "height": 2416,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Birthday cake with lit candles",
+      "focus": "50% 40%",
+      "author": "Aneta Pawlik",
+      "authorUrl": "https://unsplash.com/@anetakpawlik",
+      "page": "https://unsplash.com/photos/birthday-cake-with-lit-candles-d8s13D29QiE",
+      "raw": "https://images.unsplash.com/photo-1545696563-af8f6ec2295a"
+    },
+    "cupcakes": {
+      "id": "-gDHgEcec6Q",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Pink frosted cupcakes",
+      "focus": "50% 50%",
+      "author": "Robert Anderson",
+      "authorUrl": "https://unsplash.com/@fochrist1",
+      "page": "https://unsplash.com/photos/pink-cupcakes-on-tray--gDHgEcec6Q",
+      "raw": "https://images.unsplash.com/photo-1578922864601-79dcc7cbcea9"
+    },
+    "breads": {
+      "id": "N4gtuEZ5gWc",
+      "width": 1600,
+      "height": 900,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Freshly baked breads in a basket",
+      "focus": "50% 50%",
+      "author": "mohamed hassouna",
+      "authorUrl": "https://unsplash.com/@mhassouna931",
+      "page": "https://unsplash.com/photos/brown-bread-on-brown-wicker-basket-N4gtuEZ5gWc",
+      "raw": "https://images.unsplash.com/photo-1608198093002-ad4e005484ec"
+    },
+    "puffs": {
+      "id": "qZ5lPCPvdXE",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Tray of fresh puffs and pastries",
+      "focus": "50% 50%",
+      "author": "Mink Mingle",
+      "authorUrl": "https://unsplash.com/@minkmingle",
+      "page": "https://unsplash.com/photos/close-up-photography-of-baked-treats-on-tray-qZ5lPCPvdXE",
+      "raw": "https://images.unsplash.com/photo-1483695028939-5bb13f8648b0"
+    },
+    "shelves": {
+      "id": "gKWvWZVRwZQ",
+      "width": 1600,
+      "height": 2133,
+      "widths": [
+        480,
+        640,
+        800,
+        1200
+      ],
+      "alt": "Bakery counter full of pastries",
+      "focus": "50% 55%",
+      "author": "Sitraka",
+      "authorUrl": "https://unsplash.com/@srakotoarivelo7",
+      "page": "https://unsplash.com/photos/a-bakery-filled-with-lots-of-different-types-of-pastries-gKWvWZVRwZQ",
+      "raw": "https://images.unsplash.com/photo-1705972018470-a89eda1c6ce4"
+    },
+    "baker": {
+      "id": "RndRFJ1v1kk",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Baker at the counter in front of bread shelves",
+      "focus": "50% 50%",
+      "author": "Andy Li",
+      "authorUrl": "https://unsplash.com/@andylid0",
+      "page": "https://unsplash.com/photos/man-in-white-dress-shirt-standing-in-front-of-brown-wooden-shelf-RndRFJ1v1kk",
+      "raw": "https://images.unsplash.com/photo-1587241321921-91a834d6d191"
+    }
+  },
+  "home_services": {
+    "hero": {
+      "id": "c314Gh8dXAo",
+      "width": 1600,
+      "height": 1200,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Plumber fixing the pipes under a kitchen sink",
+      "focus": "40% 50%",
+      "author": "Timur Shakerzianov",
+      "authorUrl": "https://unsplash.com/@shaker_jpg",
+      "page": "https://unsplash.com/photos/a-man-working-on-a-pipe-in-a-wall-c314Gh8dXAo",
+      "raw": "https://images.unsplash.com/photo-1676210134188-4c05dd172f89"
+    },
+    "bathroom": {
+      "id": "jaP5ClBdIyU",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Plumber repairing a bathroom fixture",
+      "focus": "55% 50%",
+      "author": "bhagya laxmi",
+      "authorUrl": "https://unsplash.com/@bhagya_laxmi",
+      "page": "https://unsplash.com/photos/a-plumber-repairs-plumbing-in-a-bathroom-jaP5ClBdIyU",
+      "raw": "https://images.unsplash.com/photo-1749532125405-70950966b0e5"
+    },
+    "electrical": {
+      "id": "GXLPLG3_Vf4",
+      "width": 1600,
+      "height": 900,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Electrician working on a breaker panel",
+      "focus": "45% 40%",
+      "author": "Raze Solar",
+      "authorUrl": "https://unsplash.com/@razesolar",
+      "page": "https://unsplash.com/photos/electrician-working-on-electrical-panel-GXLPLG3_Vf4",
+      "raw": "https://images.unsplash.com/photo-1660330589693-99889d60181e"
+    },
+    "drill": {
+      "id": "UovTD1dG-lA",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Technician drilling an exterior wall",
+      "focus": "60% 40%",
+      "author": "Jimmy Nilsson Masth",
+      "authorUrl": "https://unsplash.com/@jimmynilssonmasth",
+      "page": "https://unsplash.com/photos/a-man-with-a-driller-and-a-hat-on-UovTD1dG-lA",
+      "raw": "https://images.unsplash.com/photo-1646640381839-02748ae8ddf0"
+    },
+    "cleaning": {
+      "id": "VRpjDw3WqqI",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Cleaner washing a window",
+      "focus": "50% 40%",
+      "author": "CDC",
+      "authorUrl": "https://unsplash.com/@cdc",
+      "page": "https://unsplash.com/photos/woman-in-white-long-sleeve-shirt-and-blue-denim-jeans-standing-beside-white-wooden-framed-glass-VRpjDw3WqqI",
+      "raw": "https://images.unsplash.com/photo-1581578731548-c64695cc6952"
+    },
+    "cleaner": {
+      "id": "FhsFUo-Wfc0",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "House cleaner carrying supplies upstairs",
+      "focus": "40% 40%",
+      "author": "Josue Michel",
+      "authorUrl": "https://unsplash.com/@josuemichelphotography",
+      "page": "https://unsplash.com/photos/woman-cleaning-stairs-in-home-FhsFUo-Wfc0",
+      "raw": "https://images.unsplash.com/photo-1646980241033-cd7abda2ee88"
+    },
+    "kitchen": {
+      "id": "_AK42TQRyCw",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Spotless kitchen after a deep clean",
+      "focus": "50% 55%",
+      "author": "Lotus Design N Print",
+      "authorUrl": "https://unsplash.com/@lotusdnp",
+      "page": "https://unsplash.com/photos/dining-set-photography-_AK42TQRyCw",
+      "raw": "https://images.unsplash.com/photo-1541123437800-1bb1317badc2"
+    },
+    "tools": {
+      "id": "lDwKKjlHL2Y",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Organised tool wall in the service van",
+      "focus": "50% 50%",
+      "author": "Anton Savinov",
+      "authorUrl": "https://unsplash.com/@tonchik",
+      "page": "https://unsplash.com/photos/a-bunch-of-tools-hanging-up-on-a-wall-lDwKKjlHL2Y",
+      "raw": "https://images.unsplash.com/photo-1731694411560-050e5b91e943"
+    },
+    "handyman": {
+      "id": "EJU7A__krX0",
+      "width": 1600,
+      "height": 1067,
+      "widths": [
+        480,
+        640,
+        800,
+        1200,
+        1600
+      ],
+      "alt": "Drill, brushes and wood on the workbench",
+      "focus": "50% 50%",
+      "author": "benjamin lehman",
+      "authorUrl": "https://unsplash.com/@abject",
+      "page": "https://unsplash.com/photos/a-couple-of-tools-that-are-sitting-on-a-table-EJU7A__krX0",
+      "raw": "https://images.unsplash.com/photo-1645651964715-d200ce0939cc"
+    }
   }
 }

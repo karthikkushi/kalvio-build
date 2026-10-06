@@ -1,11 +1,13 @@
 import { Tag } from 'lucide-react'
 import { ActionLink } from '../components/DemoActions'
-import { WhatsAppIcon } from '../components/Icon'
+import { MessageIcon } from '../components/MessageIcon'
 import { useDemo } from '../lib/demo'
+import { useMessaging } from '../lib/messaging'
 
 /** Seasonal offer (Dasara, Diwali, wedding season...). Renders nothing outside a season. */
 export function OfferBanner({ id }: { id: string }) {
   const { offer, name } = useDemo()
+  const m = useMessaging()
   if (!offer) return null
   return (
     <section id={id} aria-labelledby={`${id}-title`} className="bg-bg py-4 sm:py-6">
@@ -21,7 +23,7 @@ export function OfferBanner({ id }: { id: string }) {
             <p className="mt-1 text-[17px] leading-snug">{offer.text}</p>
           </div>
           <ActionLink kind="whatsapp" text={`Hi ${name}, I'd like the ${offer.title} offer.`} className="btn shrink-0 bg-on-highlight text-highlight">
-            <WhatsAppIcon size={18} /> Claim on WhatsApp
+            <MessageIcon size={18} /> {m.sms ? 'Claim by text' : 'Claim on WhatsApp'}
           </ActionLink>
         </div>
       </div>

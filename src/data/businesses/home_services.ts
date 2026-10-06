@@ -1,0 +1,167 @@
+import type { BusinessPreset } from '../types'
+
+export const home_services: BusinessPreset = {
+  key: 'home_services',
+  label: 'Plumbing & home services',
+  schemaType: 'HomeAndConstructionBusiness',
+  region: 'US',
+  defaultTheme: 'fresh-local',
+  demo: {
+    name: 'Lone Star Plumbing & Electric',
+    area: 'South Austin',
+    city: 'Austin, TX',
+    phone: '(512) 555-0142',
+    street: '4512 S Congress Ave',
+    since: 2008,
+  },
+  hero: {
+    image: 'hero',
+    headline: {
+      en: 'Fast, honest plumbing and electrical repairs in {area}. Upfront prices, no surprises.',
+    },
+    subline: {
+      en: 'Licensed technicians at your door in 60–90 minutes, with a flat price agreed before any work starts.',
+    },
+    chips: ['Same-day service', 'Upfront flat pricing', '1-year labor warranty'],
+  },
+  primaryCta: { en: 'Get an instant quote' },
+  rating: { value: 4.9, count: 847 },
+  badges: [
+    { label: 'Licensed & insured', icon: 'shield' },
+    { label: 'Background-checked techs', icon: 'check' },
+    { label: '1-year labor warranty', icon: 'award' },
+    { label: '24/7 emergency', icon: 'clock' },
+  ],
+  timings: [
+    { days: 'Mon – Sat', hours: '7:00 AM – 7:00 PM' },
+    { days: 'Emergencies', hours: '24/7, including holidays' },
+  ],
+  timingsNote: 'Burst pipe or no power? Call any time. A real person answers.',
+  reviews: [
+    {
+      name: 'Jennifer M.',
+      when: '1 week ago',
+      stars: 5,
+      text: 'Water heater died on a Sunday morning. They were here in an hour, quoted a flat price up front and had hot water back by lunch.',
+    },
+    {
+      name: 'David R.',
+      when: '3 weeks ago',
+      stars: 5,
+      text: 'Had them rewire our kitchen and add outlets. Clean, on time, and the final bill matched the quote to the dollar.',
+    },
+    {
+      name: 'Maria G.',
+      when: '2 months ago',
+      stars: 5,
+      text: 'Honest company. Another plumber said I needed a new main line; these guys cleared it for a fraction of the price and showed me the camera footage.',
+    },
+  ],
+  faq: [
+    { q: 'Do you charge for estimates?', a: 'No. Quotes are free, and the price we agree on is the price you pay. No hourly surprises.' },
+    { q: 'Are you licensed and insured?', a: 'Yes. Licensed by the Texas State Board of Plumbing Examiners and TDLR, and fully insured.' },
+    { q: 'How fast can you get here?', a: 'Usually within 60–90 minutes inside our service area, and the same day for most jobs.' },
+    { q: 'Do you offer financing?', a: 'Yes, 0% financing for 12 months on water heaters, panels and repipes, with approved credit.' },
+    { q: 'Is your work guaranteed?', a: 'Every job comes with a 1-year labor warranty, plus the manufacturer’s warranty on parts.' },
+  ],
+  offers: [
+    { season: 'fall', title: 'Fall tune-up special', text: 'Water heater flush and safety check, $89 (reg. $149). Book before November 30.' },
+    { season: 'winter', title: 'Freeze protection', text: 'Pipe insulation and outdoor faucet covers installed from $129. Don’t wait for the next freeze.' },
+    { season: 'spring', title: 'Spring checkup', text: 'Whole-home plumbing inspection with camera, $99.' },
+  ],
+  sections: [
+    {
+      kind: 'services',
+      id: 'services',
+      nav: 'Services',
+      title: 'Services and pricing',
+      intro: 'Starting prices. You get a firm, flat quote before we start, and that’s what you pay.',
+      layout: 'list',
+      groups: [
+        {
+          title: 'Plumbing',
+          items: [
+            { name: 'Drain cleaning', price: 129 },
+            { name: 'Leak repair', price: 149 },
+            { name: 'Water heater install', desc: '40-gal gas or electric', price: 1450, tag: 'Popular' },
+            { name: 'Toilet repair or replace', price: 165 },
+          ],
+        },
+        {
+          title: 'Electrical',
+          items: [
+            { name: 'Outlet or switch install', price: 129 },
+            { name: 'Ceiling fan install', price: 189 },
+            { name: 'Panel upgrade (200A)', price: 2400 },
+            { name: 'EV charger install', price: 799 },
+          ],
+        },
+        {
+          title: 'Home care',
+          items: [
+            { name: 'Handyman (first hour)', price: 95, prefix: '' },
+            { name: 'Deep house cleaning', desc: 'Up to 2,000 sq ft', price: 249 },
+            { name: 'Move-out cleaning', price: 299 },
+          ],
+        },
+      ],
+      footnote: 'Free estimates. $0 trip charge with any repair.',
+    },
+    {
+      kind: 'callout',
+      id: 'emergency',
+      title: 'Emergency? We answer 24/7.',
+      text: 'Burst pipe, sewer backup, sparking outlet or no power: call now and a licensed tech is on the way.',
+      action: 'call',
+      label: 'Call now',
+      icon: 'phone',
+    },
+    { kind: 'offer', id: 'offer' },
+    {
+      kind: 'features',
+      id: 'areas',
+      nav: 'Service areas',
+      title: 'Service areas',
+      intro: 'Same-day service across South and Central Austin.',
+      items: [
+        { title: 'South Austin & Manchaca', desc: '78745, 78748, 78749', icon: 'map' },
+        { title: 'Travis Heights & Zilker', desc: '78704', icon: 'map' },
+        { title: 'Circle C & Oak Hill', desc: '78739, 78735', icon: 'map' },
+        { title: 'Buda & Kyle', desc: '78610, 78640', icon: 'map' },
+        { title: 'Downtown & East Austin', desc: '78701, 78702', icon: 'map' },
+        { title: 'Sunset Valley', desc: '78745', icon: 'map' },
+      ],
+    },
+    {
+      kind: 'gallery',
+      id: 'work',
+      title: 'Recent jobs',
+      style: 'grid',
+      items: [
+        { image: 'bathroom', caption: 'Bathroom fixture replacement' },
+        { image: 'electrical', caption: 'Panel upgrade to 200A' },
+        { image: 'kitchen', caption: 'Move-out deep clean' },
+      ],
+    },
+    { kind: 'reviews', id: 'reviews', nav: 'Reviews', title: 'What homeowners say' },
+    {
+      kind: 'booking',
+      id: 'book',
+      nav: 'Quote',
+      title: 'Get an instant quote',
+      intro: 'Tell us what’s wrong. We’ll text you a flat-price quote, usually within 15 minutes.',
+      fields: [
+        { name: 'name', label: 'Your name', type: 'text', required: true },
+        { name: 'phone', label: 'Phone number', type: 'tel', required: true },
+        { name: 'zip', label: 'ZIP code', type: 'text', required: true },
+        { name: 'service', label: 'Service needed', type: 'select', options: ['Plumbing repair', 'Water heater', 'Drain cleaning', 'Electrical', 'Handyman', 'House cleaning'] },
+        { name: 'urgency', label: 'When?', type: 'select', options: ['Emergency – now', 'Today', 'This week', 'Just getting a price'] },
+        { name: 'details', label: 'Describe the problem', type: 'textarea' },
+      ],
+      submit: { en: 'Get my quote' },
+    },
+    { kind: 'timings', id: 'visit', nav: 'Contact', title: 'Hours and office' },
+    { kind: 'faq', id: 'faq', nav: 'FAQ', title: 'Common questions' },
+  ],
+  description: '{name}, {area}, {city}. Licensed and insured plumbing, electrical and home services with upfront flat pricing and same-day service.',
+}

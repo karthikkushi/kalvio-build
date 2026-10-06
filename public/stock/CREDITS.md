@@ -169,3 +169,57 @@ Regenerate with `node scripts/stock/fetch.mjs` after editing `scripts/stock/mani
 - `haldi-2`: [photo](https://unsplash.com/photos/a-woman-is-covered-in-yellow-powder-and-water-CwQH94nSarc) by [Arun Prakash](https://unsplash.com/@its_arunprakash)
 - `haldi-3`: [photo](https://unsplash.com/photos/a-woman-in-a-yellow-sari-holding-a-garland-YVECUW7Juxs) by [Arun Prakash](https://unsplash.com/@its_arunprakash)
 - `decor`: [photo](https://unsplash.com/photos/selective-focus-photography-white-and-pink-isle-flower-arrangement-fJzmPe-a0eU) by [Shardayyy Photography](https://unsplash.com/@shardayyy)
+
+## tuition
+
+- `hero`: [photo](https://unsplash.com/photos/two-young-girls-sitting-at-a-desk-in-a-classroom-TcKmus54ij0) by [Swastik Arora](https://unsplash.com/@swastikarora)
+- `class`: [photo](https://unsplash.com/photos/a-group-of-young-children-sitting-in-a-classroom-nFx5TuNxz64) by [Swastik Arora](https://unsplash.com/@swastikarora)
+- `boys`: [photo](https://unsplash.com/photos/two-young-boys-sitting-at-a-table-with-books-YcW3A8QHcQQ) by [Swastik Arora](https://unsplash.com/@swastikarora)
+- `focus`: [photo](https://unsplash.com/photos/two-young-boys-sitting-at-a-desk-with-a-book-xMYq46yAetM) by [Swastik Arora](https://unsplash.com/@swastikarora)
+- `teacher`: [photo](https://unsplash.com/photos/woman-holding-microphone-w1s5H_3Zn48) by [Wonderlane](https://unsplash.com/@wonderlane)
+- `mentor`: [photo](https://unsplash.com/photos/women-in-uniform-greet-with-hands-pressed-together-rmiMkhvshoo) by [Skytech Aviation](https://unsplash.com/@skytechaviation0)
+- `preschool`: [photo](https://unsplash.com/photos/a-group-of-children-sitting-at-desks-in-a-classroom-hXLkFpvKRys) by [Mario Heller](https://unsplash.com/@heller_mario)
+
+## restaurant_cafe
+
+- `hero`: [photo](https://unsplash.com/photos/dosa-with-masala-and-chutney-breakfast-5oF7d_hPJG4) by [Deepal Tamang](https://unsplash.com/@deepal_tamang)
+- `dosa-leaf`: [photo](https://unsplash.com/photos/dosa-with-chutney-and-sambar-breakfast-VIqcVqZ1uxM) by [Zoshua Colah](https://unsplash.com/@zoshuacolah)
+- `idli-vada`: [photo](https://unsplash.com/photos/south-indian-breakfast-with-dosa-idli-CkJBLkGW-zw) by [Susmitha Veganosaurus](https://unsplash.com/@veganosaurus)
+- `chicken-fry`: [photo](https://unsplash.com/photos/a-plate-of-food-OycP9de4m6Y) by [Paul](https://unsplash.com/@paul19977)
+- `sambar`: [photo](https://unsplash.com/photos/a-person-holding-a-spoon-over-a-pot-of-soup--Q5sWHJzHWc) by [fuseviews](https://unsplash.com/@fusewiews)
+- `kitchen`: [photo](https://unsplash.com/photos/a-couple-of-people-stand-near-each-other-bl4YpBZKZqM) by [Anirudh](https://unsplash.com/@lanirudhreddy)
+- `meals`: [photo](https://unsplash.com/photos/delicious-indian-meal-served-on-a-platter-4pT9e68P_mU) by [Zoshua Colah](https://unsplash.com/@zoshuacolah)
+- `fish-meal`: [photo](https://unsplash.com/photos/a-delicious-meal-with-fried-fish-and-curry-YGrXmau5HzU) by [Snehal Patange](https://unsplash.com/@snehal_pandkar_patange)
+- `biryani`: [photo](https://unsplash.com/photos/a-white-bowl-filled-with-rice-and-meat-ysmeQt1dzcw) by [Mario Raj](https://unsplash.com/@chefmariii)
+- `interior`: [photo](https://unsplash.com/photos/two-round-brown-wooden-tables-and-gray-chairs-set-VgdfCJIc4U8) by [Praveen Gupta](https://unsplash.com/@praveeeeeeeen)
+- `garden`: [photo](https://unsplash.com/photos/a-restaurant-with-wooden-tables-and-chairs-and-green-cushions-B_4SL5mN1OA) by [Ravi Sharma](https://unsplash.com/@ravinepz)
+- `coffee`: [photo](https://unsplash.com/photos/a-person-is-holding-a-cup-of-coffee-HLvrf_CN4fc) by [Akshansh Kumar](https://unsplash.com/@akshanshkumar)
+
+## bakery_sweets
+
+- `hero`: [photo](https://unsplash.com/photos/assortment-of-colorful-indian-sweets-displayed-in-a-shop-3zgia9k593w) by [Sadia Alam](https://unsplash.com/@sadiaalam)
+- `assorted`: [photo](https://unsplash.com/photos/a-display-case-filled-with-various-delicious-pastries-and-sweets-wMPs7gJCNdc) by [Bonala Yellender](https://unsplash.com/@yellender)
+- `jalebi`: [photo](https://unsplash.com/photos/stack-of-golden-fried-sweet-rings-at-a-market-stall-KKnpil90IBw) by [Zoshua Colah](https://unsplash.com/@zoshuacolah)
+- `counter`: [photo](https://unsplash.com/photos/a-buffet-table-filled-with-different-types-of-food-Wp-slwuk1CY) by [Reubx](https://unsplash.com/@reubx)
+- `cake-choc`: [photo](https://unsplash.com/photos/chocolate-birthday-cake-with-icing-roses-LRIQuZyxKRM) by [Stephen Wheeler](https://unsplash.com/@stephen2002)
+- `cake-pink`: [photo](https://unsplash.com/photos/fondant-cake-with-stand-ntfGWVbBiO0) by [Deva Williamson](https://unsplash.com/@biglaughkitchen)
+- `cake-forest`: [photo](https://unsplash.com/photos/chocolate-cake-with-cherries-and-cream-6jHpcBPw7i8) by [Jacob Thomas](https://unsplash.com/@jacob225)
+- `cake-truffle`: [photo](https://unsplash.com/photos/chocolate-mousse-cake-with-sugar-pearls-hcEDfkiVmMI) by [kaouther djouada](https://unsplash.com/@__kaouther_)
+- `candles`: [photo](https://unsplash.com/photos/birthday-cake-with-lit-candles-d8s13D29QiE) by [Aneta Pawlik](https://unsplash.com/@anetakpawlik)
+- `cupcakes`: [photo](https://unsplash.com/photos/pink-cupcakes-on-tray--gDHgEcec6Q) by [Robert Anderson](https://unsplash.com/@fochrist1)
+- `breads`: [photo](https://unsplash.com/photos/brown-bread-on-brown-wicker-basket-N4gtuEZ5gWc) by [mohamed hassouna](https://unsplash.com/@mhassouna931)
+- `puffs`: [photo](https://unsplash.com/photos/close-up-photography-of-baked-treats-on-tray-qZ5lPCPvdXE) by [Mink Mingle](https://unsplash.com/@minkmingle)
+- `shelves`: [photo](https://unsplash.com/photos/a-bakery-filled-with-lots-of-different-types-of-pastries-gKWvWZVRwZQ) by [Sitraka](https://unsplash.com/@srakotoarivelo7)
+- `baker`: [photo](https://unsplash.com/photos/man-in-white-dress-shirt-standing-in-front-of-brown-wooden-shelf-RndRFJ1v1kk) by [Andy Li](https://unsplash.com/@andylid0)
+
+## home_services
+
+- `hero`: [photo](https://unsplash.com/photos/a-man-working-on-a-pipe-in-a-wall-c314Gh8dXAo) by [Timur Shakerzianov](https://unsplash.com/@shaker_jpg)
+- `bathroom`: [photo](https://unsplash.com/photos/a-plumber-repairs-plumbing-in-a-bathroom-jaP5ClBdIyU) by [bhagya laxmi](https://unsplash.com/@bhagya_laxmi)
+- `electrical`: [photo](https://unsplash.com/photos/electrician-working-on-electrical-panel-GXLPLG3_Vf4) by [Raze Solar](https://unsplash.com/@razesolar)
+- `drill`: [photo](https://unsplash.com/photos/a-man-with-a-driller-and-a-hat-on-UovTD1dG-lA) by [Jimmy Nilsson Masth](https://unsplash.com/@jimmynilssonmasth)
+- `cleaning`: [photo](https://unsplash.com/photos/woman-in-white-long-sleeve-shirt-and-blue-denim-jeans-standing-beside-white-wooden-framed-glass-VRpjDw3WqqI) by [CDC](https://unsplash.com/@cdc)
+- `cleaner`: [photo](https://unsplash.com/photos/woman-cleaning-stairs-in-home-FhsFUo-Wfc0) by [Josue Michel](https://unsplash.com/@josuemichelphotography)
+- `kitchen`: [photo](https://unsplash.com/photos/dining-set-photography-_AK42TQRyCw) by [Lotus Design N Print](https://unsplash.com/@lotusdnp)
+- `tools`: [photo](https://unsplash.com/photos/a-bunch-of-tools-hanging-up-on-a-wall-lDwKKjlHL2Y) by [Anton Savinov](https://unsplash.com/@tonchik)
+- `handyman`: [photo](https://unsplash.com/photos/a-couple-of-tools-that-are-sitting-on-a-table-EJU7A__krX0) by [benjamin lehman](https://unsplash.com/@abject)

@@ -1,9 +1,10 @@
 import { ActionLink } from '../components/DemoActions'
-import { WhatsAppIcon } from '../components/Icon'
+import { MessageIcon } from '../components/MessageIcon'
 import { Img } from '../components/Img'
 import { Section, type Tone } from '../components/Section'
 import type { SectionConfig, ServiceItem } from '../data/types'
 import { useDemo } from '../lib/demo'
+import { useMessaging } from '../lib/messaging'
 import { stockImage } from '../lib/stock'
 
 type Props = Extract<SectionConfig, { kind: 'services' }> & { tone: Tone }
@@ -36,6 +37,7 @@ function Price({ item }: { item: ServiceItem }) {
 /** Product cards with a photo and an "Order" button that opens WhatsApp with the item filled in. */
 function Cards({ items, sub }: { items: ServiceItem[]; sub: boolean }) {
   const { preset, name } = useDemo()
+  const m = useMessaging()
   const H = sub ? 'h4' : 'h3'
   return (
     <ul className={`grid grid-cols-2 gap-3 sm:gap-5 ${items.length % 4 === 0 ? 'lg:grid-cols-4' : 'lg:grid-cols-3'}`}>
@@ -64,7 +66,11 @@ function Cards({ items, sub }: { items: ServiceItem[]; sub: boolean }) {
               text={`Hi ${name}, I'd like to order: ${it.name}`}
               className="btn btn-ghost mt-3 min-h-11 px-3 text-[15px]"
             >
-              <WhatsAppIcon size={17} className="text-wa" /> Order<span className="sr-only"> {it.name} on WhatsApp</span>
+              <MessageIcon size={17} className="text-wa" /> Order
+              <span className="sr-only">
+                {' '}
+                {it.name} {m.on}
+              </span>
             </ActionLink>
           </div>
         </li>
@@ -73,7 +79,29 @@ function Cards({ items, sub }: { items: ServiceItem[]; sub: boolean }) {
   )
 }
 
-export function Services({ id, title, intro, groups, footnote, tone, layout }: Props) {
+/** Swiggy / Zomato search links for the shop, plus WhatsApp for takeaway. */
+function DeliveryRow() {
+  const { name, city } = useDemo()
+  const q = encodeURIComponent(name)
+  return (
+    <div className="mt-8 flex flex-col gap-3 rounded-card bg-surface p-5 shadow-card sm:flex-row sm:items-center sm:justify-between" data-reveal>
+      <p className="font-semibold text-ink">Order for delivery or takeaway</p>
+      <div className="grid grid-cols-2 gap-3 sm:flex">
+        <a className="btn btn-ghost px-4" href={`https://www.swiggy.com/search?query=${q}`} target="_blank" rel="noopener">
+          Swiggy<span className="sr-only">: find {name} in {city}</span>
+        </a>
+        <a className="btn btn-ghost px-4" href={`https://www.zomato.com/search?q=${q}`} target="_blank" rel="noopener">
+          Zomato<span className="sr-only">: find {name} in {city}</span>
+        </a>
+        <ActionLink kind="whatsapp" text={`Hi ${name}, I'd like to order for takeaway:`} className="btn btn-wa col-span-2 px-4">
+          <MessageIcon size={18} /> Takeaway on WhatsApp
+        </ActionLink>
+      </div>
+    </div>
+  )
+}
+
+export function Services({ id, title, intro, groups, footnote, tone, layout, delivery }: Props) {
   if (layout === 'cards') {
     return (
       <Section id={id} tone={tone} title={title} intro={intro}>
@@ -121,6 +149,7 @@ export function Services({ id, title, intro, groups, footnote, tone, layout }: P
           </div>
         ))}
       </div>
+      {delivery && <DeliveryRow />}
       {footnote && <p className="mt-6 text-sm text-muted">{footnote}</p>}
     </Section>
   )

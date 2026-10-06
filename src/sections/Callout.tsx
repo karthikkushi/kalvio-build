@@ -1,5 +1,6 @@
 import { ActionLink } from '../components/DemoActions'
-import { Icon, WhatsAppIcon } from '../components/Icon'
+import { Icon } from '../components/Icon'
+import { MessageIcon } from '../components/MessageIcon'
 import type { SectionConfig } from '../data/types'
 
 type Props = Extract<SectionConfig, { kind: 'callout' }>
@@ -20,7 +21,7 @@ export function Callout({ id, title, text, action, label, icon }: Props) {
             <p className="mt-1 text-[17px] leading-snug">{text}</p>
           </div>
           <ActionLink kind={action} className="btn shrink-0 bg-on-accent text-accent">
-            {action === 'whatsapp' ? <WhatsAppIcon size={18} /> : <Icon name="phone" size={18} />} {label}
+            {action === 'whatsapp' ? <MessageIcon size={18} /> : <Icon name="phone" size={18} />} {label}
           </ActionLink>
         </div>
       </div>

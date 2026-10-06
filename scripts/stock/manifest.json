@@ -659,5 +659,223 @@
       "alt": "Aisle lined with white and pink flower arrangements",
       "focus": "50% 55%"
     }
+  },
+  "tuition": {
+    "hero": {
+      "id": "TcKmus54ij0",
+      "alt": "Two schoolgirls writing in their notebooks in class",
+      "focus": "45% 45%"
+    },
+    "class": {
+      "id": "nFx5TuNxz64",
+      "alt": "Students in uniform listening in a classroom",
+      "focus": "50% 45%"
+    },
+    "boys": {
+      "id": "YcW3A8QHcQQ",
+      "alt": "Two boys working through problems together",
+      "focus": "50% 40%"
+    },
+    "focus": {
+      "id": "xMYq46yAetM",
+      "alt": "Student concentrating on a workbook",
+      "focus": "40% 45%"
+    },
+    "teacher": {
+      "id": "w1s5H_3Zn48",
+      "alt": "Teacher explaining a concept to a group of students",
+      "focus": "60% 30%"
+    },
+    "mentor": {
+      "id": "rmiMkhvshoo",
+      "alt": "Smiling teacher greeting with folded hands",
+      "focus": "50% 30%"
+    },
+    "preschool": {
+      "id": "hXLkFpvKRys",
+      "alt": "Young children at a bright, colourful preschool classroom",
+      "focus": "50% 50%"
+    }
+  },
+  "restaurant_cafe": {
+    "hero": {
+      "id": "5oF7d_hPJG4",
+      "alt": "Crispy masala dosa with sambar and three chutneys",
+      "focus": "40% 50%"
+    },
+    "dosa-leaf": {
+      "id": "VIqcVqZ1uxM",
+      "alt": "Ghee roast dosa on a banana leaf with chutney and sambar",
+      "focus": "50% 50%"
+    },
+    "idli-vada": {
+      "id": "CkJBLkGW-zw",
+      "alt": "Idli, vada and dosa with chutney",
+      "focus": "50% 55%"
+    },
+    "chicken-fry": {
+      "id": "OycP9de4m6Y",
+      "alt": "Chicken ghee roast with chutneys",
+      "focus": "50% 50%"
+    },
+    "sambar": {
+      "id": "-Q5sWHJzHWc",
+      "alt": "Fresh sambar being strained",
+      "focus": "50% 50%"
+    },
+    "kitchen": {
+      "id": "bl4YpBZKZqM",
+      "alt": "Dosa tawa and steel vessels in the kitchen",
+      "focus": "50% 45%"
+    },
+    "meals": {
+      "id": "4pT9e68P_mU",
+      "alt": "South Indian meals on a banana leaf",
+      "focus": "50% 45%"
+    },
+    "fish-meal": {
+      "id": "YGrXmau5HzU",
+      "alt": "Fish fry meal with red rice and curry",
+      "focus": "50% 50%"
+    },
+    "biryani": {
+      "id": "ysmeQt1dzcw",
+      "alt": "Chicken dum biryani",
+      "focus": "50% 50%"
+    },
+    "interior": {
+      "id": "VgdfCJIc4U8",
+      "alt": "Cafe seating by tall windows",
+      "focus": "50% 55%"
+    },
+    "garden": {
+      "id": "B_4SL5mN1OA",
+      "alt": "Open-air garden seating with wooden tables",
+      "focus": "50% 55%"
+    },
+    "coffee": {
+      "id": "HLvrf_CN4fc",
+      "alt": "Freshly made coffee with latte art",
+      "focus": "50% 45%"
+    }
+  },
+  "bakery_sweets": {
+    "hero": {
+      "id": "3zgia9k593w",
+      "alt": "Colourful Indian sweets arranged in the shop display",
+      "focus": "50% 45%"
+    },
+    "assorted": {
+      "id": "wMPs7gJCNdc",
+      "alt": "Display case of assorted sweets and savouries",
+      "focus": "50% 50%"
+    },
+    "jalebi": {
+      "id": "KKnpil90IBw",
+      "alt": "Fresh jilebi stacked on the counter",
+      "focus": "50% 45%"
+    },
+    "counter": {
+      "id": "Wp-slwuk1CY",
+      "alt": "Trays of fresh sweets on the counter",
+      "focus": "50% 50%"
+    },
+    "cake-choc": {
+      "id": "LRIQuZyxKRM",
+      "alt": "Chocolate birthday cake with piped roses",
+      "focus": "50% 50%"
+    },
+    "cake-pink": {
+      "id": "ntfGWVbBiO0",
+      "alt": "Pink drip cake with sprinkles on a stand",
+      "focus": "50% 45%"
+    },
+    "cake-forest": {
+      "id": "6jHpcBPw7i8",
+      "alt": "Black forest cake with cherries",
+      "focus": "50% 50%"
+    },
+    "cake-truffle": {
+      "id": "hcEDfkiVmMI",
+      "alt": "Chocolate truffle cake with ganache drips",
+      "focus": "50% 50%"
+    },
+    "candles": {
+      "id": "d8s13D29QiE",
+      "alt": "Birthday cake with lit candles",
+      "focus": "50% 40%"
+    },
+    "cupcakes": {
+      "id": "-gDHgEcec6Q",
+      "alt": "Pink frosted cupcakes",
+      "focus": "50% 50%"
+    },
+    "breads": {
+      "id": "N4gtuEZ5gWc",
+      "alt": "Freshly baked breads in a basket",
+      "focus": "50% 50%"
+    },
+    "puffs": {
+      "id": "qZ5lPCPvdXE",
+      "alt": "Tray of fresh puffs and pastries",
+      "focus": "50% 50%"
+    },
+    "shelves": {
+      "id": "gKWvWZVRwZQ",
+      "alt": "Bakery counter full of pastries",
+      "focus": "50% 55%"
+    },
+    "baker": {
+      "id": "RndRFJ1v1kk",
+      "alt": "Baker at the counter in front of bread shelves",
+      "focus": "50% 50%"
+    }
+  },
+  "home_services": {
+    "hero": {
+      "id": "c314Gh8dXAo",
+      "alt": "Plumber fixing the pipes under a kitchen sink",
+      "focus": "40% 50%"
+    },
+    "bathroom": {
+      "id": "jaP5ClBdIyU",
+      "alt": "Plumber repairing a bathroom fixture",
+      "focus": "55% 50%"
+    },
+    "electrical": {
+      "id": "GXLPLG3_Vf4",
+      "alt": "Electrician working on a breaker panel",
+      "focus": "45% 40%"
+    },
+    "drill": {
+      "id": "UovTD1dG-lA",
+      "alt": "Technician drilling an exterior wall",
+      "focus": "60% 40%"
+    },
+    "cleaning": {
+      "id": "VRpjDw3WqqI",
+      "alt": "Cleaner washing a window",
+      "focus": "50% 40%"
+    },
+    "cleaner": {
+      "id": "FhsFUo-Wfc0",
+      "alt": "House cleaner carrying supplies upstairs",
+      "focus": "40% 40%"
+    },
+    "kitchen": {
+      "id": "_AK42TQRyCw",
+      "alt": "Spotless kitchen after a deep clean",
+      "focus": "50% 55%"
+    },
+    "tools": {
+      "id": "lDwKKjlHL2Y",
+      "alt": "Organised tool wall in the service van",
+      "focus": "50% 50%"
+    },
+    "handyman": {
+      "id": "EJU7A__krX0",
+      "alt": "Drill, brushes and wood on the workbench",
+      "focus": "50% 50%"
+    }
   }
 }

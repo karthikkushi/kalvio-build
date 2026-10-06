@@ -3,10 +3,10 @@ import { cleanClinical } from './clean-clinical'
 import { freshLocal } from './fresh-local'
 import { luxeDark } from './luxe-dark'
 import { softFriendly } from './soft-friendly'
-import { THEME_KEYS, type Theme, type ThemeKey } from './types'
+import { THEME_KEYS, type BrandTheme, type Theme, type ThemeKey } from './types'
 import { warmBoutique } from './warm-boutique'
 
-export { THEME_KEYS, type Theme, type ThemeKey }
+export { THEME_KEYS, type BrandTheme, type Theme, type ThemeKey }
 
 export const THEMES: Record<ThemeKey, Theme> = {
   'clean-clinical': cleanClinical,
@@ -47,7 +47,7 @@ export function resolveThemeKey(raw: string | null | undefined): ThemeKey | null
 }
 
 /** CSS custom properties for a theme, scoped to `[data-theme="<key>"]`. Tailwind maps these to utilities. */
-export function themeToCss(t: Theme): string {
+export function themeToCss(t: Theme | BrandTheme): string {
   const c = t.colors
   const vars: Record<string, string> = {
     '--t-bg': c.bg,

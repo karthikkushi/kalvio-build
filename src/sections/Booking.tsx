@@ -2,9 +2,9 @@ import { Phone } from 'lucide-react'
 import { useId, type FormEvent } from 'react'
 import { ActionLink } from '../components/DemoActions'
 import { useActionHint } from '../lib/actions'
-import { WhatsAppIcon } from '../components/Icon'
+import { MessageIcon } from '../components/MessageIcon'
 import { Section, type Tone } from '../components/Section'
-import { waLink } from '../config/site'
+import { messageHref, useMessaging } from '../lib/messaging'
 import type { Field, SectionConfig } from '../data/types'
 import { t } from '../i18n/strings'
 import { useDemo } from '../lib/demo'
@@ -44,10 +44,11 @@ function Input({ f, id }: { f: Field; id: string }) {
   }
 }
 
-/** Booking goes to the shop's WhatsApp with the details filled in. No data is stored by the site. */
+/** Booking goes to the shop's WhatsApp (SMS in the US) with the details filled in. No data is stored by the site. */
 export function Booking({ id, title, intro, fields, submit, tone }: Props) {
   const d = useDemo()
   const hint = useActionHint()
+  const m = useMessaging()
   const uid = useId()
 
   function onSubmit(e: FormEvent<HTMLFormElement>) {
@@ -58,7 +59,9 @@ export function Booking({ id, title, intro, fields, submit, tone }: Props) {
       .map((f) => [f.label, String(data.get(f.name) ?? '').trim()] as const)
       .filter(([, v]) => v)
       .map(([k, v]) => `${k}: ${v}`)
-    window.open(waLink(d.phone.digits, `Hi ${d.name}, I'd like to book.\n${lines.join('\n')}`), '_blank', 'noopener')
+    const href = messageHref(m.sms, d.phone.digits, `Hi ${d.name}, ${m.sms ? "I'd like a quote." : "I'd like to book."}\n${lines.join('\n')}`)
+    if (m.sms) window.location.href = href
+    else window.open(href, '_blank', 'noopener')
   }
 
   return (
@@ -83,9 +86,11 @@ export function Booking({ id, title, intro, fields, submit, tone }: Props) {
             </div>
           ))}
           <button type="submit" className="btn btn-primary mt-2 sm:col-span-2">
-            <WhatsAppIcon size={19} /> {t(submit, d.lang)}
+            <MessageIcon size={19} /> {t(submit, d.lang)}
           </button>
-          <p className="text-sm text-muted sm:col-span-2">Opens WhatsApp with your details filled in. Nothing is stored on this website.</p>
+          <p className="text-sm text-muted sm:col-span-2">
+            Opens {m.sms ? 'a text message' : 'WhatsApp'} with your details filled in. Nothing is stored on this website.
+          </p>
         </form>
         <aside className="self-start rounded-card bg-surface-alt p-6 sm:p-8" data-reveal>
           <h3 className="font-display text-xl text-ink">Prefer to talk?</h3>
@@ -95,7 +100,7 @@ export function Booking({ id, title, intro, fields, submit, tone }: Props) {
               <Phone size={18} aria-hidden="true" /> <span data-p="phone">{d.phoneDisplay}</span>
             </ActionLink>
             <ActionLink kind="whatsapp" className="btn btn-wa justify-start">
-              <WhatsAppIcon size={18} /> Message on WhatsApp
+              <MessageIcon size={18} /> {m.cta}
             </ActionLink>
           </div>
           <dl className="mt-6 space-y-2 text-sm">

@@ -1,9 +1,11 @@
 import { ActionLink } from '../components/DemoActions'
 import { Monogram } from '../components/Monogram'
 import { useDemo } from '../lib/demo'
+import { useMessaging } from '../lib/messaging'
 
 export function Footer() {
   const d = useDemo()
+  const m = useMessaging()
   return (
     <footer className="border-t border-line bg-bg pb-24 lg:pb-0">
       <div className="wrap grid gap-8 py-12 md:grid-cols-3">
@@ -43,7 +45,7 @@ export function Footer() {
             </li>
             <li>
               <ActionLink kind="whatsapp" className="inline-flex min-h-11 items-center font-semibold text-accent-ink underline-offset-4 hover:underline">
-                WhatsApp us
+                {m.sms ? 'Text us' : 'WhatsApp us'}
               </ActionLink>
             </li>
           </ul>

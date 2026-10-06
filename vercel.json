@@ -1,13 +1,40 @@
 {
   "cleanUrls": true,
   "redirects": [
-    { "source": "/styles", "destination": "/#samples", "permanent": true },
-    { "source": "/styles/glassmorphism", "destination": "/demo/dermatologist?theme=clean-clinical", "permanent": true },
-    { "source": "/styles/skeuomorphism", "destination": "/demo/restaurant_cafe?theme=fresh-local", "permanent": true },
-    { "source": "/styles/neo-brutalism", "destination": "/demo/gym_fitness?theme=bold-studio", "permanent": true },
-    { "source": "/styles/claymorphism", "destination": "/demo/vet?theme=soft-friendly", "permanent": true },
-    { "source": "/styles/minimalism", "destination": "/demo/clinic?theme=clean-clinical", "permanent": true },
-    { "source": "/styles/liquid-glass", "destination": "/demo/salon_beauty?theme=luxe-dark", "permanent": true }
-  ],
-  "rewrites": [{ "source": "/((?!assets/|stock/|og/|_demo/|demo/).*)", "destination": "/index.html" }]
+    {
+      "source": "/styles",
+      "destination": "/#samples",
+      "permanent": true
+    },
+    {
+      "source": "/styles/glassmorphism",
+      "destination": "/demo/dermatologist?theme=clean-clinical",
+      "permanent": true
+    },
+    {
+      "source": "/styles/skeuomorphism",
+      "destination": "/demo/restaurant_cafe?theme=fresh-local",
+      "permanent": true
+    },
+    {
+      "source": "/styles/neo-brutalism",
+      "destination": "/demo/gym_fitness?theme=bold-studio",
+      "permanent": true
+    },
+    {
+      "source": "/styles/claymorphism",
+      "destination": "/demo/vet?theme=soft-friendly",
+      "permanent": true
+    },
+    {
+      "source": "/styles/minimalism",
+      "destination": "/demo/clinic?theme=clean-clinical",
+      "permanent": true
+    },
+    {
+      "source": "/styles/liquid-glass",
+      "destination": "/demo/salon_beauty?theme=luxe-dark",
+      "permanent": true
+    }
+  ]
 }

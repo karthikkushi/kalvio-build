@@ -34,3 +34,6 @@ Thumbs.db
 .scratch/
 .wrangler/
 .cache/
+
+# Local Claude Code config
+.claude/
