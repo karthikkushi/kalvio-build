@@ -21,11 +21,11 @@ export const UI = {
   },
   ribbonCta: { en: 'Like it? Reply on WhatsApp', kn: 'ಇಷ್ಟವಾಯಿತೇ? WhatsApp ಮಾಡಿ', hi: 'पसंद आई? WhatsApp करें' },
   closingTitle: {
-    en: 'This could be live in 5 days.',
-    kn: 'ಇದು 5 ದಿನಗಳಲ್ಲಿ ಲೈವ್ ಆಗಬಹುದು.',
-    hi: 'यह 5 दिनों में लाइव हो सकती है।',
+    en: 'This could be live in a week.',
+    kn: 'ಇದು ಒಂದು ವಾರದಲ್ಲಿ ಲೈವ್ ಆಗಬಹುದು.',
+    hi: 'यह एक हफ़्ते में लाइव हो सकती है।',
   },
-  closingBodyUS: { en: 'Your photos, your services, your real Google reviews, live in 5 days. One-time price, no monthly lock-in.' },
+  closingBodyUS: { en: 'Your photos, your services, your real Google reviews, live in a week. {price} a month, no setup fee.' },
   closingCta: { en: 'Reply YES on WhatsApp', kn: 'WhatsApp ನಲ್ಲಿ YES ಕಳುಹಿಸಿ', hi: 'WhatsApp पर YES भेजें' },
   closingBody: {
     en: 'Your photos, your prices, your real Google reviews. Website from {price}, one-time.',

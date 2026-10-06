@@ -97,7 +97,7 @@ export function sampleLink(lead: { name: string; category: string; locality: str
   a monogram logo from their initials, a headline with their area, sample rating and badges.
 - **Ribbon:** "Free sample made for <name> by Kalvio Build. Like it? Reply on WhatsApp", which opens a chat with
   Kalvio Build that already names the shop and the link.
-- **Last screen:** "This could be live in 5 days. Reply YES on WhatsApp."
+- **Last screen:** "This could be live in a week. Reply YES on WhatsApp."
 
 Personalised links send `noindex` (meta tag and `X-Robots-Tag`), so search engines never list a real shop with sample
 prices and reviews. Reviews, ratings and "years in business" are labelled as sample content on the page.

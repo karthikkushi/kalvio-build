@@ -4,7 +4,7 @@ const STEPS = [
   { title: 'Tell us about your shop', text: 'On a call or on WhatsApp: your shop’s name, area and what you sell.' },
   { title: 'Get a free sample in a minute', text: 'A link on WhatsApp to a website with your name, area and phone number on it.' },
   { title: 'Approve, or ask for changes', text: 'Send your photos, prices and timings. We put them in and show you again.' },
-  { title: `Live in ${SITE.deliveryDays} days`, text: 'On your own web address, with Call, WhatsApp and Google Maps buttons that work.' },
+  { title: `Live in ${SITE.delivery}`, text: 'On your own web address, with Call, WhatsApp and Google Maps buttons that work.' },
 ]
 
 export function HowItWorks() {

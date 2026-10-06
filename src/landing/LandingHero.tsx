@@ -16,7 +16,7 @@ export function LandingHero() {
             See your shop’s website before you pay.
           </h1>
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-white/80 sm:text-xl">
-            Free sample in 1 minute, with your shop’s name, area and phone number. Like it? It goes live in {SITE.deliveryDays} days, from{' '}
+            Free sample in 1 minute, with your shop’s name, area and phone number. Like it? It goes live in {SITE.delivery}, from{' '}
             {inr(FROM_PRICE)}.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">

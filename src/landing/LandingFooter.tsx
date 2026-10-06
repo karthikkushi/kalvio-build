@@ -20,7 +20,7 @@ export function LandingFooter() {
         <div className="wrap grid gap-8 py-10 sm:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr]">
           <div>
             <Logo tone="light" />
-            <p className="mt-3 max-w-sm text-white/70">Websites for local shops, clinics and studios. Free sample first, live in {SITE.deliveryDays} days.</p>
+            <p className="mt-3 max-w-sm text-white/70">Websites for local shops, clinics and studios. Free sample first, live in {SITE.delivery}.</p>
           </div>
           <ul className="space-y-1 text-white/85">
             <li>
