@@ -1,0 +1,8 @@
+# Cloudflare Pages redirects. Old 2025 style pages -> closest business + theme.
+/styles                    /#samples                                  301
+/styles/glassmorphism      /demo/dermatologist?theme=clean-clinical  301
+/styles/skeuomorphism      /demo/restaurant_cafe?theme=fresh-local   301
+/styles/neo-brutalism      /demo/gym_fitness?theme=bold-studio       301
+/styles/claymorphism       /demo/vet?theme=soft-friendly             301
+/styles/minimalism         /demo/clinic?theme=clean-clinical         301
+/styles/liquid-glass       /demo/salon_beauty?theme=luxe-dark        301
