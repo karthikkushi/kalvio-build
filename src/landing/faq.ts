@@ -1,9 +1,6 @@
 import { FROM_PRICE, PRICING, inr } from '../config/pricing'
 import { SITE } from '../config/site'
 
-const domain = PRICING.extras[0]
-const care = PRICING.extras[1]
-
 export const LANDING_FAQ = [
   {
     q: 'Is the sample really free?',
@@ -15,11 +12,11 @@ export const LANDING_FAQ = [
   },
   {
     q: 'How long does it take?',
-    a: `About ${SITE.deliveryDays} days after you send your details and photos.`,
+    a: `About ${SITE.delivery} after you send your details and photos.`,
   },
   {
     q: 'Do I have to pay every month?',
-    a: `No. The website is a one-time price from ${inr(FROM_PRICE)}. A web address (domain) costs about ${inr(domain.price)} a year. If you want us to keep changing prices and photos for you, maintenance is ${inr(care.price)} a month, and it’s optional.`,
+    a: `No. The website is a one-time price from ${inr(FROM_PRICE)}, and your domain name is free for the first year. After that it’s ${inr(PRICING.renewal.price)} a year for the domain and hosting, with small changes at ${inr(PRICING.editPrice)} each. Or choose the optional care plan at ${inr(PRICING.care.price)} a month: renewals and unlimited small changes included.`,
   },
   {
     q: 'Will my shop show up on Google?',

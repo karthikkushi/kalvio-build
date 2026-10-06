@@ -21,7 +21,7 @@ const JSON_LD = JSON.stringify({
     {
       '@type': 'ProfessionalService',
       name: SITE.name,
-      description: 'Websites for local businesses. Free sample first, live in 5 days.',
+      description: `Websites for local businesses. Free sample first, live in ${SITE.delivery}.`,
       telephone: `+${SITE.whatsapp}`,
       email: SITE.email,
       areaServed: SITE.city,

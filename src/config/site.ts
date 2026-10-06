@@ -4,10 +4,10 @@ export const SITE = {
   /** WhatsApp number in international format, digits only. */
   whatsapp: '918123097334',
   whatsappDisplay: '+91 81230 97334',
-  email: 'hello@kalviobuild.in',
+  email: 'kushikarthikeyenmr@gmail.com',
   city: 'Bengaluru',
-  /** Days from "yes" to live, used in copy. */
-  deliveryDays: 5,
+  /** Time from "yes" to live, used in copy: "live in a week". */
+  delivery: 'a week',
   year: new Date().getFullYear(),
 } as const
 

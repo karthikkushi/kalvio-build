@@ -43,7 +43,7 @@ is used only on the landing page's live preview.
 All sections read from the preset and theme tokens only (`src/sections/*`). Every sample also gets: ribbon, header with
 mobile menu, **signboard hero** (shop name, area and phone on the photo, then the headline, rating, years and trust
 badges), seasonal offer banner, reviews (clearly marked as samples), timings with click-to-load Google Map, FAQ,
-**"This could be live in 5 days. Reply YES on WhatsApp."**, footer, and the sticky **Call · WhatsApp · Directions** bar on phones.
+**"This could be live in a week. Reply YES on WhatsApp."**, footer, and the sticky **Call · WhatsApp · Directions** bar on phones.
 
 | key | default theme | business-specific sections |
 |---|---|---|

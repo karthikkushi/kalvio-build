@@ -1,6 +1,7 @@
 /**
- * Kalvio Build's prices. Change them here only: the landing page and the samples' closing message read from this file.
- * The USD row (landing page with ?region=us, and US samples) is converted from the rupee price at `usdRate`.
+ * Kalvio Build's prices. Decided 6 Oct 2026: one price list for every business type, an optional monthly care
+ * plan, and a monthly plan for US clients. Change prices here only: the landing page, its FAQ and the samples'
+ * closing message read from this file (index.html's meta description is checked against it by a test).
  */
 export interface PricingPlan {
   key: 'starter' | 'business' | 'premium'
@@ -12,44 +13,80 @@ export interface PricingPlan {
 }
 
 export const PRICING = {
-  usdRate: 88,
   plans: [
     {
       key: 'starter',
       name: 'Starter',
-      price: 3000,
+      price: 7999,
       pages: '1 page',
-      features: ['Your shop’s details, photos and timings', 'Call, WhatsApp and Google Maps buttons', 'Works on every phone', 'Live in 5 days'],
+      features: [
+        'Your shop’s photos, services and prices',
+        'Timings, Google Maps and directions',
+        'Call, WhatsApp and Directions buttons',
+        'Enquiries straight to your WhatsApp',
+        '1 round of changes',
+      ],
     },
     {
       key: 'business',
       name: 'Business',
-      price: 7000,
+      price: 14999,
       pages: 'Up to 5 pages',
       highlight: true,
-      features: ['Everything in Starter', 'Photo gallery', 'Services and prices', 'Basic Google search setup', '2 rounds of changes'],
+      features: [
+        'Everything in Starter',
+        'Photo gallery',
+        'Booking or enquiry form',
+        'Festival offer banners',
+        'Google Business Profile setup',
+        'Basic Google search setup',
+        '2 rounds of changes',
+      ],
     },
     {
       key: 'premium',
       name: 'Premium',
-      price: 12000,
-      pages: 'Up to 8 pages',
-      features: ['Everything in Business', 'Booking or enquiry form', 'Google reviews on your site', 'English + Hindi or Kannada', '3 months of support'],
+      price: 24999,
+      pages: 'Up to 10 pages',
+      features: [
+        'Everything in Business',
+        'English + Kannada or Hindi',
+        'Menu, catalogue or gold-rate board',
+        'Instagram feed on your site',
+        '3 months of the care plan free',
+        '3 rounds of changes',
+      ],
     },
   ] satisfies PricingPlan[],
-  extras: [
-    { label: 'Domain name (yourshop.in)', price: 500, period: 'year', approx: true },
-    { label: 'Maintenance and small changes', price: 500, period: 'month', approx: false },
-  ],
+  /** Included in every plan. */
+  included: ['Live in about a week', 'Domain name free for the first year', 'Fast, secure hosting'],
+  /** Optional, after launch. */
+  care: {
+    price: 999,
+    period: 'month',
+    features: [
+      'Domain and hosting renewal included',
+      'Unlimited small edits: prices, timings, photos, offers',
+      'Edits done within 2 working days',
+      'A festival offer banner each season',
+      'A monthly check that everything works',
+    ],
+  },
+  /** Without the care plan, from the second year. */
+  renewal: { price: 1499, period: 'year' },
+  /** Per small edit, without the care plan. */
+  editPrice: 500,
+  /** US clients (home services): monthly, no setup fee. */
+  us: {
+    monthly: 99,
+    minimumMonths: 12,
+    features: ['Website, domain and hosting', 'Unlimited small edits', 'Quote and booking form', 'No setup fee'],
+  },
 } as const
 
 export function inr(n: number): string {
   return `₹${n.toLocaleString('en-IN')}`
 }
 
-/** Rupee price converted to dollars, rounded to the nearest $5. */
-export function usd(n: number): string {
-  return `$${Math.max(5, Math.round(n / PRICING.usdRate / 5) * 5)}`
-}
-
 export const FROM_PRICE = PRICING.plans[0].price
+export const US_MONTHLY = `$${PRICING.us.monthly}`
