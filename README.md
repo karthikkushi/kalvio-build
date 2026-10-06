@@ -6,6 +6,8 @@ Websites for local businesses, sold with a free sample: Shreya sends a shop owne
 - `/`: the agency landing page ("See your shop's website before you pay").
 - `/demo/<business-key>?name=…&area=…&phone=…`: a personalised sample for any of 17 business types in any of 6
   themes. The link format is documented in [`docs/DEMO_LINKS.md`](docs/DEMO_LINKS.md).
+- `/share?key=…&name=…`: Shreya's WhatsApp kit for a shop: a picture of their website to send first, a
+  10-second video, and a link preview with their name (see `docs/DEMO_LINKS.md`).
 
 ## Commands
 
@@ -36,6 +38,8 @@ Copy `.env.example` to `.env` to send landing-page enquiries to Lead Finder (pub
 | Photos (self-hosted, credited) | `scripts/stock/manifest.json` → `node scripts/stock/fetch.mjs` → `public/stock/` |
 | Edge personalisation for link previews | `functions/demo/[key].ts` |
 | Lead Finder enquiry RPC | `supabase/leadfinder/` |
+| WhatsApp kit page | `src/pages/Share.tsx`, `src/share/` |
+| Share Worker (screenshots, preview images) | `workers/share/`, deploy with `npm run share:deploy` |
 
 Adding a business: write `src/data/businesses/<key>.ts` (copy a similar one), add its photos to the manifest and
 fetch them, add it to `src/data/catalog.ts`, then run `npm test`. Regenerate `public/previews/` and `public/og/`

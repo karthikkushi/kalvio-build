@@ -37,6 +37,24 @@ does it instead. It already runs tests, lint and the build on every push; to let
 
 After that, a push to `main` deploys production and any other branch gets its own preview URL.
 
+## Share Worker (WhatsApp kit)
+
+`workers/share/` is a separate Cloudflare Worker, `https://kalvio-share.kalvio-build.workers.dev`, on the free plan:
+
+- **Browser Rendering** takes the sample screenshots for `/share` (free: 10 browser-minutes a day).
+- **KV** namespace `kalvio-share` caches screenshots (30 days) and stores link-preview images with the shop's name
+  (1 year).
+- It checks Shreya's Lead Finder code through Lead Finder's `app_login` RPC (publishable key only).
+
+It is not deployed by the GitHub workflow (the API token only has Pages access). After changing it:
+
+```
+npm run share:deploy
+```
+
+If you change how screenshots are taken, bump `SHOT_VERSION` in `src/lib/sharekit.ts` so old cached ones aren't
+reused.
+
 ## Custom domain
 
 Pages project → **Custom domains → Set up a domain** (e.g. `kalviobuild.in`). Then set `SITE_ORIGIN` to it (in

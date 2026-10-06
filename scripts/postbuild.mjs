@@ -93,6 +93,11 @@ const lowPriority = (html) =>
     .replace('<script type="module" crossorigin src=', '<script type="module" crossorigin fetchpriority="low" src=')
     .replace(/<link rel="modulepreload" crossorigin href=/g, '<link rel="modulepreload" crossorigin fetchpriority="low" href=')
 writeFileSync(join(dist, '404.html'), shell.replace('<!--app-head-->', '<meta name="robots" content="noindex">'))
+// Shreya's WhatsApp kit: an app page (no prerender), served at /share with a 200 status.
+writeFileSync(
+  join(dist, 'share.html'),
+  shell.replace(/<title>[^<]*<\/title>/, '<title>WhatsApp kit | Kalvio Build</title>').replace('<!--app-head-->', '<meta name="robots" content="noindex, nofollow">'),
+)
 const landingChunks = [...deps('src/pages/Landing.tsx')]
   .filter((k) => !entryDeps.has(k))
   .map((k) => `<link rel="modulepreload" crossorigin fetchpriority="low" href="/${manifest[k].file}">`)
