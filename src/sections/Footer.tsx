@@ -52,17 +52,17 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-line">
-        <div className="wrap flex flex-col gap-1 py-5 text-sm text-muted sm:flex-row sm:justify-between">
+        <div className="wrap flex flex-col py-2 text-sm text-muted sm:flex-row sm:items-center sm:justify-between">
           <p>
             © {new Date().getFullYear()} <span data-p="name">{d.name}</span>
           </p>
           <p>
             Sample website by{' '}
-            <a href="/" className="font-semibold text-ink underline underline-offset-4">
+            <a href="/" className="inline-block py-3 font-semibold text-ink underline underline-offset-4">
               Kalvio Build
             </a>{' '}
             ·{' '}
-            <a href="/stock/CREDITS.md" className="underline underline-offset-4">
+            <a href="/stock/CREDITS.md" className="inline-block py-3 underline underline-offset-4">
               Photo credits
             </a>
           </p>

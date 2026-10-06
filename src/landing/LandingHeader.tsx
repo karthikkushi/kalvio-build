@@ -27,14 +27,14 @@ export function LandingHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-white/10 bg-[#14121f]/95 text-white backdrop-blur-md">
       <div className="wrap flex h-16 items-center gap-4">
-        <a href="#top" className="rounded-md" aria-label="Kalvio Build, back to top">
+        <a href="#top" className="flex min-h-11 items-center rounded-md" aria-label="Kalvio Build, back to top">
           <Logo tone="light" />
         </a>
         <nav aria-label="Main" className="ml-auto hidden lg:block">
           <ul className="flex">
             {LINKS.map((l) => (
               <li key={l.href}>
-                <a href={l.href} className="rounded-btn px-3 py-2 text-[15px] font-semibold text-white/80 hover:text-white">
+                <a href={l.href} className="inline-flex min-h-11 items-center rounded-btn px-3 text-[15px] font-semibold text-white/80 hover:text-white">
                   {l.label}
                 </a>
               </li>

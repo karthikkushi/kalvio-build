@@ -32,7 +32,7 @@ export function Ribbon() {
             data-p-href="ribbon"
             target="_blank"
             rel="noopener"
-            className="font-semibold text-[#c9c3ff] underline decoration-[#c9c3ff]/50 underline-offset-2 hover:decoration-[#c9c3ff]"
+            className="py-3 font-semibold text-[#c9c3ff] underline decoration-[#c9c3ff]/50 underline-offset-2 hover:decoration-[#c9c3ff]"
           >
             {t(UI.ribbonCta, lang)}
           </a>
