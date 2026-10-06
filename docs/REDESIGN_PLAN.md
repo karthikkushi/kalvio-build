@@ -165,7 +165,7 @@ Done as 301s in `public/_redirects` (Cloudflare) and `vercel.json`, and in the a
 
 ## 9. Still yours to do or check
 
-1. **Cloudflare Pages:** project `kalvio-build` is created and the redesign is live as a preview at <https://redesign-2026.kalvio-build.pages.dev>. After merging, run `npm run deploy` for production, or add the API token so GitHub deploys automatically (`docs/DEPLOY.md`).
+1. **Cloudflare Pages:** the redesign is live in production at <https://kalvio-build.pages.dev> (deployed from `redesign-2026`). Merge the PR so `main` matches what's live, and add the API token so GitHub deploys automatically (`docs/DEPLOY.md`).
 2. **Kannada and Hindi** strings in `src/i18n/strings.ts` and the presets' headlines: first drafts, have them checked.
 3. **Landing FAQ** (`src/landing/faq.ts`): policy wording ("you pay only after you've seen it", what's included)
    should match how you actually work.

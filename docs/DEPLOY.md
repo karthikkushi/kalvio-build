@@ -8,7 +8,7 @@ runs for `/demo/*` pages).
 
 - Cloudflare account: *Kushikarthikeyenmr@gmail.com's Account* (`580a7755e020979114ebfddba1d768eb`).
 - Pages project **`kalvio-build`**, production branch `main`, created with Wrangler (a "Direct Upload" project).
-- Production URL: <https://kalvio-build.pages.dev> (empty until the first `main` deploy).
+- Production URL: <https://kalvio-build.pages.dev>, first deployed 6 Oct 2026 from the `redesign-2026` branch.
 - Preview of the redesign: <https://redesign-2026.kalvio-build.pages.dev>.
 
 Preview deployments are automatically `noindex`; production pages are indexable except personalised samples.
