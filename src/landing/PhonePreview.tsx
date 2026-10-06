@@ -3,10 +3,21 @@ import { AnimatePresence, LazyMotion, domAnimation, m, useReducedMotion } from '
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router'
 import { CATALOG } from '../data/catalog'
+import previews from '../data/previews.generated.json'
 import type { BusinessKey } from '../data/types'
+import { IPhone } from './IPhone'
 
 const FEATURED: BusinessKey[] = ['dentist', 'salon_beauty', 'gym_fitness', 'jewellery', 'restaurant_cafe', 'clinic', 'bakery_sweets', 'clothing']
 const items = FEATURED.map((k) => CATALOG.find((c) => c.key === k)!)
+
+interface PreviewMeta {
+  width: number
+  height: number
+  top: string
+  topDark: boolean
+  bottom: string
+  bottomDark: boolean
+}
 
 /** A phone showing real sample sites, switching every few seconds (or by tapping a business type). */
 export function PhonePreview() {
@@ -14,6 +25,7 @@ export function PhonePreview() {
   const [paused, setPaused] = useState(false)
   const reduce = useReducedMotion()
   const current = items[i]
+  const shot = (previews as Record<string, PreviewMeta>)[current.key]
 
   useEffect(() => {
     if (paused || reduce) return
@@ -29,15 +41,15 @@ export function PhonePreview() {
       onFocusCapture={() => setPaused(true)}
       onBlurCapture={() => setPaused(false)}
     >
-      <div className="relative aspect-[560/1212] w-[min(68vw,280px)] rounded-[44px] bg-[#0b0a12] p-2.5 shadow-[0_40px_80px_-30px_rgb(91_69_224/0.6),inset_0_0_0_1.5px_rgb(255_255_255/0.12)] lg:w-[300px]">
-        <div className="relative size-full overflow-hidden rounded-[36px] bg-[#1d1a2b]">
+      <div className="w-[min(70vw,290px)] lg:w-[320px]">
+        <IPhone domain="kalvio-build.pages.dev" {...shot}>
           <LazyMotion features={domAnimation} strict>
             <AnimatePresence initial={false}>
               <m.img
                 key={current.key}
                 src={`/previews/${current.key}.webp`}
-                width={560}
-                height={1212}
+                width={shot.width}
+                height={shot.height}
                 alt={`Sample website for a ${current.label.toLowerCase()}: ${current.demoName}`}
                 className="absolute inset-0 size-full object-cover object-top"
                 initial={{ opacity: 0, scale: 1.02 }}
@@ -48,7 +60,7 @@ export function PhonePreview() {
               />
             </AnimatePresence>
           </LazyMotion>
-        </div>
+        </IPhone>
       </div>
 
       <div className="w-full max-w-md">

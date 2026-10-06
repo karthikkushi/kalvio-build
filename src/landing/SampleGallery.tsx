@@ -24,8 +24,8 @@ export function SampleGallery() {
                       <div className="relative aspect-[3/4] overflow-hidden rounded-card bg-surface-alt shadow-card ring-1 ring-line">
                         <img
                           src={`/previews/${c.key}.webp`}
-                          width={560}
-                          height={1212}
+                          width={600}
+                          height={1157}
                           alt=""
                           loading="lazy"
                           decoding="async"
