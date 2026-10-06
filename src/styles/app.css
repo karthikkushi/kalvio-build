@@ -239,3 +239,162 @@
     opacity var(--rv-duration, 0.26s) var(--rv-ease, ease-out),
     transform var(--rv-duration, 0.26s) var(--rv-ease, ease-out);
 }
+
+/*
+ * iPhone 15 Pro mockup (src/landing/IPhone.tsx). Every size is in iPhone points: the screen is 393 × 852 and the
+ * device, with its 9 pt titanium band and bezel, is 411 × 870. --u is one point, scaled to the mockup's width with
+ * container query units, so the proportions stay exact at any size.
+ */
+.iphone {
+  container-type: inline-size;
+}
+.iphone-device {
+  --u: calc(100cqw / 411);
+  position: relative;
+  aspect-ratio: 411 / 870;
+  border-radius: calc(66 * var(--u));
+  background: linear-gradient(135deg, #8a8a92 0%, #3b3b41 14%, #222226 40%, #2b2b30 62%, #55555c 86%, #8f8f97 100%);
+  box-shadow:
+    inset 0 0 0 calc(0.75 * var(--u)) rgb(255 255 255 / 0.35),
+    inset 0 calc(1.5 * var(--u)) calc(2 * var(--u)) rgb(255 255 255 / 0.25),
+    0 calc(50 * var(--u)) calc(90 * var(--u)) calc(-30 * var(--u)) rgb(91 69 224 / 0.55),
+    0 calc(18 * var(--u)) calc(40 * var(--u)) rgb(0 0 0 / 0.55);
+}
+.iphone-bezel {
+  position: absolute;
+  inset: calc(3 * var(--u));
+  border-radius: calc(63 * var(--u));
+  background: #050506;
+  box-shadow: inset 0 0 0 calc(0.75 * var(--u)) rgb(255 255 255 / 0.06);
+}
+.iphone-btn {
+  position: absolute;
+  width: calc(4 * var(--u));
+  border-radius: calc(2 * var(--u));
+  background: linear-gradient(90deg, #3a3a40, #8b8b93 45%, #4a4a50);
+}
+.iphone-btn-action,
+.iphone-btn-vol-up,
+.iphone-btn-vol-down {
+  left: calc(-3 * var(--u));
+}
+.iphone-btn-power {
+  right: calc(-3 * var(--u));
+  top: calc(225 * var(--u));
+  height: calc(100 * var(--u));
+}
+.iphone-btn-action {
+  top: calc(130 * var(--u));
+  height: calc(32 * var(--u));
+}
+.iphone-btn-vol-up {
+  top: calc(190 * var(--u));
+  height: calc(62 * var(--u));
+}
+.iphone-btn-vol-down {
+  top: calc(266 * var(--u));
+  height: calc(62 * var(--u));
+}
+.iphone-screen {
+  position: absolute;
+  inset: calc(9 * var(--u));
+  border-radius: calc(57 * var(--u));
+  overflow: hidden;
+  isolation: isolate;
+  background: #000;
+}
+.iphone-status {
+  position: absolute;
+  inset-inline: 0;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  height: calc(54 * var(--u));
+  align-items: center;
+  justify-content: space-between;
+  padding: calc(5 * var(--u)) calc(30 * var(--u)) 0 calc(48 * var(--u));
+  font: 600 calc(17 * var(--u)) / 1 -apple-system, 'SF Pro Text', system-ui, sans-serif;
+  letter-spacing: -0.02em;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+.iphone-status-icons {
+  display: flex;
+  align-items: center;
+  gap: calc(6 * var(--u));
+}
+.iphone-status-icons svg:nth-child(1) {
+  width: calc(18 * var(--u));
+}
+.iphone-status-icons svg:nth-child(2) {
+  width: calc(16 * var(--u));
+}
+.iphone-status-icons svg:nth-child(3) {
+  width: calc(27 * var(--u));
+}
+.iphone-island {
+  position: absolute;
+  top: calc(11 * var(--u));
+  left: 50%;
+  z-index: 3;
+  width: calc(125 * var(--u));
+  height: calc(37 * var(--u));
+  translate: -50% 0;
+  border-radius: calc(20 * var(--u));
+  background: #000;
+}
+.iphone-island::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: calc(12 * var(--u));
+  width: calc(11 * var(--u));
+  height: calc(11 * var(--u));
+  translate: 0 -50%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #3a4a78, #121829 55%, #05070d);
+}
+.iphone-content {
+  position: absolute;
+  inset-inline: 0;
+  top: calc(54 * var(--u));
+  bottom: calc(40 * var(--u));
+  overflow: hidden;
+  background: #fff;
+}
+.iphone-safari {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  height: calc(40 * var(--u));
+  justify-content: center;
+  gap: calc(4 * var(--u));
+  padding-top: calc(7 * var(--u));
+  font: 500 calc(12 * var(--u)) / 1 -apple-system, 'SF Pro Text', system-ui, sans-serif;
+  transition: background-color 0.3s ease;
+}
+.iphone-lock {
+  width: calc(8 * var(--u));
+  height: calc(10 * var(--u));
+  margin-top: calc(0.5 * var(--u));
+}
+.iphone-home {
+  position: absolute;
+  bottom: calc(8 * var(--u));
+  left: 50%;
+  z-index: 3;
+  width: calc(134 * var(--u));
+  height: calc(5 * var(--u));
+  translate: -50% 0;
+  border-radius: 999px;
+}
+.iphone-glare {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  background: linear-gradient(118deg, rgb(255 255 255 / 0.13) 0%, rgb(255 255 255 / 0.04) 26%, transparent 42%);
+}

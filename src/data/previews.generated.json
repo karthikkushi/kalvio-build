@@ -1,0 +1,138 @@
+{
+  "bakery_sweets": {
+    "width": 600,
+    "height": 1157,
+    "top": "#fbf6ef",
+    "topDark": false,
+    "bottom": "#fffdf9",
+    "bottomDark": false
+  },
+  "clinic": {
+    "width": 600,
+    "height": 1157,
+    "top": "#f6f9fa",
+    "topDark": false,
+    "bottom": "#ffffff",
+    "bottomDark": false
+  },
+  "clothing": {
+    "width": 600,
+    "height": 1157,
+    "top": "#fbf6ef",
+    "topDark": false,
+    "bottom": "#fffdf9",
+    "bottomDark": false
+  },
+  "dentist": {
+    "width": 600,
+    "height": 1157,
+    "top": "#f6f9fa",
+    "topDark": false,
+    "bottom": "#ffffff",
+    "bottomDark": false
+  },
+  "dermatologist": {
+    "width": 600,
+    "height": 1157,
+    "top": "#fbf6ef",
+    "topDark": false,
+    "bottom": "#fffdf9",
+    "bottomDark": false
+  },
+  "events_photo": {
+    "width": 600,
+    "height": 1157,
+    "top": "#f3f1ec",
+    "topDark": false,
+    "bottom": "#ffffff",
+    "bottomDark": false
+  },
+  "eye_clinic": {
+    "width": 600,
+    "height": 1157,
+    "top": "#f6f9fa",
+    "topDark": false,
+    "bottom": "#ffffff",
+    "bottomDark": false
+  },
+  "furniture_home": {
+    "width": 600,
+    "height": 1157,
+    "top": "#0e1311",
+    "topDark": true,
+    "bottom": "#161d1a",
+    "bottomDark": true
+  },
+  "gym_fitness": {
+    "width": 600,
+    "height": 1157,
+    "top": "#f3f1ec",
+    "topDark": false,
+    "bottom": "#ffffff",
+    "bottomDark": false
+  },
+  "home_services": {
+    "width": 600,
+    "height": 1157,
+    "top": "#fcfbf6",
+    "topDark": false,
+    "bottom": "#ffffff",
+    "bottomDark": false
+  },
+  "jewellery": {
+    "width": 600,
+    "height": 1157,
+    "top": "#0e1311",
+    "topDark": true,
+    "bottom": "#161d1a",
+    "bottomDark": true
+  },
+  "pet_shop": {
+    "width": 600,
+    "height": 1157,
+    "top": "#fff8f1",
+    "topDark": false,
+    "bottom": "#ffffff",
+    "bottomDark": false
+  },
+  "physio": {
+    "width": 600,
+    "height": 1157,
+    "top": "#fcfbf6",
+    "topDark": false,
+    "bottom": "#ffffff",
+    "bottomDark": false
+  },
+  "restaurant_cafe": {
+    "width": 600,
+    "height": 1157,
+    "top": "#fcfbf6",
+    "topDark": false,
+    "bottom": "#ffffff",
+    "bottomDark": false
+  },
+  "salon_beauty": {
+    "width": 600,
+    "height": 1157,
+    "top": "#fbf6ef",
+    "topDark": false,
+    "bottom": "#fffdf9",
+    "bottomDark": false
+  },
+  "tuition": {
+    "width": 600,
+    "height": 1157,
+    "top": "#fff8f1",
+    "topDark": false,
+    "bottom": "#ffffff",
+    "bottomDark": false
+  },
+  "vet": {
+    "width": 600,
+    "height": 1157,
+    "top": "#fff8f1",
+    "topDark": false,
+    "bottom": "#ffffff",
+    "bottomDark": false
+  }
+}

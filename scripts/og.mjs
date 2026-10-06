@@ -68,9 +68,9 @@ const phoneW = 210
 const tiles = await Promise.all(
   phones.map(async (k, i) => ({
     input: await sharp(`public/previews/${k}.webp`)
-      .resize(phoneW, Math.round((phoneW * 1212) / 560))
-      .extract({ left: 0, top: 0, width: phoneW, height: 440 })
-      .composite([{ input: Buffer.from(`<svg width="${phoneW}" height="440"><rect width="${phoneW}" height="440" rx="26" fill="none" stroke="#C9C3FF" stroke-opacity="0.35" stroke-width="3"/></svg>`) }])
+      .resize(phoneW)
+      .extract({ left: 0, top: 0, width: phoneW, height: 400 })
+      .composite([{ input: Buffer.from(`<svg width="${phoneW}" height="400"><rect width="${phoneW}" height="400" rx="26" fill="none" stroke="#C9C3FF" stroke-opacity="0.35" stroke-width="3"/></svg>`) }])
       .png()
       .toBuffer(),
     left: 730 + i * 230,
