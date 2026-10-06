@@ -68,6 +68,28 @@ A plumber in Austin (US English, dollars, "Text us" buttons):
 https://kalvio-build.pages.dev/demo/home_services?name=Peak%20Plumbing%20Co&area=Round%20Rock&city=Austin%2C%20TX&phone=5125550199
 ```
 
+## WhatsApp kit for Shreya (`/share`)
+
+Many owners won't tap a link from an unknown number, and WhatsApp can ban numbers that send links to people who
+haven't replied. So the first message is a **picture**, not a link. Open:
+
+```
+https://kalvio-build.pages.dev/share?key=dentist&name=Avinashi%20Dental%20Clinic&area=Jayanagar&city=Bengaluru&phone=%2B919036993516
+```
+
+It takes the same parameters as `/demo` (`key` instead of the path) and, after Shreya enters her Lead Finder code
+once, makes in about 10 seconds:
+
+1. **A picture** (1080 × 1350): "Made for <shop>", an iPhone showing their website, "Reply YES to make it live".
+   Sent first with "Shall I send you the link?". Nothing to click.
+2. **A 10-second video** (MP4, about 2.5 MB) scrolling through their website. Optional.
+3. **The link-preview image with their name**, uploaded so that when the link is sent after they reply, WhatsApp's
+   preview shows "Avinashi Dental Clinic, Jayanagar" instead of a generic picture.
+4. The two messages to send, and an "Open their chat" button when the phone number is known.
+
+The picture is taken by Cloudflare's free Browser Rendering (10 browser-minutes a day, about 150 kits; it resets at
+5:30 AM). Kits are cached for 30 days, so opening the same shop again is instant and free.
+
 ## Building links in Lead Finder
 
 ```ts
@@ -82,6 +104,15 @@ export function sampleLink(lead: { name: string; category: string; locality: str
   if (lead.city) q.set('city', lead.city)
   if (lead.phone_intl) q.set('phone', lead.phone_intl)
   return `https://kalvio-build.pages.dev/demo/${lead.category}?${q}`
+}
+
+/** What Lead Finder's "Make sample" button should open: Shreya's WhatsApp kit for the lead. */
+export function shareKitLink(lead: Parameters<typeof sampleLink>[0]) {
+  const sample = sampleLink(lead)
+  if (!sample) return null
+  const q = new URL(sample).searchParams
+  q.set('key', lead.category)
+  return `https://kalvio-build.pages.dev/share?${q}`
 }
 ```
 

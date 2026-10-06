@@ -6,6 +6,8 @@ export const SITE = {
   whatsappDisplay: '+91 81230 97334',
   email: 'kushikarthikeyenmr@gmail.com',
   city: 'Bengaluru',
+  /** Share Worker (workers/share): sample screenshots and link-preview images. */
+  shareApi: 'https://kalvio-share.kalvio-build.workers.dev',
   /** Time from "yes" to live, used in copy: "live in a week". */
   delivery: 'a week',
   year: new Date().getFullYear(),

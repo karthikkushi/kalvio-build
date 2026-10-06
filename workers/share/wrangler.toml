@@ -1,0 +1,21 @@
+# Kalvio share Worker: screenshots personalised samples with Cloudflare Browser Rendering (free plan:
+# 10 browser-minutes a day) and stores WhatsApp pictures and link-preview images in KV.
+# Deploy: npm run share:deploy
+name = "kalvio-share"
+main = "src/index.ts"
+compatibility_date = "2026-09-01"
+compatibility_flags = ["nodejs_compat"]
+
+[browser]
+binding = "BROWSER"
+
+[[kv_namespaces]]
+binding = "SHARE"
+id = "8ca5e54735e446b089047b5fe59af5a3"
+preview_id = "6f014d37468e4545b8d0fd6406aaeb02"
+
+[vars]
+SITE = "https://kalvio-build.pages.dev"
+LEADFINDER_URL = "https://eojvxcwvnsowfifxehaa.supabase.co"
+# Publishable key: it can only call Lead Finder's public RPCs (here, app_login to check a team code).
+LEADFINDER_KEY = "sb_publishable_2rZ7238dcMz9MWWUG8PdAg_yLVwgB3h"

@@ -19,6 +19,7 @@ import {
   yesMessage,
 } from '../../src/lib/personalise'
 import { parsePhone } from '../../src/lib/phone'
+import { ogKey } from '../../src/lib/sharekit'
 import { resolveThemeKey } from '../../src/themes'
 
 interface Defaults {
@@ -75,6 +76,11 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env, params })
   const title = `${name} | ${d.label} in ${area}, ${city}`
   const description = d.description.replace(/\{(\w+)\}/g, (_, k: string) => vars[k] ?? '')
   const pageUrl = url.toString()
+  // Personalised links point at the preview image with the shop's name, made on the share page (/share).
+  // The share Worker serves the generic image for this business if none was made.
+  const ogImage = personalised
+    ? `${SITE.shareApi}/og/${key}/${await ogKey({ key, theme, name, area, city })}.jpg`
+    : `${url.origin}/og/${key}.jpg`
 
   // Text for every element marked data-p="..." in the React components.
   const text: Record<string, string> = {}
@@ -111,7 +117,7 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env, params })
       element: (e) => void e.setAttribute('content', description),
     })
     .on('meta[property="og:title"]', { element: (e) => void e.setAttribute('content', title) })
-    .on('meta[property="og:image"]', { element: (e) => void e.setAttribute('content', `${url.origin}/og/${key}.jpg`) })
+    .on('meta[property="og:image"]', { element: (e) => void e.setAttribute('content', ogImage) })
     .on('meta[property="og:url"]', { element: (e) => void e.setAttribute('content', pageUrl) })
     .on('link[rel="canonical"]', { element: (e) => void e.setAttribute('href', `${url.origin}/demo/${key}`) })
     .on('head', {

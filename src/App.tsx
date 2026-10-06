@@ -1,10 +1,11 @@
 import { Suspense } from 'react'
 import { Navigate, Route, Routes, useParams } from 'react-router'
-import { DemoRoute, HomeRoute, NotFoundRoute } from './routes'
+import { DemoRoute, HomeRoute, NotFoundRoute, ShareRoute } from './routes'
 
 const Home = HomeRoute.Component
 const Demo = DemoRoute.Component
 const NotFound = NotFoundRoute.Component
+const Share = ShareRoute.Component
 
 /** The 2025 site's style pages, mapped to the closest business + theme. Also done as 301s in vercel.json. */
 const OLD_STYLES: Record<string, string> = {
@@ -27,6 +28,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/demo/:key" element={<Demo />} />
+        <Route path="/share" element={<Share />} />
         <Route path="/styles" element={<Navigate to="/#samples" replace />} />
         <Route path="/styles/:style" element={<OldStyle />} />
         <Route path="*" element={<NotFound />} />
