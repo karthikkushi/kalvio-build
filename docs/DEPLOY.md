@@ -58,7 +58,7 @@ reused.
 ## Custom domain
 
 Pages project → **Custom domains → Set up a domain** (e.g. `kalviobuild.in`). Then set `SITE_ORIGIN` to it (in
-`.env` and in the workflow), redeploy, and update the links in `docs/DEMO_LINKS.md` and Lead Finder's Make sample
+`.env` and in the workflow), redeploy, and update the links in `docs/DEMO_LINKS.md` and Lead Finder's Send sample
 button.
 
 ## Retiring the Vercel project

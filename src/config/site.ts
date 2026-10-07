@@ -10,6 +10,8 @@ export const SITE = {
   shareApi: 'https://kalvio-share.kalvio-build.workers.dev',
   /** Time from "yes" to live, used in copy: "live in a week". */
   delivery: 'a week',
+  /** Who sends the WhatsApp messages to shops (signed in the /share kit's messages). */
+  sender: 'Shreya',
   year: new Date().getFullYear(),
 } as const
 
