@@ -172,6 +172,8 @@ export type SectionConfig =
       intro: string
       fields: Field[]
       submit: Localized
+      /** Kalvio Desk clinic slug. When set, a booking also goes to that clinic's request list. Samples leave it unset. */
+      deskSlug?: string
     })
   | (SectionBase & {
       kind: 'callout'
