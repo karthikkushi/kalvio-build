@@ -21,7 +21,8 @@ export function SampleGallery() {
                 {CATALOG.filter((c) => c.group === g).map((c) => (
                   <li key={c.key} data-reveal>
                     <Link to={`/demo/${c.key}`} className="group block">
-                      <div className="relative aspect-[3/4] overflow-hidden rounded-card bg-surface-alt shadow-card ring-1 ring-line">
+                      {/* 393 × 496 pt: the phone screen down to just below every sample's hero photo, so no text is cut in half. */}
+                      <div className="relative aspect-[393/496] overflow-hidden rounded-card bg-surface-alt shadow-card ring-1 ring-line">
                         <img
                           src={`/previews/${c.key}.webp`}
                           width={600}
