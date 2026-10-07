@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from 'vitest'
-import { bookViaDesk, sendToDesk, toDeskBooking } from './desk'
+import { bookViaDesk, sendToDesk, toDeskBooking, deskProducts, orderText } from './desk'
 import type { Field } from '../data/types'
 
 const fields: Field[] = [
@@ -66,5 +66,23 @@ describe('bookViaDesk', () => {
     const done = await bookViaDesk('demo', { name: 'A', phone: '1' }, () => order.push('open'), f as never)
     expect(order).toEqual(['open', 'fetch'])
     expect(done).toBe(false)
+  })
+})
+
+describe('deskProducts', () => {
+  const p = { id: '1', name: 'Sunscreen SPF 50', description: null, price_paise: 65000, photo_path: null, in_stock: true }
+  it('returns the list, or nothing on any failure', async () => {
+    const ok = (async () => new Response(JSON.stringify([p]))) as unknown as typeof fetch
+    expect(await deskProducts('demo', ok)).toEqual([p])
+    const down = (async () => {
+      throw new Error('offline')
+    }) as unknown as typeof fetch
+    expect(await deskProducts('demo', down)).toEqual([])
+    const odd = (async () => new Response('{"message":"x"}', { status: 400 })) as unknown as typeof fetch
+    expect(await deskProducts('demo', odd)).toEqual([])
+  })
+  it('types the order message', () => {
+    expect(orderText(p)).toBe("Hi, I'd like to order Sunscreen SPF 50 (₹650). I saw it on your website.")
+    expect(orderText({ ...p, in_stock: false })).toBe('Hi, is Sunscreen SPF 50 available? I saw it on your website.')
   })
 })

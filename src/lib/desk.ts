@@ -66,3 +66,38 @@ export function bookViaDesk(slug: string, b: DeskBooking, openMessage: () => voi
   openMessage()
   return sendToDesk(slug, b, doFetch)
 }
+
+/** A product the clinic marked "Show on our website" in Kalvio Desk (desk_public_products). */
+export interface DeskProduct {
+  id: string
+  name: string
+  description: string | null
+  price_paise: number
+  photo_path: string | null
+  in_stock: boolean
+}
+
+/** The clinic's website products. Never throws: on any failure the section simply doesn't show. */
+export async function deskProducts(slug: string, doFetch: typeof fetch = fetch): Promise<DeskProduct[]> {
+  try {
+    const res = await doFetch(`${SITE.desk.url}/rest/v1/rpc/desk_public_products`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', apikey: SITE.desk.key },
+      body: JSON.stringify({ p_slug: slug }),
+    })
+    const body: unknown = res.ok ? await res.json() : null
+    return Array.isArray(body) ? (body as DeskProduct[]) : []
+  } catch {
+    return []
+  }
+}
+
+export const deskPhotoUrl = (path: string) => `${SITE.desk.url}/storage/v1/object/public/products/${path}`
+
+/** What the "Order on WhatsApp" button types for the visitor. */
+export function orderText(p: Pick<DeskProduct, 'name' | 'price_paise' | 'in_stock'>): string {
+  const price = `₹${(p.price_paise / 100).toLocaleString('en-IN', { maximumFractionDigits: 2 })}`
+  return p.in_stock
+    ? `Hi, I'd like to order ${p.name} (${price}). I saw it on your website.`
+    : `Hi, is ${p.name} available? I saw it on your website.`
+}

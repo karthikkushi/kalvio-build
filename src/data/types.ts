@@ -184,6 +184,13 @@ export type SectionConfig =
       label: string
       icon: IconName
     })
+  | (SectionBase & {
+      kind: 'deskProducts'
+      title: string
+      intro?: string
+      /** Kalvio Desk clinic slug: the products it marks "Show on our website". */
+      deskSlug: string
+    })
   | (SectionBase & { kind: 'reviews'; title: string })
   | (SectionBase & { kind: 'faq'; title: string })
   | (SectionBase & { kind: 'timings'; title: string })
