@@ -1,7 +1,7 @@
 # Free sample links (`/demo`)
 
-This is the contract Lead Finder's **Make sample** button relies on. Until production is deployed, try the links on
-the preview by replacing `kalvio-build.pages.dev` with `redesign-2026.kalvio-build.pages.dev`. Keep it stable: add parameters, never rename or
+This is the contract Lead Finder's **Send sample** button relies on. To try changes before they go live, use the links on
+the preview by replacing `kalvio-build.pages.dev` with the branch preview, `<branch>.kalvio-build.pages.dev`. Keep it stable: add parameters, never rename or
 remove them.
 
 ```
@@ -46,7 +46,7 @@ Remember to URL-encode values (`encodeURIComponent`): a space becomes `%20`, `+`
 | `home_services` | Plumbing & home services (USA, $, SMS instead of WhatsApp) | fresh-local |
 
 Lead Finder categories without their own sample (`general_shop`, `auto_parts`, `mobile_electronics`, `grocery`,
-`gifts_books`, `hardware`, `pharmacy`, `laundry`, `sports`, `footwear`) should not get a Make sample button yet.
+`gifts_books`, `hardware`, `pharmacy`, `laundry`, `sports`, `footwear`) get no Send sample button yet.
 
 ## Examples (three real-looking shops)
 
@@ -70,54 +70,60 @@ https://kalvio-build.pages.dev/demo/home_services?name=Peak%20Plumbing%20Co&area
 
 ## WhatsApp kit for Shreya (`/share`)
 
-Many owners won't tap a link from an unknown number, and WhatsApp can ban numbers that send links to people who
-haven't replied. So the first message is a **picture**, not a link. Open:
+After a call where the shop says "send it on WhatsApp", Shreya taps **Send sample** in Lead Finder (on the lead's
+sheet, and on the card of every Interested lead). That opens:
 
 ```
-https://kalvio-build.pages.dev/share?key=dentist&name=Avinashi%20Dental%20Clinic&area=Jayanagar&city=Bengaluru&phone=%2B919036993516
+https://kalvio-build.pages.dev/share?key=dermatologist&name=Avance%20Derma%20Skin%2C%20Hair%20and%20Laser%20Clinic&address=No%201338%2C%20First%20Floor%2C%2060%20Feet%20Road%2C%20D%20Block.%20AECS%20Layout%2C%20Kundalahalli&city=Bengaluru&phone=%2B919343800800#code=<her Lead Finder code>
 ```
 
-It takes the same parameters as `/demo` (`key` instead of the path) and, after Shreya enters her Lead Finder code
-once, makes in about 10 seconds:
+It takes the same parameters as `/demo` (`key` instead of the path), plus:
 
-1. **A picture** (1080 × 1350): "Made for <shop>", an iPhone showing their website, "Reply YES to make it live".
-   Sent first with "Shall I send you the link?". Nothing to click.
-2. **A 10-second video** (MP4, about 2.5 MB) scrolling through their website. Optional.
-3. **The link-preview image with their name**, uploaded so that when the link is sent after they reply, WhatsApp's
-   preview shows "Avinashi Dental Clinic, Jayanagar" instead of a generic picture.
-4. The two messages to send, and an "Open their chat" button when the phone number is known.
+| param | notes |
+|---|---|
+| `address` | Lead Finder's address. Used only when `area` is missing: the kit picks the area out of it ("…, Malleshwaram" → Malleshwaram) with `src/lib/area.ts`, and leaves it empty when unsure. |
+| `#code=` | Her Lead Finder code, in the hash so it never reaches a server log. The kit keeps it on the phone, removes it from the address bar and uses it to take the picture. |
+
+With the code present the kit starts by itself, with nothing to type:
+
+1. **Message 1, the sample link**, ready at once, signed by `SITE.sender` (Shreya), "Hi Doctor" for clinics.
+   **Send on WhatsApp** opens the shop's chat with it typed in.
+2. **A picture** (1080 × 1350): "Made for <shop>", an iPhone showing their website. After about 10 seconds.
+3. **A 10-second video** (MP4, about 2.5 MB) scrolling through their website, made right after the picture.
+4. **Message 2, the details**: the sample is only an example, we build to their requirements, and we also make
+   billing, a reception dashboard and analytics. No prices, no link. Wording in `src/share/messages.ts`.
+5. **The link-preview image with their name**, uploaded while the picture is made, so WhatsApp's preview of the link
+   shows "Avance Derma Skin, Hair and Laser Clinic". The page says when it's ready (wait for it before sending the link).
+
+Both messages can be edited before sending. "Change details" at the bottom fixes the area, theme or language and
+makes the kit again. Without a code (opened by hand) the page shows the form first and asks for the code once.
 
 The picture is taken by Cloudflare's free Browser Rendering (10 browser-minutes a day, about 150 kits; it resets at
-5:30 AM). Kits are cached for 30 days, so opening the same shop again is instant and free.
+5:30 AM). Kits are cached for 30 days, so opening the same shop again is instant and free. When the daily limit is
+used up, the link and both messages still work.
 
 ## Building links in Lead Finder
 
-```ts
+Lead Finder (`web/app.js`, `kitLink`) builds the Send sample link like this:
+
+```js
 const SAMPLE_KEYS = new Set(['dentist', 'dermatologist', 'clinic', 'physio', 'eye_clinic', 'vet', 'pet_shop',
   'salon_beauty', 'gym_fitness', 'jewellery', 'clothing', 'furniture_home', 'events_photo', 'tuition',
   'restaurant_cafe', 'bakery_sweets', 'home_services'])
 
-export function sampleLink(lead: { name: string; category: string; locality: string | null; city: string; phone_intl: string | null }) {
+function kitLink(lead, code) {
   if (!SAMPLE_KEYS.has(lead.category)) return null
-  const q = new URLSearchParams({ name: lead.name })
-  if (lead.locality) q.set('area', lead.locality)
+  const q = new URLSearchParams({ key: lead.category, name: lead.name })
+  if (lead.locality && lead.locality !== lead.city) q.set('area', lead.locality)
+  else if (lead.address) q.set('address', lead.address)
   if (lead.city) q.set('city', lead.city)
   if (lead.phone_intl) q.set('phone', lead.phone_intl)
-  return `https://kalvio-build.pages.dev/demo/${lead.category}?${q}`
-}
-
-/** What Lead Finder's "Make sample" button should open: Shreya's WhatsApp kit for the lead. */
-export function shareKitLink(lead: Parameters<typeof sampleLink>[0]) {
-  const sample = sampleLink(lead)
-  if (!sample) return null
-  const q = new URL(sample).searchParams
-  q.set('key', lead.category)
-  return `https://kalvio-build.pages.dev/share?${q}`
+  return `https://kalvio-build.pages.dev/share?${q}#code=${encodeURIComponent(code)}`
 }
 ```
 
-`URLSearchParams` encodes `+` in `phone_intl` correctly. Send the link with a short message, e.g.
-"Here's a free sample of your website: <link>".
+`URLSearchParams` encodes `+` in `phone_intl` correctly. A plain sample link (no kit) is the same without `key` and
+`#code`, at `/demo/<category>`.
 
 ## What the owner sees
 
