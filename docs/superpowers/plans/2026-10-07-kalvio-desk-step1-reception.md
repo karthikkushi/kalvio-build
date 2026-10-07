@@ -26,7 +26,7 @@
   - Decline: `Hi <name>, sorry, we can't give you an appointment at <clinic> on <day>. Please call us on <clinic phone> to find another time.`
   - Reminder: `Hi <name>, a reminder of your appointment at <clinic> tomorrow at <time>.`
   - Review: `Thank you for visiting <clinic>! If you're happy with your visit, a Google review would help us a lot: <link>`
-- UI design (Karthik's request): every screen is designed with the installed design skills, not ad hoc. Task 5b sets the design system with `frontend-design` (Anthropic) and `design:design-system`; each UI task (6–9) builds with `frontend-design`, writes labels and messages with `design:ux-copy`, then runs `design:design-critique` and `design:accessibility-review` on phone and desktop screenshots and fixes what they find before committing. WCAG AA contrast, 44 px touch targets, works one-handed on a phone at the reception desk.
+- UI design (Karthik's request): every screen is designed with the installed design skills, not ad hoc. Task 5b sets the design system with `frontend-design` (Anthropic), `design:design-system` and taste-skill (Leonxlnx/taste-skill, installed at `~/.claude/skills/taste-skill/SKILL.md`; read the file directly; use its trust-first dials VARIANCE 3–4, MOTION 2–3, DENSITY 4–5 and its anti-slop rules, since it is written for landing pages, not product UI); each UI task (6–9) builds with `frontend-design`, writes labels and messages with `design:ux-copy`, then runs `design:design-critique` and `design:accessibility-review` on phone and desktop screenshots and fixes what they find before committing. WCAG AA contrast, 44 px touch targets, works one-handed on a phone at the reception desk.
 - Visit statuses: `waiting` (website request), `booked`, `arrived`, `with_doctor`, `done`, `no_show`, `declined`. Sources: `website`, `google`, `friend`, `instagram`, `walk_in`, `other`.
 
 ## Review Focus
@@ -156,7 +156,7 @@ Docker Desktop must be running (`open -a Docker`, wait until `docker info` succe
 
 **Interfaces:**
 - Produces the components above, used by Tasks 6–9; status chip colours for each visit status and source.
-- [ ] **Step 1:** Invoke `frontend-design` and `design:design-system` with the brief: busy clinic reception, glanceable Today list, Kalvio brand (from kalvio-build's `kalvio` theme), calm and trustworthy for a medical setting, light and dark mode, phone first. Record the choices (type scale, colours, spacing, radius, motion, status colours) in `docs/DESIGN.md`.
+- [ ] **Step 1:** Invoke `frontend-design` and `design:design-system`, and read taste-skill's SKILL.md, with the brief: busy clinic reception, glanceable Today list, Kalvio brand (from kalvio-build's `kalvio` theme), calm and trustworthy for a medical setting, light and dark mode, phone first. Record the choices (type scale, colours, spacing, radius, motion, status colours) in `docs/DESIGN.md`.
 - [ ] **Step 2:** `ui.test.ts`: every status chip's text/background pair meets 4.5:1 contrast (reuse kalvio-build's `src/lib/contrast.ts`), and every status and source has a chip style.
 - [ ] **Step 3:** Run; expected FAIL. Build tokens and components; render them all on `/design`. Run; expected PASS.
 - [ ] **Step 4:** Screenshot `/design` at 393 px and 1280 px, light and dark; run `design:design-critique` and `design:accessibility-review`; fix findings.
