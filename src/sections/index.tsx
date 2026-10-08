@@ -3,6 +3,7 @@ import type { SectionConfig } from '../data/types'
 import { About } from './About'
 import { BeforeAfter } from './BeforeAfter'
 import { Callout } from './Callout'
+import { DeskProducts } from './DeskProducts'
 import { Booking } from './Booking'
 import { Faq } from './Faq'
 import { Features } from './Features'
@@ -44,6 +45,8 @@ export function Sections({ sections, hasOffer }: { sections: SectionConfig[]; ha
         return <GoldRate key={s.id} {...s} tone={tone} />
       case 'booking':
         return <Booking key={s.id} {...s} tone={tone} />
+      case 'deskProducts':
+        return <DeskProducts key={s.id} {...s} tone={tone} />
       case 'reviews':
         return <Reviews key={s.id} {...s} tone={tone} />
       case 'faq':

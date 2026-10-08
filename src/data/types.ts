@@ -172,6 +172,8 @@ export type SectionConfig =
       intro: string
       fields: Field[]
       submit: Localized
+      /** Kalvio Desk clinic slug. When set, a booking also goes to that clinic's request list. Samples leave it unset. */
+      deskSlug?: string
     })
   | (SectionBase & {
       kind: 'callout'
@@ -181,6 +183,13 @@ export type SectionConfig =
       action: 'call' | 'whatsapp'
       label: string
       icon: IconName
+    })
+  | (SectionBase & {
+      kind: 'deskProducts'
+      title: string
+      intro?: string
+      /** Kalvio Desk clinic slug: the products it marks "Show on our website". */
+      deskSlug: string
     })
   | (SectionBase & { kind: 'reviews'; title: string })
   | (SectionBase & { kind: 'faq'; title: string })

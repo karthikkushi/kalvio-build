@@ -8,6 +8,7 @@ import { messageHref, useMessaging } from '../lib/messaging'
 import type { Field, SectionConfig } from '../data/types'
 import { t } from '../i18n/strings'
 import { useDemo } from '../lib/demo'
+import { bookViaDesk, toDeskBooking } from '../lib/desk'
 
 type Props = Extract<SectionConfig, { kind: 'booking' }> & { tone: Tone }
 
@@ -44,8 +45,11 @@ function Input({ f, id }: { f: Field; id: string }) {
   }
 }
 
-/** Booking goes to the shop's WhatsApp (SMS in the US) with the details filled in. No data is stored by the site. */
-export function Booking({ id, title, intro, fields, submit, tone }: Props) {
+/**
+ * Booking goes to the shop's WhatsApp (SMS in the US) with the details filled in. Samples store nothing.
+ * With a deskSlug the request also goes to that clinic's Kalvio Desk booking list.
+ */
+export function Booking({ id, title, intro, fields, submit, deskSlug, tone }: Props) {
   const d = useDemo()
   const hint = useActionHint()
   const m = useMessaging()
@@ -60,8 +64,9 @@ export function Booking({ id, title, intro, fields, submit, tone }: Props) {
       .filter(([, v]) => v)
       .map(([k, v]) => `${k}: ${v}`)
     const href = messageHref(m.sms, d.phone.digits, `Hi ${d.name}, ${m.sms ? "I'd like a quote." : "I'd like to book."}\n${lines.join('\n')}`)
-    if (m.sms) window.location.href = href
-    else window.open(href, '_blank', 'noopener')
+    const open = () => (m.sms ? (window.location.href = href) : void window.open(href, '_blank', 'noopener'))
+    if (deskSlug) void bookViaDesk(deskSlug, toDeskBooking(fields, (n) => String(data.get(n) ?? '')), open)
+    else open()
   }
 
   return (
@@ -85,12 +90,24 @@ export function Booking({ id, title, intro, fields, submit, tone }: Props) {
               <Input f={f} id={`${uid}-${f.name}`} />
             </div>
           ))}
+          {deskSlug && (
+            <input
+              name="website"
+              type="text"
+              tabIndex={-1}
+              autoComplete="off"
+              aria-hidden="true"
+              className="absolute -left-[9999px] h-0 w-0 opacity-0"
+            />
+          )}
           <button type="submit" className="btn btn-primary mt-2 sm:col-span-2">
             <MessageIcon size={19} /> {t(submit, d.lang)}
           </button>
           <p className="text-sm text-muted sm:col-span-2">
-            Opens {m.sms ? 'a text message' : 'WhatsApp'} with your details filled in. Nothing is stored on this website.
+            Opens {m.sms ? 'a text message' : 'WhatsApp'} with your details filled in.{' '}
+            {deskSlug ? "Your request also goes to the clinic's booking list." : 'Nothing is stored on this website.'}
           </p>
+          {deskSlug && <p className="text-sm text-muted sm:col-span-2">By sending, you agree that {d.name} may contact you about your appointment.</p>}
         </form>
         <aside className="self-start rounded-card bg-surface-alt p-6 sm:p-8" data-reveal>
           <h3 className="font-display text-xl text-ink">Prefer to talk?</h3>

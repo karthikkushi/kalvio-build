@@ -8,6 +8,8 @@ export const SITE = {
   city: 'Bengaluru',
   /** Share Worker (workers/share): sample screenshots and link-preview images. */
   shareApi: 'https://kalvio-share.kalvio-build.workers.dev',
+  /** Kalvio Desk (the clinic app): public booking function. The key is a publishable one, safe in client code. */
+  desk: { url: 'https://suxmtmnidhjcqydjjthq.supabase.co', key: 'sb_publishable_bywMaA4Q0C4MFXxbM7my-A_rJjUYJMZ' },
   /** Time from "yes" to live, used in copy: "live in a week". */
   delivery: 'a week',
   /** Who sends the WhatsApp messages to shops (signed in the /share kit's messages). */
