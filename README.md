@@ -1,12 +1,20 @@
 # Kalvio Build
 
-Websites for local businesses, sold with a free sample: Shreya sends a shop owner a link to **their own** website
-(name, area, phone, real photos) seconds after a call. This repo is the agency site and the sample sites.
+**What:** an agency website that makes a free sample website for any local shop in seconds, with the shop's own name, area and phone number (17 business types, 6 themes).
+**For:** local business owners (clinics, salons, gyms, shops, restaurants, US home services) who want to see their website before they pay.
+**Run:** `npm install`, then `npm run dev` and open http://localhost:5173 (Node 22).
+
+Live: https://kalvio-build.pages.dev/ · US version with dollar pricing: https://kalvio-build.pages.dev/?region=us ·
+US sample: [a plumber in Austin](https://kalvio-build.pages.dev/demo/home_services?name=Peak%20Plumbing%20Co&area=Round%20Rock&city=Austin%2C%20TX&phone=5125550199)
+
+![Kalvio Build landing page](docs/screenshots/after/landing/home-1440-fold.webp)
+
+## Pages
 
 - `/`: the agency landing page ("See your shop's website before you pay").
 - `/demo/<business-key>?name=…&area=…&phone=…`: a personalised sample for any of 17 business types in any of 6
   themes. The link format is documented in [`docs/DEMO_LINKS.md`](docs/DEMO_LINKS.md).
-- `/share?key=…&name=…`: Shreya's WhatsApp kit for a shop: a picture of their website to send first, a
+- `/share?key=…&name=…`: the salesperson's WhatsApp kit for a shop: a picture of their website to send first, a
   10-second video, and a link preview with their name (see `docs/DEMO_LINKS.md`).
 
 ## Commands
